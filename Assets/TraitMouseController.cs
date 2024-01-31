@@ -51,11 +51,8 @@ public class TraitMouseController : MonoBehaviour
 
         foreach (RaycastResult result in results)
         {
-            T component = result.gameObject.GetComponent<T>();
-            if (component != null)
-            {
+            if (result.gameObject.TryGetComponent(out T component) 
                 return component;
-            }
         }
         return null;
     }
