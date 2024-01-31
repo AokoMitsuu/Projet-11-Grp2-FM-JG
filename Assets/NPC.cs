@@ -6,26 +6,26 @@ using UnityEngine;
 [Serializable]
 public class NPC
 {
-    public string Name;
-    public List<TraitSo> Traits;
-    public string Summary;
+    [SerializeField] private string _name;
+    public List<TraitSo> _traits;
+    public string _summary;
 
     public NPC(string name, List<TraitSo> traits)
     {
-        Name = name;
-        Traits = traits;
+        _name = name;
+        _traits = traits;
         GenerateSummary();
     }
 
     private void GenerateSummary()
     {
         // Générer un résumé basé sur les traits
-        Summary = $"Je suis {Name}. Mes traits principaux sont: \n";
-        foreach(TraitSo trait in Traits)
+        _summary = $"Je suis {_name}. Mes traits principaux sont: \n";
+        foreach(TraitSo trait in _traits)
         {
-            Summary += trait.Description;
-            if (Traits.Last() != trait)
-                Summary += "\n";
+            _summary += trait.Description;
+            if (_traits.Last() != trait)
+                _summary += "\n";
         }
     }
 }

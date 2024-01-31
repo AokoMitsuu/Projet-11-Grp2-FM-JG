@@ -1,14 +1,13 @@
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 
 public class TraitsManager
 {
-    public List<TraitSo> AvailableTraits;
+    private List<TraitSo> _availableTraits;
 
     public TraitsManager(List<TraitSo> availableTraits)
     {
-        AvailableTraits = availableTraits;
+        _availableTraits = availableTraits;
     }
 
     public TraitSo GetRandomTraitAvoidingGroupConflicts(List<TraitSo> selectedTraits)
@@ -21,7 +20,7 @@ public class TraitsManager
             conflictTraits.Add(selected);
         }
 
-        List<TraitSo> potentialTraits = AvailableTraits.Except(conflictTraits).ToList();
+        List<TraitSo> potentialTraits = _availableTraits.Except(conflictTraits).ToList();
 
         if (potentialTraits.Count > 0)
         {

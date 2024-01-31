@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class NPCGenerator : MonoBehaviour
 {
-    public List<TraitSo> PossibleTraits;
-    public NPC[] npcs = new NPC[6];
-    public int traitsCount = 3;
+    [SerializeField] private List<TraitSo> _possibleTraits;
+    [SerializeField] private NPC[] _npcs = new NPC[6];
+    [SerializeField] private int _traitsCount = 3;
 
     void Start()
     {
@@ -14,21 +14,21 @@ public class NPCGenerator : MonoBehaviour
 
     void GenerateNPCs()
     {
-        for (int i = 0; i < npcs.Length; i++)
+        for (int i = 0; i < _npcs.Length; i++)
         {
             string name = $"NPC {i + 1}";
             List<TraitSo> traits = GetRandomTraits();
-            npcs[i] = new NPC(name, traits);
-            Debug.Log(npcs[i].Summary);
+            _npcs[i] = new NPC(name, traits);
+            Debug.Log(_npcs[i]._summary);
         }
     }
 
     List<TraitSo> GetRandomTraits()
     {
-        TraitsManager traitsManager = new TraitsManager(PossibleTraits);
+        TraitsManager traitsManager = new TraitsManager(_possibleTraits);
         List<TraitSo> selectedTraits = new List<TraitSo>();
 
-        while (selectedTraits.Count < traitsCount)
+        while (selectedTraits.Count < _traitsCount)
         {
             TraitSo potentialTrait = traitsManager.GetRandomTraitAvoidingGroupConflicts(selectedTraits);
             if (potentialTrait)
