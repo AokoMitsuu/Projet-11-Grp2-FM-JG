@@ -24,8 +24,8 @@ public class NPCGenerator : MonoBehaviour
         if (!_randomSeed)
             Random.InitState(_seed);
 
-        _profileContainer.sizeDelta = new Vector2(50 + ((_npcs.Length / 2) * 800), _profileContainer.sizeDelta.y);
-        _traitContainer.sizeDelta = new Vector2(_profileContainer.sizeDelta.x, 50 + (_possibleTraits.Count * 85));
+        //_profileContainer.sizeDelta = new Vector2(50 + ((_npcs.Length / 2) * 800), _profileContainer.sizeDelta.y);
+        //_traitContainer.sizeDelta = new Vector2(_profileContainer.sizeDelta.x, 50 + (_possibleTraits.Count * 85));
 
         GenerateTrait();
         GenerateNPCs();
@@ -46,7 +46,13 @@ public class NPCGenerator : MonoBehaviour
 
     private void GenerateTrait()
     {
-        foreach(var trait in _possibleTraits)
+        // clear container
+        foreach (Transform child in _traitContainer.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        foreach (var trait in _possibleTraits)
         {
             TraitController traitController = Instantiate(_traitPrefab, _traitContainer).GetComponent<TraitController>();
             traitController.Init(trait);

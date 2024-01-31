@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class TraitMouseController : MonoBehaviour
 {
-    public static TraitMouseController Instance;
+    public static TraitMouseController Instance { get; private set; }
 
     [SerializeField] private TMP_Text _traitText;
     [SerializeField] private Image _backgroundUI;
@@ -62,9 +62,10 @@ public class TraitMouseController : MonoBehaviour
 
     public void OnPointerDown()
     {
-        var traiController = GetUIHoverObject<TraitController>();
-        if (traiController != null){
-            _actualTrait = traiController.Trait;
+        var traitController = GetUIHoverObject<TraitController>();
+        if (traitController != null)
+        {
+            _actualTrait = traitController.Trait;
             _traitText.text = _actualTrait.Name;
             SetActive(true);
         }
@@ -77,6 +78,7 @@ public class TraitMouseController : MonoBehaviour
         {
             profile.AddTrait(_actualTrait);
         }
+        _actualTrait = null;
 
         SetActive(false);
     }
