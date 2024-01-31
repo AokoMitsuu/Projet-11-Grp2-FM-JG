@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
+  m_Name: Visionnaire
+  m_EditorClassIdentifier: 
+  _name: Visionnaire
+  _conflictTrait:
+  - {fileID: 11400000, guid: 0c98392250acf0142a39f3e63a6adcbc, type: 2}
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _complementaryPrefixSentece:
+  - ' et aussi'
+  - ' de plus'
+  - ' de plus'
+  _contradictionPrefixSentece:
+  - ' Malheuresement'
+  - ' Cependant'
+  - " Malgr\xE9s toutes mes qualit\xE9es"
+  _suffixSentence:
+  - J'ai une grande vision pour l'avenir.
+  - "Je r\xEAve de grandes r\xE9alisations."
+  - "Je suis toujours tourn\xE9 vers demain."
+  _tag: 0

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
+  m_Name: Ponctuel
+  m_EditorClassIdentifier: 
+  _name: Ponctuel
+  _conflictTrait:
+  - {fileID: 11400000, guid: e7a0d62a854c60d4ba82b70239ecf0e1, type: 2}
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _complementaryPrefixSentece:
+  - ' et aussi'
+  - ' de plus'
+  - ' de plus'
+  _contradictionPrefixSentece:
+  - ' Malheuresement'
+  - ' Cependant'
+  - " Malgr\xE9s toutes mes qualit\xE9es"
+  _suffixSentence:
+  - "J'arrive toujours \xE0 l'heure pour mes rendez-vous."
+  - "Pour moi, la ponctualit\xE9 est une marque de respect."
+  - "Je planifie mon temps pour \xE9viter tout retard."
+  _tag: 0

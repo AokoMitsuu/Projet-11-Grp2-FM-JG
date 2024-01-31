@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.ParticleSystem;
+using Random = UnityEngine.Random;
 
 [Serializable]
 public class NPC
@@ -18,15 +17,11 @@ public class NPC
 
     public string Summary => _summary;
     [SerializeField] private string _summary;
-
-    private List<TraitSo> _oldTraits;
     
-
     public NPC(string name, List<TraitSo> traits)
     {
         _name = name;
         _traits = traits;
-        _oldTraits = new List<TraitSo>(_traits);
         GenerateSummary();
     }
 
@@ -43,12 +38,44 @@ public class NPC
     private void GenerateSummary()
     {
         // Générer un résumé basé sur les traits
-        _summary = $"Je suis {_name}. Mes traits principaux sont: \n";
-        foreach(TraitSo trait in _traits)
+        _summary = $"Je suis {_name}.\n";
+
+
+        List<TraitSo> ageTraits = _traits.Where(trait => trait.Tag == ETag.Age).ToList();
+        List<TraitSo> Traits = _traits.Where(trait => trait.Tag == ETag.Positif).ToList();
+        List<TraitSo> negativeTraits = _traits.Where(trait => trait.Tag == ETag.Negatif).ToList();
+
+        foreach (TraitSo trait in ageTraits)
         {
-            _summary += trait.Description;
-            if (_traits.Last() != trait)
-                _summary += "\n";
+            _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+        }
+
+        foreach (TraitSo trait in Traits)
+        {
+            if(Traits.First() != trait)
+            {
+                _summary = _summary.Substring(0, _summary.Length - 1);
+                _summary += trait.ComplementaryPrefixSentece[Random.Range(0, trait.ComplementaryPrefixSentece.Count - 1)].ToLower() + " ";
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)].ToLower() + " ";
+            }
+            else
+            {
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+            }
+        }
+
+        foreach (TraitSo trait in negativeTraits)
+        {
+            if (negativeTraits.First() != trait)
+            {
+                _summary = _summary.Substring(0, _summary.Length - 1);
+                _summary += trait.ContradictionPrefixSentece[Random.Range(0, trait.ContradictionPrefixSentece.Count - 1)].ToLower() + " ";
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)].ToLower() + " ";
+            }
+            else
+            {
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+            }
         }
 
         OnTraitsChange?.Invoke();
@@ -65,7 +92,6 @@ public class NPC
                 _traits.Remove(conflict);
             }
         }
-        _oldTraits = new List<TraitSo>(_traits);
         GenerateSummary();
     }
 }
