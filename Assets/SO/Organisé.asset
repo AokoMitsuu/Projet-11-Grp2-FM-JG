@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: "Organis\xE9"
   m_EditorClassIdentifier: 
   _name: "Organis\xE9"
-  _description: "Tr\xE8s structur\xE9 et ordonn\xE9."
   _conflictTrait:
   - {fileID: 11400000, guid: 0d28c550e0bd73d40b4bbff5b6a13bda, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ', chaque chose a sa place chez moi.'
+  - ", j'appr\xE9cie lorsque tout est en ordre."
+  - ", je planifie tout \xE0 l'avance."

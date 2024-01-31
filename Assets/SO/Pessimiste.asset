@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Pessimiste
   m_EditorClassIdentifier: 
   _name: Pessimiste
-  _description: "A tendance \xE0 voir le c\xF4t\xE9 n\xE9gatif."
   _conflictTrait:
   - {fileID: 11400000, guid: 937164c804ff9714ca414fc91dc7e71a, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ', je m''attends toujours au pire.'
+  - ", il m'est difficile d'esp\xE9rer le meilleur."
+  - ", je pr\xE9f\xE8re \xEAtre pr\xEAt pour les mauvaises surprises."

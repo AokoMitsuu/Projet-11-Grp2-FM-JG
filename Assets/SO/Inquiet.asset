@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Inquiet
   m_EditorClassIdentifier: 
   _name: Inquiet
-  _description: Souvent soucieux ou douteux.
   _conflictTrait:
   - {fileID: 11400000, guid: f1cc1d15fdbedcf4a8232c87264af441, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ', je me fais souvent du souci pour l''avenir.'
+  - ', il m''est difficile de rester serein.'
+  - ", les \"et si\" occupent souvent mes pens\xE9es."

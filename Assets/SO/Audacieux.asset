@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Audacieux
   m_EditorClassIdentifier: 
   _name: Audacieux
-  _description: Prend des risques et aime l'aventure.
   _conflictTrait:
   - {fileID: 11400000, guid: 2c4966dd7bf43f344a061b844f7a5cc9, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis plutot '
+  - 'Je suis '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", j'aime relever de nouveaux d\xE9fis."
+  - ', je ne recule pas devant l''inconnu.'
+  - ', l''aventure m''attire toujours.'

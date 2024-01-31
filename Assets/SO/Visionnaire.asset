@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Visionnaire
   m_EditorClassIdentifier: 
   _name: Visionnaire
-  _description: "Pense \xE0 l'avenir et a de grandes id\xE9es."
   _conflictTrait:
   - {fileID: 11400000, guid: 0c98392250acf0142a39f3e63a6adcbc, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ', j''ai une grande vision pour l''avenir.'
+  - ", je r\xEAve de grandes r\xE9alisations."
+  - ", je suis toujours tourn\xE9 vers demain."

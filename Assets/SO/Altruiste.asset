@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Altruiste
   m_EditorClassIdentifier: 
   _name: Altruiste
-  _description: "Se soucie profond\xE9ment du bien-\xEAtre des autres."
   _conflictTrait:
   - {fileID: 11400000, guid: 3f726b5051eacfb42830a0afd6f1c7d1, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", le bien-\xEAtre des autres est ma priorit\xE9."
+  - ', j''aime prendre soin des gens autour de moi.'
+  - ', aider est dans ma nature.'

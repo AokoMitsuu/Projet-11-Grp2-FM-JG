@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: "Cr\xE9atif"
   m_EditorClassIdentifier: 
   _name: "Cr\xE9atif"
-  _description: "A toujours des id\xE9es originales et innovantes."
   _conflictTrait:
   - {fileID: 11400000, guid: d72bf0f371d8edf4d847c70880da922b, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", j'ai constamment de nouvelles id\xE9es."
+  - ', j''aime penser hors des sentiers battus.'
+  - ', je trouve des solutions originales.'

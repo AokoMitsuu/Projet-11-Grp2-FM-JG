@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.ParticleSystem;
+using Random = UnityEngine.Random;
 
 [Serializable]
 public class NPC
@@ -43,12 +42,10 @@ public class NPC
     private void GenerateSummary()
     {
         // Générer un résumé basé sur les traits
-        _summary = $"Je suis {_name}. Mes traits principaux sont: \n";
+        _summary = $"Je suis {_name}.\n";
         foreach(TraitSo trait in _traits)
         {
-            _summary += trait.Description;
-            if (_traits.Last() != trait)
-                _summary += "\n";
+            _summary += trait.PrefixSentece[Random.Range(0, trait.PrefixSentece.Count - 1)] + trait.Name.ToLower() + trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
         }
 
         OnTraitsChange?.Invoke();

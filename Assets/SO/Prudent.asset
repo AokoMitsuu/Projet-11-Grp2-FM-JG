@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Prudent
   m_EditorClassIdentifier: 
   _name: Prudent
-  _description: "Est tr\xE8s prudent et \xE9vite les risques."
   _conflictTrait:
   - {fileID: 11400000, guid: 44b2fb239fadc2b47a5b155d21b769dc, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", je r\xE9fl\xE9chis toujours aux cons\xE9quences."
+  - ", j'\xE9vite de prendre des risques inutiles."
+  - ', je mesure deux fois avant de couper.'

@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Ponctuel
   m_EditorClassIdentifier: 
   _name: Ponctuel
-  _description: "Arrive toujours \xE0 l'heure."
   _conflictTrait:
   - {fileID: 11400000, guid: e7a0d62a854c60d4ba82b70239ecf0e1, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", j'arrive toujours \xE0 l'heure pour mes rendez-vous."
+  - ", pour moi, la ponctualit\xE9 est une marque de respect."
+  - ", je planifie mon temps pour \xE9viter tout retard."

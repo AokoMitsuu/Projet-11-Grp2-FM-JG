@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Sociable
   m_EditorClassIdentifier: 
   _name: Sociable
-  _description: " Aime \xEAtre entour\xE9 de gens et socialiser."
   _conflictTrait:
   - {fileID: 11400000, guid: 8b60788ffdd506d4fa58bfbee676fc76, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ', j''aime rencontrer de nouvelles personnes.'
+  - ', passer du temps avec les autres me rend heureux.'
+  - ", je suis souvent entour\xE9 d'amis."

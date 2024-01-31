@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Conservateur
   m_EditorClassIdentifier: 
   _name: Conservateur
-  _description: "Pr\xE9f\xE8re maintenir les m\xE9thodes existantes."
   _conflictTrait:
   - {fileID: 11400000, guid: ba13f243850b52840bbfdfa5d2627437, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", je tiens \xE0 pr\xE9server ce qui fonctionne."
+  - ", je suis m\xE9fiant vis-\xE0-vis du changement."
+  - ", je pr\xE9f\xE8re la s\xE9curit\xE9 \xE0 l'incertitude."

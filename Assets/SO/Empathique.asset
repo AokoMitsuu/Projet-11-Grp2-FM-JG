@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Empathique
   m_EditorClassIdentifier: 
   _name: Empathique
-  _description: Comprend et partage les sentiments des autres.
   _conflictTrait:
   - {fileID: 11400000, guid: 66c352d810f32084f9b2c8c4c9bfe92f, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", je ressens profond\xE9ment les \xE9motions des autres."
+  - ', je m''efforce de comprendre les sentiments d''autrui.'
+  - ", je suis naturellement \xE0 l'\xE9coute."

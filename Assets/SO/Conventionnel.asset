@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Conventionnel
   m_EditorClassIdentifier: 
   _name: Conventionnel
-  _description: "Pr\xE9f\xE8re suivre les m\xE9thodes \xE9prouv\xE9es."
   _conflictTrait:
   - {fileID: 11400000, guid: 6d103bf0d469f3d4dbb7a2005d0d5671, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", je pr\xE9f\xE8re les m\xE9thodes \xE9prouv\xE9es."
+  - ", je suis \xE0 l'aise avec ce qui est familier."
+  - ', je respecte les traditions.'

@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Optimiste
   m_EditorClassIdentifier: 
   _name: Optimiste
-  _description: "Voit toujours le bon c\xF4t\xE9 des choses."
   _conflictTrait:
   - {fileID: 11400000, guid: b4938ceab5be5384c9325728c043438c, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", je vois toujours le verre \xE0 moiti\xE9 plein."
+  - ", je cherche toujours le bon c\xF4t\xE9 des choses."
+  - ', je ne me laisse pas abattre facilement.'

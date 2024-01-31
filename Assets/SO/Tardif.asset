@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Tardif
   m_EditorClassIdentifier: 
   _name: Tardif
-  _description: "A tendance \xE0 arriver en retard."
   _conflictTrait:
   - {fileID: 11400000, guid: ec1a4b4766e6dcd428a5458792b4f6db, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", j'ai tendance \xE0 sous-estimer le temps n\xE9cessaire."
+  - ", malgr\xE9 mes efforts, j'arrive souvent en retard."
+  - ', le temps semble toujours filer entre mes doigts.'

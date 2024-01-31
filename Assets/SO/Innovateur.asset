@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Innovateur
   m_EditorClassIdentifier: 
   _name: Innovateur
-  _description: "Cherche constamment \xE0 am\xE9liorer et \xE0 innover."
   _conflictTrait:
   - {fileID: 11400000, guid: 57c2a597cfb4baf4db2c13b1d5039116, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", je cherche toujours \xE0 repousser les limites."
+  - ", j'aspire \xE0 changer les choses."
+  - ', je ne me contente jamais du statu quo.'

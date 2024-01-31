@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Dynamique
   m_EditorClassIdentifier: 
   _name: Dynamique
-  _description: "Plein d'\xE9nergie et d'enthousiasme."
   _conflictTrait:
   - {fileID: 11400000, guid: 204d9239f119ba04ba498673f1b37864, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", je d\xE9borde d'\xE9nergie et d'enthousiasme."
+  - ', je suis toujours en mouvement.'
+  - ', je ne tiens pas en place.'

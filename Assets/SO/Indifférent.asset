@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: "Indiff\xE9rent"
   m_EditorClassIdentifier: 
   _name: "Indiff\xE9rent"
-  _description: "Peu int\xE9ress\xE9 par l'apprentissage ou la d\xE9couverte."
   _conflictTrait:
   - {fileID: 11400000, guid: f6ab96deabbd2f848b8efa5f9d2c9f45, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", peu de choses suscitent ma curiosit\xE9."
+  - ", il m'est difficile de trouver de l'int\xE9r\xEAt."
+  - ', peu de choses captent vraiment mon attention.'

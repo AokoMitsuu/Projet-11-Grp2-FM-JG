@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Diplomate
   m_EditorClassIdentifier: 
   _name: Diplomate
-  _description: "Habile \xE0 g\xE9rer les gens et \xE0 \xE9viter les conflits."
   _conflictTrait:
   - {fileID: 11400000, guid: b2263d18fc1e4784aa7a2bcd90f6a41b, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ', je sais naviguer dans les situations complexes.'
+  - ", j'\xE9vite les conflits autant que possible."
+  - ', je m''efforce de maintenir l''harmonie.'

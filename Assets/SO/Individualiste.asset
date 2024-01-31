@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Individualiste
   m_EditorClassIdentifier: 
   _name: Individualiste
-  _description: "Met l'accent sur l'ind\xE9pendance personnelle."
   _conflictTrait:
   - {fileID: 11400000, guid: f2b32248f31f4d24fb20afecf6d8f0c1, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", je valorise mon ind\xE9pendance avant tout."
+  - ', je me concentre sur mon propre chemin.'
+  - ", je fais confiance \xE0 mes propres d\xE9cisions."

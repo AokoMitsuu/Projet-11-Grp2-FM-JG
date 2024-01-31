@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: "D\xE9sordonn\xE9"
   m_EditorClassIdentifier: 
   _name: "D\xE9sordonn\xE9"
-  _description: "Peu structur\xE9 et souvent en d\xE9sordre."
   _conflictTrait:
   - {fileID: 11400000, guid: 3bb80547d470e6d4a9be179aa09b0a52, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ', mon bureau est toujours en pagaille.'
+  - ', je trouve difficile de maintenir l''ordre.'
+  - ', je me perds souvent dans mes propres affaires.'

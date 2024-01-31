@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Solitaire
   m_EditorClassIdentifier: 
   _name: Solitaire
-  _description: "Pr\xE9f\xE8re la solitude."
   _conflictTrait:
   - {fileID: 11400000, guid: 8e982acc05bf2054bb80594b3af8ff44, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ', je trouve la paix dans la solitude.'
+  - ", j'appr\xE9cie mes moments de calme seul."
+  - ', les grands groupes me fatiguent.'

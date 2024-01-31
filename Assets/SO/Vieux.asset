@@ -13,7 +13,16 @@ MonoBehaviour:
   m_Name: Vieux
   m_EditorClassIdentifier: 
   _name: Vieux
-  _description: 
   _conflictTrait:
   - {fileID: 11400000, guid: d8c2ec77c1771c34da6a21d95f78aca9, type: 2}
   - {fileID: 11400000, guid: 60402c46598bd044080d78560657626f, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  _suffixSentence:
+  - ", je porte en moi les le\xE7ons et les souvenirs d'une vie bien remplie."
+  - ", je regarde le pass\xE9 avec nostalgie et le futur avec sagesse."
+  - ", je partage volontiers mon exp\xE9rience et mes conseils avec les plus jeunes."

@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: "\xC9go\xEFste"
   m_EditorClassIdentifier: 
   _name: "\xC9go\xEFste"
-  _description: "Pense d'abord \xE0 soi-m\xEAme."
   _conflictTrait:
   - {fileID: 11400000, guid: 6d058a44cc4b8c6459a894df6c785b2b, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", je pense d'abord \xE0 mes propres int\xE9r\xEAts."
+  - ', il m''est difficile de mettre les autres en avant.'
+  - ', mes besoins passent souvent avant ceux des autres.'

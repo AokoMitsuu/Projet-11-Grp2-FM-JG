@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Direct
   m_EditorClassIdentifier: 
   _name: Direct
-  _description: Dit les choses telles qu'elles sont, parfois sans tact.
   _conflictTrait:
   - {fileID: 11400000, guid: a8720092a1960b54aa613faefc50488b, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ', je dis toujours les choses comme elles sont.'
+  - ', je n''aime pas tourner autour du pot.'
+  - ", je pr\xE9f\xE8re une v\xE9rit\xE9 dure \xE0 un mensonge doux."

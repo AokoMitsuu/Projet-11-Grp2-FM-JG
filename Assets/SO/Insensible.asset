@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Insensible
   m_EditorClassIdentifier: 
   _name: Insensible
-  _description: "A du mal \xE0 se connecter \xE9motionnellement avec les autres."
   _conflictTrait:
   - {fileID: 11400000, guid: 99722b483bea08d4a9c91054834fb1b4, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", il m'est difficile de me connecter aux \xE9motions des autres."
+  - ", je ne suis pas tr\xE8s bon pour r\xE9conforter les gens."
+  - ", je pr\xE9f\xE8re rester neutre \xE9motionnellement."

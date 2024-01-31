@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Confiant
   m_EditorClassIdentifier: 
   _name: Confiant
-  _description: "S\xFBr de soi et de ses capacit\xE9s."
   _conflictTrait:
   - {fileID: 11400000, guid: 36d4bc20e14385b4e835014c18400486, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", je crois en mes capacit\xE9s."
+  - ", je fais face aux d\xE9fis avec assurance."
+  - ', le doute me visite rarement.'

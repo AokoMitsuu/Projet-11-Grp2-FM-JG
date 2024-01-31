@@ -13,7 +13,18 @@ MonoBehaviour:
   m_Name: Ado
   m_EditorClassIdentifier: 
   _name: Ado
-  _description: 
   _conflictTrait:
   - {fileID: 11400000, guid: 582da936876c73b478302496fb8d312c, type: 2}
   - {fileID: 11400000, guid: 60402c46598bd044080d78560657626f, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  _suffixSentence:
+  - ", je d\xE9couvre qui je suis et explore le monde autour de moi."
+  - ", je vis entre l'insouciance de l'enfance et les responsabilit\xE9s naissantes
+    de l'\xE2ge adulte."
+  - ", je navigue \xE0 travers les hauts et les bas de cette p\xE9riode de d\xE9couverte
+    de soi."

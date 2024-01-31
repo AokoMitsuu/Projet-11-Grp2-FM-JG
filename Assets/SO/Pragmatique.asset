@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: Pragmatique
   m_EditorClassIdentifier: 
   _name: Pragmatique
-  _description: "Se concentre sur le pratique et le r\xE9alisable."
   _conflictTrait:
   - {fileID: 11400000, guid: e6d5cc524f922af47bc53c89179fc239, type: 2}
+  _contradictionTrait: []
+  _complementaryTrait: []
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _suffixSentence:
+  - ", je me concentre sur ce qui est r\xE9alisable."
+  - ", j'aime les solutions concr\xE8tes."
+  - ', je garde les pieds sur terre.'
