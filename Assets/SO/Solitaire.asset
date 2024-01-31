@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Solitaire
   m_EditorClassIdentifier: 
-  Name: Solitaire
-  Description: "Pr\xE9f\xE8re la solitude"
-  ConflictTrait:
+  _name: Solitaire
+  _description: "Pr\xE9f\xE8re la solitude."
+  _conflictTrait:
   - {fileID: 11400000, guid: 8e982acc05bf2054bb80594b3af8ff44, type: 2}

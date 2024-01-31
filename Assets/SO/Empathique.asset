@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Empathique
   m_EditorClassIdentifier: 
-  Name: Empathique
-  Description: Comprend et partage les sentiments des autres.
-  ConflictTrait:
+  _name: Empathique
+  _description: Comprend et partage les sentiments des autres.
+  _conflictTrait:
   - {fileID: 11400000, guid: 66c352d810f32084f9b2c8c4c9bfe92f, type: 2}

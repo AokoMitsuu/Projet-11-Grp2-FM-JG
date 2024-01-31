@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Prudent
   m_EditorClassIdentifier: 
-  Name: Prudent
-  Description: "Est tr\xE8s prudent et \xE9vite les risques."
-  ConflictTrait:
+  _name: Prudent
+  _description: "Est tr\xE8s prudent et \xE9vite les risques."
+  _conflictTrait:
   - {fileID: 11400000, guid: 44b2fb239fadc2b47a5b155d21b769dc, type: 2}

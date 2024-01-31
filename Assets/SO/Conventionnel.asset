@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Conventionnel
   m_EditorClassIdentifier: 
-  Name: Conventionnel
-  Description: "Pr\xE9f\xE8re suivre les m\xE9thodes \xE9prouv\xE9es."
-  ConflictTrait:
+  _name: Conventionnel
+  _description: "Pr\xE9f\xE8re suivre les m\xE9thodes \xE9prouv\xE9es."
+  _conflictTrait:
   - {fileID: 11400000, guid: 6d103bf0d469f3d4dbb7a2005d0d5671, type: 2}

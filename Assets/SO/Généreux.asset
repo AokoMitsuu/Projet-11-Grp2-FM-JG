@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: "G\xE9n\xE9reux"
   m_EditorClassIdentifier: 
-  Name: "G\xE9n\xE9reux"
-  Description: Donne volontiers et aide les autres.
-  ConflictTrait:
+  _name: "G\xE9n\xE9reux"
+  _description: Donne volontiers et aide les autres.
+  _conflictTrait:
   - {fileID: 11400000, guid: 48eda0d57dea62c4aa46a466e8f86735, type: 2}

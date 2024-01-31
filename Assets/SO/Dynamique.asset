@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Dynamique
   m_EditorClassIdentifier: 
-  Name: Dynamique
-  Description: "Plein d'\xE9nergie et d'enthousiasme."
-  ConflictTrait:
+  _name: Dynamique
+  _description: "Plein d'\xE9nergie et d'enthousiasme."
+  _conflictTrait:
   - {fileID: 11400000, guid: 204d9239f119ba04ba498673f1b37864, type: 2}

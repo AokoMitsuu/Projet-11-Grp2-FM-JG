@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Visionnaire
   m_EditorClassIdentifier: 
-  Name: Visionnaire
-  Description: "Pense \xE0 l'avenir et a de grandes id\xE9es."
-  ConflictTrait:
+  _name: Visionnaire
+  _description: "Pense \xE0 l'avenir et a de grandes id\xE9es."
+  _conflictTrait:
   - {fileID: 11400000, guid: 0c98392250acf0142a39f3e63a6adcbc, type: 2}

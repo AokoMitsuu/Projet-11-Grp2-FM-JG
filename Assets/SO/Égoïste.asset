@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: "\xC9go\xEFste"
   m_EditorClassIdentifier: 
-  Name: "\xC9go\xEFste"
-  Description: "Pense d'abord \xE0 soi-m\xEAme."
-  ConflictTrait:
+  _name: "\xC9go\xEFste"
+  _description: "Pense d'abord \xE0 soi-m\xEAme."
+  _conflictTrait:
   - {fileID: 11400000, guid: 6d058a44cc4b8c6459a894df6c785b2b, type: 2}

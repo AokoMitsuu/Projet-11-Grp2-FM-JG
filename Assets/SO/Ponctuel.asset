@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Ponctuel
   m_EditorClassIdentifier: 
-  Name: Ponctuel
-  Description: "Arrive toujours \xE0 l'heure."
-  ConflictTrait:
+  _name: Ponctuel
+  _description: "Arrive toujours \xE0 l'heure."
+  _conflictTrait:
   - {fileID: 11400000, guid: e7a0d62a854c60d4ba82b70239ecf0e1, type: 2}

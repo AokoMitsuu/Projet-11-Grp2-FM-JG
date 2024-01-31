@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: "L\xE9thargique"
   m_EditorClassIdentifier: 
-  Name: "L\xE9thargique"
-  Description: "Manque souvent d'\xE9nergie et de motivation."
-  ConflictTrait:
+  _name: "L\xE9thargique"
+  _description: "Manque souvent d'\xE9nergie et de motivation."
+  _conflictTrait:
   - {fileID: 11400000, guid: 9022a6555ff6717419e11f02e0646bec, type: 2}

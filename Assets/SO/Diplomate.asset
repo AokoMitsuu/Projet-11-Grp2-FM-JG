@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Diplomate
   m_EditorClassIdentifier: 
-  Name: Diplomate
-  Description: "Habile \xE0 g\xE9rer les gens et \xE0 \xE9viter les conflits."
-  ConflictTrait:
+  _name: Diplomate
+  _description: "Habile \xE0 g\xE9rer les gens et \xE0 \xE9viter les conflits."
+  _conflictTrait:
   - {fileID: 11400000, guid: b2263d18fc1e4784aa7a2bcd90f6a41b, type: 2}

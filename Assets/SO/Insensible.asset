@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Insensible
   m_EditorClassIdentifier: 
-  Name: Insensible
-  Description: "A du mal \xE0 se connecter \xE9motionnellement avec les autres."
-  ConflictTrait:
+  _name: Insensible
+  _description: "A du mal \xE0 se connecter \xE9motionnellement avec les autres."
+  _conflictTrait:
   - {fileID: 11400000, guid: 99722b483bea08d4a9c91054834fb1b4, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Curieux
   m_EditorClassIdentifier: 
-  Name: Curieux
-  Description: "Toujours \xE0 la recherche de nouvelles connaissances."
-  ConflictTrait:
+  _name: Curieux
+  _description: "Toujours \xE0 la recherche de nouvelles connaissances."
+  _conflictTrait:
   - {fileID: 11400000, guid: 96377ae787c4c9846af415379bd83805, type: 2}

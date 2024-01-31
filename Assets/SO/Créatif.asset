@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: "Cr\xE9atif"
   m_EditorClassIdentifier: 
-  Name: "Cr\xE9atif "
-  Description: "A toujours des id\xE9es originales et innovantes."
-  ConflictTrait:
+  _name: "Cr\xE9atif"
+  _description: "A toujours des id\xE9es originales et innovantes."
+  _conflictTrait:
   - {fileID: 11400000, guid: d72bf0f371d8edf4d847c70880da922b, type: 2}

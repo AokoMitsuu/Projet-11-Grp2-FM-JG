@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Pessimiste
   m_EditorClassIdentifier: 
-  Name: Pessimiste
-  Description: "A tendance \xE0 voir le c\xF4t\xE9 n\xE9gatif."
-  ConflictTrait:
+  _name: Pessimiste
+  _description: "A tendance \xE0 voir le c\xF4t\xE9 n\xE9gatif."
+  _conflictTrait:
   - {fileID: 11400000, guid: 937164c804ff9714ca414fc91dc7e71a, type: 2}

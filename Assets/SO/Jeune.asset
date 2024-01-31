@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Jeune
   m_EditorClassIdentifier: 
-  Name: Jeune
-  Description: 
-  ConflictTrait:
-  - {fileID: 11400000, guid: 582da936876c73b478302496fb8d312c, type: 2}
+  _name: Jeune
+  _description: 
+  _conflictTrait:
   - {fileID: 11400000, guid: d8c2ec77c1771c34da6a21d95f78aca9, type: 2}
+  - {fileID: 11400000, guid: 582da936876c73b478302496fb8d312c, type: 2}

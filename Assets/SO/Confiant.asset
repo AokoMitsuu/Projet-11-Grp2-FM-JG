@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Confiant
   m_EditorClassIdentifier: 
-  Name: Confiant
-  Description: "S\xFBr de soi et de ses capacit\xE9s."
-  ConflictTrait:
+  _name: Confiant
+  _description: "S\xFBr de soi et de ses capacit\xE9s."
+  _conflictTrait:
   - {fileID: 11400000, guid: 36d4bc20e14385b4e835014c18400486, type: 2}

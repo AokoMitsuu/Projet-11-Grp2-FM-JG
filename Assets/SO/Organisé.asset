@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: "Organis\xE9"
   m_EditorClassIdentifier: 
-  Name: "Organis\xE9"
-  Description: "Tr\xE8s structur\xE9 et ordonn\xE9."
-  ConflictTrait:
+  _name: "Organis\xE9"
+  _description: "Tr\xE8s structur\xE9 et ordonn\xE9."
+  _conflictTrait:
   - {fileID: 11400000, guid: 0d28c550e0bd73d40b4bbff5b6a13bda, type: 2}

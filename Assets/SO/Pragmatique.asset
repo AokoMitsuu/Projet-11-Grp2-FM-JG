@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Pragmatique
   m_EditorClassIdentifier: 
-  Name: Pragmatique
-  Description: "Se concentre sur le pratique et le r\xE9alisable."
-  ConflictTrait:
+  _name: Pragmatique
+  _description: "Se concentre sur le pratique et le r\xE9alisable."
+  _conflictTrait:
   - {fileID: 11400000, guid: e6d5cc524f922af47bc53c89179fc239, type: 2}

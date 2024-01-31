@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: "D\xE9sordonn\xE9"
   m_EditorClassIdentifier: 
-  Name: "D\xE9sordonn\xE9"
-  Description: "Peu structur\xE9 et souvent en d\xE9sordre."
-  ConflictTrait:
+  _name: "D\xE9sordonn\xE9"
+  _description: "Peu structur\xE9 et souvent en d\xE9sordre."
+  _conflictTrait:
   - {fileID: 11400000, guid: 3bb80547d470e6d4a9be179aa09b0a52, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Direct
   m_EditorClassIdentifier: 
-  Name: Direct
-  Description: Dit les choses telles qu'elles sont, parfois sans tact.
-  ConflictTrait:
+  _name: Direct
+  _description: Dit les choses telles qu'elles sont, parfois sans tact.
+  _conflictTrait:
   - {fileID: 11400000, guid: a8720092a1960b54aa613faefc50488b, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: "Indiff\xE9rent"
   m_EditorClassIdentifier: 
-  Name: "Indiff\xE9rent"
-  Description: "Peu int\xE9ress\xE9 par l'apprentissage ou la d\xE9couverte."
-  ConflictTrait:
+  _name: "Indiff\xE9rent"
+  _description: "Peu int\xE9ress\xE9 par l'apprentissage ou la d\xE9couverte."
+  _conflictTrait:
   - {fileID: 11400000, guid: f6ab96deabbd2f848b8efa5f9d2c9f45, type: 2}

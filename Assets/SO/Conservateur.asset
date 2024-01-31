@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Conservateur
   m_EditorClassIdentifier: 
-  Name: Conservateur
-  Description: "Pr\xE9f\xE8re maintenir les m\xE9thodes existante."
-  ConflictTrait:
+  _name: Conservateur
+  _description: "Pr\xE9f\xE8re maintenir les m\xE9thodes existantes."
+  _conflictTrait:
   - {fileID: 11400000, guid: ba13f243850b52840bbfdfa5d2627437, type: 2}

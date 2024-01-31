@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Audacieux
   m_EditorClassIdentifier: 
-  Name: Audacieux
-  Description: Prend des risques et aime l'aventure.
-  ConflictTrait:
+  _name: Audacieux
+  _description: Prend des risques et aime l'aventure.
+  _conflictTrait:
   - {fileID: 11400000, guid: 2c4966dd7bf43f344a061b844f7a5cc9, type: 2}

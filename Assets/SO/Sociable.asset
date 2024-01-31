@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Sociable
   m_EditorClassIdentifier: 
-  Name: Sociable
-  Description: "Aime \xEAtre entour\xE9 de gens et socialiser."
-  ConflictTrait:
+  _name: Sociable
+  _description: " Aime \xEAtre entour\xE9 de gens et socialiser."
+  _conflictTrait:
   - {fileID: 11400000, guid: 8b60788ffdd506d4fa58bfbee676fc76, type: 2}

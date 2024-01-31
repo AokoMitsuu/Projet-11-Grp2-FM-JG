@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Optimiste
   m_EditorClassIdentifier: 
-  Name: Optimiste
-  Description: "Voit toujours le bon c\xF4t\xE9 des choses."
-  ConflictTrait:
+  _name: Optimiste
+  _description: "Voit toujours le bon c\xF4t\xE9 des choses."
+  _conflictTrait:
   - {fileID: 11400000, guid: b4938ceab5be5384c9325728c043438c, type: 2}
