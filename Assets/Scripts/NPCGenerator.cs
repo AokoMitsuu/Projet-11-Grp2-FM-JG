@@ -15,7 +15,7 @@ public class NPCGenerator : MonoBehaviour
 
     [Space(10), Header("TRAITS")]
     [SerializeField] private List<TraitSo> _possibleTraits;
-    [SerializeField] private RectTransform _traitContainer;
+    [SerializeField] private TraitsContainer _traitContainer;
     [SerializeField] private GameObject _traitPrefab;
 
 
@@ -46,15 +46,12 @@ public class NPCGenerator : MonoBehaviour
 
     private void GenerateTrait()
     {
-        // clear container
-        foreach (Transform child in _traitContainer.transform)
-        {
-            Destroy(child.gameObject);
-        }
+        _traitContainer.Clear();
 
         foreach (var trait in _possibleTraits)
         {
-            TraitController traitController = Instantiate(_traitPrefab, _traitContainer).GetComponent<TraitController>();
+            TraitController traitController = Instantiate(_traitPrefab).GetComponent<TraitController>();
+            _traitContainer.AddUI(traitController.gameObject);
             traitController.Init(trait);
         }
     }
