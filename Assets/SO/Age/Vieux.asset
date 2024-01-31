@@ -28,7 +28,7 @@ MonoBehaviour:
   - ' Cependant, je suis aussi '
   - " Malgr\xE9s toutes mes qualit\xE9es, je suis aussi "
   _suffixSentence:
-  - ", je porte en moi les le\xE7ons et les souvenirs d'une vie bien remplie."
-  - ", je regarde le pass\xE9 avec nostalgie et le futur avec sagesse."
-  - ", je partage volontiers mon exp\xE9rience et mes conseils avec les plus jeunes."
+  - "Je porte en moi les le\xE7ons et les souvenirs d'une vie bien remplie."
+  - "Je regarde le pass\xE9 avec nostalgie et le futur avec sagesse."
+  - "Je partage volontiers mon exp\xE9rience et mes conseils avec les plus jeunes."
   _tag: 3

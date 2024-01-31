@@ -21,14 +21,15 @@ MonoBehaviour:
   - 'Je suis plutot '
   - "J'ai l'habitude d'\xEAtre "
   _complementaryPrefixSentece:
-  - ' Et je suis aussi '
-  - ' De plus, je suis aussi '
+  - ' et aussi'
+  - ' de plus'
+  - ' de plus'
   _contradictionPrefixSentece:
-  - ' Malheuresement je suis aussi '
-  - ' Cependant, je suis aussi '
-  - " Malgr\xE9s toutes mes qualit\xE9es, je suis aussi "
+  - ' Malheuresement'
+  - ' Cependant'
+  - " Malgr\xE9s toutes mes qualit\xE9es"
   _suffixSentence:
-  - ", je pr\xE9f\xE8re les m\xE9thodes \xE9prouv\xE9es."
-  - ", je suis \xE0 l'aise avec ce qui est familier."
-  - ', je respecte les traditions.'
+  - "Je pr\xE9f\xE8re les m\xE9thodes \xE9prouv\xE9es."
+  - "Je suis \xE0 l'aise avec ce qui est familier."
+  - Je respecte les traditions.
   _tag: 0

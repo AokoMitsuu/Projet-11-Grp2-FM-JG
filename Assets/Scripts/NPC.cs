@@ -47,19 +47,35 @@ public class NPC
 
         foreach (TraitSo trait in ageTraits)
         {
-            _summary += trait.PrefixSentece[Random.Range(0, trait.PrefixSentece.Count - 1)] + trait.Name.ToLower() + trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+            _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
         }
 
         foreach (TraitSo trait in Traits)
         {
-            _summary += Traits.First() == trait ? trait.PrefixSentece[Random.Range(0, trait.PrefixSentece.Count - 1)] : trait.ComplementaryPrefixSentece[Random.Range(0, trait.ComplementaryPrefixSentece.Count - 1)];
-            _summary += trait.Name.ToLower() + trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+            if(Traits.First() != trait)
+            {
+                _summary = _summary.Substring(0, _summary.Length - 1);
+                _summary += trait.ComplementaryPrefixSentece[Random.Range(0, trait.ComplementaryPrefixSentece.Count - 1)].ToLower() + " ";
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)].ToLower() + " ";
+            }
+            else
+            {
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+            }
         }
 
         foreach (TraitSo trait in negativeTraits)
         {
-            _summary += negativeTraits.First() == trait ? trait.ContradictionPrefixSentece[Random.Range(0, trait.ContradictionPrefixSentece.Count - 1)] : trait.ComplementaryPrefixSentece[Random.Range(0, trait.ComplementaryPrefixSentece.Count - 1)];
-            _summary += trait.Name.ToLower() + trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+            if (negativeTraits.First() != trait)
+            {
+                _summary = _summary.Substring(0, _summary.Length - 1);
+                _summary += trait.ContradictionPrefixSentece[Random.Range(0, trait.ContradictionPrefixSentece.Count - 1)].ToLower() + " ";
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)].ToLower() + " ";
+            }
+            else
+            {
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+            }
         }
 
         OnTraitsChange?.Invoke();

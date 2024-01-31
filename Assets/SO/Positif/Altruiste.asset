@@ -21,14 +21,15 @@ MonoBehaviour:
   - 'Je suis plutot '
   - "J'ai l'habitude d'\xEAtre "
   _complementaryPrefixSentece:
-  - ' Et je suis aussi '
-  - ' De plus, je suis aussi '
+  - ' et aussi'
+  - ' de plus'
+  - ' de plus'
   _contradictionPrefixSentece:
-  - ' Malheuresement je suis aussi '
-  - ' Cependant, je suis aussi '
-  - " Malgr\xE9s toutes mes qualit\xE9es, je suis aussi "
+  - ' Malheuresement'
+  - ' Cependant'
+  - " Malgr\xE9s toutes mes qualit\xE9es"
   _suffixSentence:
-  - ", le bien-\xEAtre des autres est ma priorit\xE9."
-  - ', j''aime prendre soin des gens autour de moi.'
-  - ', aider est dans ma nature.'
+  - "Le bien-\xEAtre des autres est ma priorit\xE9."
+  - J'aime prendre soin des gens autour de moi.
+  - Aider est dans ma nature.
   _tag: 0

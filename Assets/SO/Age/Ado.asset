@@ -27,9 +27,9 @@ MonoBehaviour:
   - ' Cependant, je suis aussi '
   - " Malgr\xE9s toutes mes qualit\xE9es, je suis aussi "
   _suffixSentence:
-  - ", je d\xE9couvre qui je suis et explore le monde autour de moi."
-  - ", je vis entre l'insouciance de l'enfance et les responsabilit\xE9s naissantes
+  - "Je d\xE9couvre qui je suis et explore le monde autour de moi."
+  - "Je vis entre l'insouciance de l'enfance et les responsabilit\xE9s naissantes
     de l'\xE2ge adulte."
-  - ", je navigue \xE0 travers les hauts et les bas de cette p\xE9riode de d\xE9couverte
+  - "Je navigue \xE0 travers les hauts et les bas de cette p\xE9riode de d\xE9couverte
     de soi."
   _tag: 0
