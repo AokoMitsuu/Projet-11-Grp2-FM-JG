@@ -8,6 +8,8 @@ using static UnityEngine.ParticleSystem;
 [Serializable]
 public class NPC
 {
+    public Action OnTraitsChange;
+
     public string Name => _name;
     [SerializeField] private string _name;
 
@@ -19,24 +21,6 @@ public class NPC
 
     private List<TraitSo> _oldTraits;
     
-    public void Update()
-    {
-        if (_traits.Count > _oldTraits.Count)
-        {
-            RemoveConflicts(_traits[_traits.Count - 1].ConflictTrait);
-        }
-        else if (_traits.Count == _oldTraits.Count)
-        {
-            for (int i = 0; i < _traits.Count; i++)
-            {
-                if (_traits[i] != _oldTraits[i])
-                {
-                    RemoveConflicts(_traits[i].ConflictTrait);
-                    return;
-                }
-            }
-        }
-    }
 
     public NPC(string name, List<TraitSo> traits)
     {
@@ -44,6 +28,16 @@ public class NPC
         _traits = traits;
         _oldTraits = new List<TraitSo>(_traits);
         GenerateSummary();
+    }
+
+    public void AddTraits(TraitSo trait)
+    {
+        if (_traits.Contains(trait))
+            return;
+
+        _traits.Add(trait);
+
+        RemoveConflicts(_traits[_traits.Count - 1].ConflictTrait);
     }
 
     private void GenerateSummary()
@@ -56,6 +50,8 @@ public class NPC
             if (_traits.Last() != trait)
                 _summary += "\n";
         }
+
+        OnTraitsChange?.Invoke();
     }
 
     private void RemoveConflicts(List<TraitSo> conflictTraits)
@@ -70,5 +66,6 @@ public class NPC
             }
         }
         _oldTraits = new List<TraitSo>(_traits);
+        GenerateSummary();
     }
 }

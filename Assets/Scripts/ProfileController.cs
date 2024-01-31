@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ProfileController : MonoBehaviour
 {
@@ -15,7 +16,13 @@ public class ProfileController : MonoBehaviour
     public void Init(NPC npc)
     {
         _npc = npc;
+        _npc.OnTraitsChange += UpdateUI;
         UpdateUI();
+    }
+
+    public void AddTrait(TraitSo trait)
+    {
+        _npc.AddTraits(trait);
     }
 
     private void UpdateUI()

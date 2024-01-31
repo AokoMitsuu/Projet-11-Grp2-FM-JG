@@ -3,15 +3,20 @@ using UnityEngine;
 
 public class NPCGenerator : MonoBehaviour
 {
-    [SerializeField] private List<TraitSo> _possibleTraits;
+    [Header("NPC")]
     [SerializeField] private NPC[] _npcs = new NPC[6];
     [SerializeField] private int _traitsCount = 3;
     [SerializeField] private int _seed;
     [SerializeField] private bool _randomSeed;
 
-    [SerializeField] private Transform _profileContainer;
+    [Space(10), Header("PROFILE")]
+    [SerializeField] private RectTransform _profileContainer;
     [SerializeField] private GameObject _profilePrefab;
 
+    [Space(10), Header("TRAITS")]
+    [SerializeField] private List<TraitSo> _possibleTraits;
+    [SerializeField] private RectTransform _traitContainer;
+    [SerializeField] private GameObject _traitPrefab;
 
 
     private void Start()
@@ -19,15 +24,11 @@ public class NPCGenerator : MonoBehaviour
         if (!_randomSeed)
             Random.InitState(_seed);
 
-        GenerateNPCs();
-    }
+        _profileContainer.sizeDelta = new Vector2(50 + ((_npcs.Length / 2) * 800), _profileContainer.sizeDelta.y);
+        _traitContainer.sizeDelta = new Vector2(_profileContainer.sizeDelta.x, 50 + (_possibleTraits.Count * 85));
 
-    private void Update()
-    {
-        foreach(var npc in _npcs)
-        {
-            npc.Update();
-        }
+        GenerateTrait();
+        GenerateNPCs();
     }
 
     private void GenerateNPCs()
@@ -40,6 +41,15 @@ public class NPCGenerator : MonoBehaviour
             var profile = Instantiate(_profilePrefab, _profileContainer);
             profile.GetComponent<ProfileController>().Init(npc);
             _npcs[i] = npc;
+        }
+    }
+
+    private void GenerateTrait()
+    {
+        foreach(var trait in _possibleTraits)
+        {
+            TraitController traitController = Instantiate(_traitPrefab, _traitContainer).GetComponent<TraitController>();
+            traitController.Init(trait);
         }
     }
 
