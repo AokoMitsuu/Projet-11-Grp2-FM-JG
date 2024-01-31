@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
+  m_Name: "L\xE9thargique"
+  m_EditorClassIdentifier: 
+  _name: "L\xE9thargique"
+  _conflictTrait:
+  - {fileID: 11400000, guid: 9022a6555ff6717419e11f02e0646bec, type: 2}
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
+  _complementaryPrefixSentece:
+  - ' Et je suis aussi '
+  - ' De plus, je suis aussi '
+  _contradictionPrefixSentece:
+  - ' Malheuresement je suis aussi '
+  - ' Cependant, je suis aussi '
+  - " Malgr\xE9s toutes mes qualit\xE9es, je suis aussi "
+  _suffixSentence:
+  - ", j'ai souvent du mal \xE0 me motiver."
+  - ", l'\xE9nergie me fait souvent d\xE9faut."
+  - ", je pr\xE9f\xE8re prendre les choses calmement."
+  _tag: 1

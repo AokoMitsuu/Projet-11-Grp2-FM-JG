@@ -17,15 +17,11 @@ public class NPC
 
     public string Summary => _summary;
     [SerializeField] private string _summary;
-
-    private List<TraitSo> _oldTraits;
     
-
     public NPC(string name, List<TraitSo> traits)
     {
         _name = name;
         _traits = traits;
-        _oldTraits = new List<TraitSo>(_traits);
         GenerateSummary();
     }
 
@@ -43,9 +39,27 @@ public class NPC
     {
         // Générer un résumé basé sur les traits
         _summary = $"Je suis {_name}.\n";
-        foreach(TraitSo trait in _traits)
+
+
+        List<TraitSo> ageTraits = _traits.Where(trait => trait.Tag == ETag.Age).ToList();
+        List<TraitSo> Traits = _traits.Where(trait => trait.Tag == ETag.Positif).ToList();
+        List<TraitSo> negativeTraits = _traits.Where(trait => trait.Tag == ETag.Negatif).ToList();
+
+        foreach (TraitSo trait in ageTraits)
         {
             _summary += trait.PrefixSentece[Random.Range(0, trait.PrefixSentece.Count - 1)] + trait.Name.ToLower() + trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+        }
+
+        foreach (TraitSo trait in Traits)
+        {
+            _summary += Traits.First() == trait ? trait.PrefixSentece[Random.Range(0, trait.PrefixSentece.Count - 1)] : trait.ComplementaryPrefixSentece[Random.Range(0, trait.ComplementaryPrefixSentece.Count - 1)];
+            _summary += trait.Name.ToLower() + trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+        }
+
+        foreach (TraitSo trait in negativeTraits)
+        {
+            _summary += negativeTraits.First() == trait ? trait.ContradictionPrefixSentece[Random.Range(0, trait.ContradictionPrefixSentece.Count - 1)] : trait.ComplementaryPrefixSentece[Random.Range(0, trait.ComplementaryPrefixSentece.Count - 1)];
+            _summary += trait.Name.ToLower() + trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
         }
 
         OnTraitsChange?.Invoke();
@@ -62,7 +76,6 @@ public class NPC
                 _traits.Remove(conflict);
             }
         }
-        _oldTraits = new List<TraitSo>(_traits);
         GenerateSummary();
     }
 }

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
+  m_Name: Audacieux
+  m_EditorClassIdentifier: 
+  _name: Audacieux
+  _conflictTrait:
+  - {fileID: 11400000, guid: 2c4966dd7bf43f344a061b844f7a5cc9, type: 2}
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis plutot '
+  - 'Je suis '
+  - "J'ai l'habitude d'\xEAtre "
+  _complementaryPrefixSentece:
+  - ' Et je suis aussi '
+  - ' De plus, je suis aussi '
+  _contradictionPrefixSentece:
+  - ' Malheuresement je suis aussi '
+  - ' Cependant, je suis aussi '
+  - " Malgr\xE9s toutes mes qualit\xE9es, je suis aussi "
+  _suffixSentence:
+  - ", j'aime relever de nouveaux d\xE9fis."
+  - ', je ne recule pas devant l''inconnu.'
+  - ', l''aventure m''attire toujours.'
+  _tag: 0

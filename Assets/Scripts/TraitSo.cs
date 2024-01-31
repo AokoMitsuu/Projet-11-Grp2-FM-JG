@@ -12,17 +12,20 @@ public class TraitSo : ScriptableObject
     public List<TraitSo> ConflictTrait => _conflictTrait;
     [SerializeField] private List<TraitSo> _conflictTrait;
 
-    public List<TraitSo> ContradictionTrait => _contradictionTrait;
-    [SerializeField] private List<TraitSo> _contradictionTrait;
-
-    public List<TraitSo> ComplementaryTrait => _complementaryTrait;
-    [SerializeField] private List<TraitSo> _complementaryTrait;
-
     public List<string> PrefixSentece => _prefixSentence;
     [SerializeField] private List<string> _prefixSentence;
 
+    public List<string> ComplementaryPrefixSentece => _complementaryPrefixSentece;
+    [SerializeField] private List<string> _complementaryPrefixSentece;
+
+    public List<string> ContradictionPrefixSentece => _contradictionPrefixSentece;
+    [SerializeField] private List<string> _contradictionPrefixSentece;
+
     public List<string> SufixSentece => _suffixSentence;
     [SerializeField] private List<string> _suffixSentence;
+
+    public ETag Tag => _tag;
+    [SerializeField] private ETag _tag;
 }
 
 public enum ETag
