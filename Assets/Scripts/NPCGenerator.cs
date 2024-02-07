@@ -4,7 +4,7 @@ using UnityEngine;
 public class NPCGenerator : MonoBehaviour
 {
     [Header("NPC")]
-    [SerializeField] private NPC[] _npcs = new NPC[6];
+    [SerializeField] private NPC[] _npcs = new NPC[4];
     [SerializeField] private int _traitsCount = 3;
     [SerializeField] private int _seed;
     [SerializeField] private bool _randomSeed;
@@ -18,14 +18,29 @@ public class NPCGenerator : MonoBehaviour
     [SerializeField] private TraitsContainer _traitContainer;
     [SerializeField] private GameObject _traitPrefab;
 
+    [Space(10), Header("PORTRAIT")]
+    [SerializeField] private List<AnimatedSpriteSO> _basePortraits;
+
+
+    public int CurrentSeed => _seed;
+
+    private void Awake()
+    {
+        if (_randomSeed) _seed = Random.Range(0, 10000000);
+
+        Random.InitState(_seed);
+    }
 
     private void Start()
     {
-        if (!_randomSeed)
-            Random.InitState(_seed);
+        GenerateTrait();
+        GenerateNPCs();
+    }
 
-        //_profileContainer.sizeDelta = new Vector2(50 + ((_npcs.Length / 2) * 800), _profileContainer.sizeDelta.y);
-        //_traitContainer.sizeDelta = new Vector2(_profileContainer.sizeDelta.x, 50 + (_possibleTraits.Count * 85));
+    public void Regenerate(int seed)
+    {
+        _seed = seed;
+        Random.InitState(_seed);
 
         GenerateTrait();
         GenerateNPCs();
@@ -33,11 +48,22 @@ public class NPCGenerator : MonoBehaviour
 
     private void GenerateNPCs()
     {
+        foreach (Transform child in _profileContainer.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        List<AnimatedSpriteSO> portraits = new(_basePortraits);
+
         for (int i = 0; i < _npcs.Length; i++)
         {
             string name = $"NPC {i + 1}";
             List<TraitSo> traits = GetRandomTraits();
-            NPC npc = new NPC(name, traits);
+
+            AnimatedSpriteSO sprite = portraits[Random.Range(0, portraits.Count)];
+            portraits.Remove(sprite);
+
+            NPC npc = new NPC(name, traits, sprite);
             var profile = Instantiate(_profilePrefab, _profileContainer);
             profile.GetComponent<ProfileController>().Init(npc);
             _npcs[i] = npc;

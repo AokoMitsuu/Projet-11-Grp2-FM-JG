@@ -7,6 +7,8 @@ using Random = UnityEngine.Random;
 [Serializable]
 public class NPC
 {
+    public const int MAX_TRAITS_COUNT = 3;
+
     public Action OnTraitsChange;
 
     public string Name => _name;
@@ -17,22 +19,40 @@ public class NPC
 
     public string Summary => _summary;
     [SerializeField] private string _summary;
+
+    public AnimatedSpriteSO BaseSprite => _basePortrait;
+    private AnimatedSpriteSO _basePortrait;
     
-    public NPC(string name, List<TraitSo> traits)
+    public NPC(string name, List<TraitSo> traits, AnimatedSpriteSO basePortrait)
     {
         _name = name;
         _traits = traits;
+        _basePortrait = basePortrait;
         GenerateSummary();
+        OnTraitsChange?.Invoke();
     }
 
-    public void AddTraits(TraitSo trait)
+    public bool AddTrait(TraitSo trait)
     {
-        if (_traits.Contains(trait))
-            return;
+        if (_traits.Contains(trait)) return false;
+        if (_traits.Count + 1 > MAX_TRAITS_COUNT) return false;
 
         _traits.Add(trait);
 
-        RemoveConflicts(_traits[_traits.Count - 1].ConflictTrait);
+        RemoveConflicts(_traits[^1].ConflictTrait);
+
+        GenerateSummary();
+        OnTraitsChange?.Invoke();
+
+        return true;
+    }
+
+    public void RemoveTrait(TraitSo trait)
+    {
+        _traits.Remove(trait);
+
+        GenerateSummary();
+        OnTraitsChange?.Invoke();
     }
 
     private void GenerateSummary()
@@ -77,8 +97,6 @@ public class NPC
                 _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
             }
         }
-
-        OnTraitsChange?.Invoke();
     }
 
     private void RemoveConflicts(List<TraitSo> conflictTraits)
@@ -92,6 +110,5 @@ public class NPC
                 _traits.Remove(conflict);
             }
         }
-        GenerateSummary();
     }
 }

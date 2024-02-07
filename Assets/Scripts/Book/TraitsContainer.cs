@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,7 +28,7 @@ public class TraitsContainer : MonoBehaviour
     public void AddUI(GameObject UIObject)
     {
         GameObject page = GetFirstAvailablePage();
-        UIObject.transform.SetParent(page.transform);
+        UIObject.transform.SetParent(page.transform, false);
     }
 
     public GameObject GetFirstAvailablePage()

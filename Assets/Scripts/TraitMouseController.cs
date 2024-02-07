@@ -12,7 +12,7 @@ public class TraitMouseController : MonoBehaviour
     [SerializeField] private TMP_Text _traitText;
     [SerializeField] private Image _backgroundUI;
 
-    private TraitSo _actualTrait;
+    private TraitController _currentTraitController;
     private Color _baseColor;
 
     void Awake()
@@ -25,8 +25,7 @@ public class TraitMouseController : MonoBehaviour
     private void Update()
     {
         Vector2 cursorPosition = Input.mousePosition;
-        Vector2 worldPosition;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle((RectTransform)transform.parent, cursorPosition, null, out worldPosition);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle((RectTransform)transform.parent, cursorPosition, null, out Vector2 worldPosition);
         transform.localPosition = worldPosition;
 
         if (Input.GetMouseButtonDown(0))
@@ -62,21 +61,58 @@ public class TraitMouseController : MonoBehaviour
         var traitController = GetUIHoverObject<TraitController>();
         if (traitController != null)
         {
-            _actualTrait = traitController.Trait;
-            _traitText.text = _actualTrait.Name;
+            _currentTraitController = traitController;
+
+            _traitText.text = _currentTraitController.Trait.Name;
             SetActive(true);
+            if (!traitController.IsInfiniteSource)
+            {
+                traitController.IsInteractable = false;
+            }
         }
     }
 
     public void OnPointerUp()
     {
-        var profile = GetUIHoverObject<ProfileController>();
-        if (_actualTrait != null && profile != null)
-        {
-            profile.AddTrait(_actualTrait);
-        }
-        _actualTrait = null;
+        if (!_currentTraitController) return;
 
+        if (!_currentTraitController.IsInfiniteSource) _currentTraitController.IsInteractable = true;
+
+        var profile = GetUIHoverObject<ProfileController>();
+
+        
+        if (!profile) // if in void
+        {
+            if (!_currentTraitController.IsInfiniteSource)
+            {
+                _currentTraitController.LinkedNpc.RemoveTrait(_currentTraitController.Trait);
+                Destroy(_currentTraitController.gameObject);
+            }
+        }
+        else // if in list
+        {
+            if (!_currentTraitController.IsInfiniteSource && profile.Npc == _currentTraitController.LinkedNpc)
+            {
+                StopDrag();
+                return;
+            }
+
+            bool success = profile.Npc.AddTrait(_currentTraitController.Trait);
+
+            // if trait successfully added
+            if (success && !_currentTraitController.IsInfiniteSource)
+            {
+                _currentTraitController.LinkedNpc.RemoveTrait(_currentTraitController.Trait);
+                Destroy(_currentTraitController.gameObject);
+            }
+        }
+
+        StopDrag();
+    }
+
+    public void StopDrag()
+    {
+        _currentTraitController = null;
         SetActive(false);
     }
 
