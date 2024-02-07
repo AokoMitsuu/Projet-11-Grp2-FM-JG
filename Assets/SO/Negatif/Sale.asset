@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
-  m_Name: Curieux
+  m_Name: Sale
   m_EditorClassIdentifier: 
-  _name: Curieux
-  _conflictTrait: []
+  _name: Sale
+  _conflictTrait:
+  - {fileID: 11400000, guid: 52e2bd47709ae7440a9d3c6fe2eb6608, type: 2}
   _sentenceParams:
-  - Sentence: Enfant, je posais des questions sur tout et n'importe quoi
+  - Sentence: "Apr\xE8s une journ\xE9e de camping, j'\xE9tais couvert de boue et
+      attirais les mouches"
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -24,8 +26,8 @@ MonoBehaviour:
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
-  - Sentence: "Ma curiosit\xE9 me pousse \xE0 explorer de nouveaux sujets chaque
-      jour"
+  - Sentence: "Parfois, je laisse tra\xEEner mes affaires, cr\xE9ant un d\xE9sordre
+      peu engageant"
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -34,7 +36,7 @@ MonoBehaviour:
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
-  - Sentence: "Je continuerai \xE0 chercher des r\xE9ponses aux myst\xE8res de l'univers"
+  - Sentence: Je vais faire un effort pour maintenir mon espace de vie plus propre
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -43,4 +45,4 @@ MonoBehaviour:
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
-  _tag: 0
+  _tag: 1

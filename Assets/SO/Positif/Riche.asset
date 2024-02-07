@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
-  m_Name: Curieux
+  m_Name: Riche
   m_EditorClassIdentifier: 
-  _name: Curieux
-  _conflictTrait: []
+  _name: Riche
+  _conflictTrait:
+  - {fileID: 11400000, guid: 0300026034903ed42b6299025a7caad8, type: 2}
   _sentenceParams:
-  - Sentence: Enfant, je posais des questions sur tout et n'importe quoi
+  - Sentence: "Il fut un temps o\xF9 je comptais chaque euro pour finir le mois."
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -24,8 +25,8 @@ MonoBehaviour:
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
-  - Sentence: "Ma curiosit\xE9 me pousse \xE0 explorer de nouveaux sujets chaque
-      jour"
+  - Sentence: "Bien que mes moyens soient limit\xE9s, je trouve de la joie dans la
+      simplicit\xE9."
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -34,7 +35,7 @@ MonoBehaviour:
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
-  - Sentence: "Je continuerai \xE0 chercher des r\xE9ponses aux myst\xE8res de l'univers"
+  - Sentence: "Je travaille dur dans l'espoir d'am\xE9liorer ma situation financi\xE8re"
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '

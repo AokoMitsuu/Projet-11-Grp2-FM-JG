@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
-  m_Name: Curieux
+  m_Name: "M\xE9lomane"
   m_EditorClassIdentifier: 
-  _name: Curieux
-  _conflictTrait: []
+  _name: "M\xE9lomane"
+  _conflictTrait:
+  - {fileID: 11400000, guid: edbc61e31772d0149ac5cea375aa5266, type: 2}
   _sentenceParams:
-  - Sentence: Enfant, je posais des questions sur tout et n'importe quoi
+  - Sentence: "Depuis mon plus jeune \xE2ge, les m\xE9lodies m'ont transport\xE9,
+      chaque note de musique \xE9veillant une \xE9motion profonde en moi"
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -24,8 +26,8 @@ MonoBehaviour:
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
-  - Sentence: "Ma curiosit\xE9 me pousse \xE0 explorer de nouveaux sujets chaque
-      jour"
+  - Sentence: "Je vis au rythme des harmonies, chaque jour \xE9tant une opportunit\xE9
+      de d\xE9couvrir de nouveaux sons et de revisiter des classiques"
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -34,7 +36,9 @@ MonoBehaviour:
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
-  - Sentence: "Je continuerai \xE0 chercher des r\xE9ponses aux myst\xE8res de l'univers"
+  - Sentence: "Mon amour pour la musique ne cessera de cro\xEEtre, m'emmenant dans
+      des voyages sonores inexplor\xE9s et enrichissant mon \xE2me de rythmes sans
+      fin"
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -43,4 +47,4 @@ MonoBehaviour:
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
-  _tag: 0
+  _tag: 3

@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
-  m_Name: Curieux
+  m_Name: Propre
   m_EditorClassIdentifier: 
-  _name: Curieux
-  _conflictTrait: []
+  _name: Propre
+  _conflictTrait:
+  - {fileID: 11400000, guid: b3200e43439a6cc44b39384dcdfc5b88, type: 2}
   _sentenceParams:
-  - Sentence: Enfant, je posais des questions sur tout et n'importe quoi
+  - Sentence: "$V1 m'a appris \xE0 tenir $V2 impeccable"
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -23,9 +24,17 @@ MonoBehaviour:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Ma curiosit\xE9 me pousse \xE0 explorer de nouveaux sujets chaque
-      jour"
+    SentenceVariables:
+    - Variables:
+      - "Ma m\xE8re"
+      - "Mon p\xE8re"
+      - "Ma grand-m\xE8re"
+      - "Mon grand-p\xE8re"
+    - Variables:
+      - ma cuisine
+      - ma chambre
+      - mon garage
+  - Sentence: "Je prends soin de ma personne, cherchant \xE0 $V1 propret\xE9"
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -33,8 +42,13 @@ MonoBehaviour:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Je continuerai \xE0 chercher des r\xE9ponses aux myst\xE8res de l'univers"
+    SentenceVariables:
+    - Variables:
+      - briller de
+      - rayonner de
+      - incarner la
+  - Sentence: "Je continuerai \xE0 $V1 l'ordre et la propret\xE9 dans tous les aspects
+      de ma vie"
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -42,5 +56,8 @@ MonoBehaviour:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - valoriser
+      - "pr\xE9vil\xE9gier"
   _tag: 0

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -57,46 +58,84 @@ public class NPC
 
     private void GenerateSummary()
     {
-        // Générer un résumé basé sur les traits
+        // Gï¿½nï¿½rer un rï¿½sumï¿½ basï¿½ sur les traits
         _summary = $"Je suis {_name}.\n";
+        int index = 0;
 
+        List<TraitSo> traits = _traits.Where(trait => trait.Tag == ETag.Other || trait.Tag == ETag.Positif || trait.Tag == ETag.PassionPositif).ToList();
+        List<TraitSo> negativeTraits = _traits.Where(trait => trait.Tag == ETag.Negatif || trait.Tag == ETag.PassionNegatif).ToList();
 
-        List<TraitSo> ageTraits = _traits.Where(trait => trait.Tag == ETag.Age).ToList();
-        List<TraitSo> Traits = _traits.Where(trait => trait.Tag == ETag.Positif).ToList();
-        List<TraitSo> negativeTraits = _traits.Where(trait => trait.Tag == ETag.Negatif).ToList();
+        _summary += CreateSubSummary(traits, ref index, false);
+        _summary += CreateSubSummary(negativeTraits, ref index, traits.Count > 0);
+    }
 
-        foreach (TraitSo trait in ageTraits)
+    private string CreateSubSummary(List<TraitSo> traits, ref int index, bool isContradiction)
+    {
+        var subSumary = "";
+        foreach (TraitSo trait in traits)
         {
-            _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
-        }
+            SentenceParams sentenceParams = trait.SentenceParams[index];
 
-        foreach (TraitSo trait in Traits)
-        {
-            if(Traits.First() != trait)
+            if (!sentenceParams.Sentence.Contains("$Contradiction"))
+                subSumary += "$Contradiction";
+
+            if (!sentenceParams.Sentence.Contains("$Complementary"))
+                subSumary += "$Complementary";
+
+            if (index == 0)
+                subSumary += sentenceParams.Sentence;
+            else
+                subSumary += sentenceParams.Sentence.ToLower();
+
+            if (isContradiction && traits.First() == trait)
             {
-                _summary = _summary.Substring(0, _summary.Length - 1);
-                _summary += trait.ComplementaryPrefixSentece[Random.Range(0, trait.ComplementaryPrefixSentece.Count - 1)].ToLower() + " ";
-                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)].ToLower() + " ";
+                subSumary = subSumary.Replace("$Contradiction", sentenceParams.ContradictionPrefixSentence[Random.Range(0, sentenceParams.ContradictionPrefixSentence.Count)] + " ");
+            }
+            else if (traits.First() != trait)
+            {
+                subSumary = subSumary.Replace("$Complementary", sentenceParams.ComplementaryPrefixSentence[Random.Range(0, sentenceParams.ComplementaryPrefixSentence.Count)].ToLower() + " ");
+            }
+
+            if (traits.Last() == trait)
+            {
+                subSumary += ". ";
             }
             else
             {
-                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+                subSumary += " ";
             }
+
+            subSumary = ReplaceVariables(subSumary, sentenceParams.SentenceVariables);
+            subSumary = subSumary.Replace("$Contradiction", "");
+            subSumary = subSumary.Replace("$Complementary", "");
+            index++;
         }
 
-        foreach (TraitSo trait in negativeTraits)
+        return subSumary;
+    }
+
+    private static string ReplaceVariables(string input, List<SentenceVariables> variable)
+    {
+        string pattern = @"\$(V\d+)";
+
+        string result = Regex.Replace(input, pattern, match =>
         {
-            if (negativeTraits.First() != trait)
+            string indexStr = match.Value.Substring(2);
+            int index;
+            if (int.TryParse(indexStr, out index) && index > 0 && index <= variable.Count)
             {
-                _summary = _summary.Substring(0, _summary.Length - 1);
-                _summary += trait.ContradictionPrefixSentece[Random.Range(0, trait.ContradictionPrefixSentece.Count - 1)].ToLower() + " ";
-                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)].ToLower() + " ";
+                var test1 = variable[index - 1];
+                var test2 = test1.Variables;
+                var test3 = test2[Random.Range(0, test2.Count)];
+                return variable[index - 1].Variables[Random.Range(0, variable[index - 1].Variables.Count)];
             }
             else
             {
-                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+                return match.Value;
             }
-        }
+        });
+
+        return result;
     }
 
     private void RemoveConflicts(List<TraitSo> conflictTraits)

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,17 +13,8 @@ public class TraitSo : ScriptableObject
     public List<TraitSo> ConflictTrait => _conflictTrait;
     [SerializeField] private List<TraitSo> _conflictTrait;
 
-    public List<string> PrefixSentece => _prefixSentence;
-    [SerializeField] private List<string> _prefixSentence;
-
-    public List<string> ComplementaryPrefixSentece => _complementaryPrefixSentece;
-    [SerializeField] private List<string> _complementaryPrefixSentece;
-
-    public List<string> ContradictionPrefixSentece => _contradictionPrefixSentece;
-    [SerializeField] private List<string> _contradictionPrefixSentece;
-
-    public List<string> SufixSentece => _suffixSentence;
-    [SerializeField] private List<string> _suffixSentence;
+    public List<SentenceParams> SentenceParams => _sentenceParams;
+    [SerializeField] private List<SentenceParams> _sentenceParams;
 
     public ETag Tag => _tag;
     [SerializeField] private ETag _tag;
@@ -32,5 +24,22 @@ public enum ETag
 {
     Positif,
     Negatif,
-    Age
+    Other,
+    PassionPositif, 
+    PassionNegatif
+}
+
+[Serializable]
+public class SentenceParams
+{
+    public string Sentence;
+    public List<string> ComplementaryPrefixSentence;
+    public List<string> ContradictionPrefixSentence;
+    public List<SentenceVariables> SentenceVariables;
+}
+
+[Serializable]
+public class SentenceVariables
+{
+    public List<string> Variables;
 }

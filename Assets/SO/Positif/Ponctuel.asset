@@ -15,21 +15,33 @@ MonoBehaviour:
   _name: Ponctuel
   _conflictTrait:
   - {fileID: 11400000, guid: e7a0d62a854c60d4ba82b70239ecf0e1, type: 2}
-  _prefixSentence:
-  - "Je suis consid\xE9r\xE9 comme \xE9tant "
-  - 'Je suis '
-  - 'Je suis plutot '
-  - "J'ai l'habitude d'\xEAtre "
-  _complementaryPrefixSentece:
-  - ' et aussi'
-  - ' de plus'
-  - ' de plus'
-  _contradictionPrefixSentece:
-  - ' Malheuresement'
-  - ' Cependant'
-  - " Malgr\xE9s toutes mes qualit\xE9es"
-  _suffixSentence:
-  - "J'arrive toujours \xE0 l'heure pour mes rendez-vous."
-  - "Pour moi, la ponctualit\xE9 est une marque de respect."
-  - "Je planifie mon temps pour \xE9viter tout retard."
+  _sentenceParams:
+  - Sentence: "Je n'ai jamais \xE9t\xE9 en retard \xE0 un rendez-vous de ma vie"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "La ponctualit\xE9 est une valeur que je continue \xE0 honorer scrupuleusement"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Je m'engage \xE0 maintenir cette ponctualit\xE9, symbole de respect
+      pour les autres et pour moi-m\xEAme"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 0

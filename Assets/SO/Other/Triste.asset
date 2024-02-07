@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
-  m_Name: Curieux
+  m_Name: Triste
   m_EditorClassIdentifier: 
-  _name: Curieux
-  _conflictTrait: []
+  _name: Triste
+  _conflictTrait:
+  - {fileID: 11400000, guid: bec19626fbf30fa4a98fc662e36701aa, type: 2}
+  - {fileID: 11400000, guid: 6fbef96dc8bad03429c0212bc157798a, type: 2}
   _sentenceParams:
-  - Sentence: Enfant, je posais des questions sur tout et n'importe quoi
+  - Sentence: "Hier, j'ai \xE9clat\xE9 de rire en repensant \xE0 une vieille blague"
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -24,8 +26,8 @@ MonoBehaviour:
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
-  - Sentence: "Ma curiosit\xE9 me pousse \xE0 explorer de nouveaux sujets chaque
-      jour"
+  - Sentence: "Aujourd'hui, je me sens l\xE9ger et plein de gratitude pour les petites
+      choses"
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -34,7 +36,7 @@ MonoBehaviour:
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
-  - Sentence: "Je continuerai \xE0 chercher des r\xE9ponses aux myst\xE8res de l'univers"
+  - Sentence: Demain, je vais partager un moment de joie avec mes amis
     ComplementaryPrefixSentence:
     - 'et aussi '
     - 'de plus '
@@ -43,4 +45,4 @@ MonoBehaviour:
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
-  _tag: 0
+  _tag: 2

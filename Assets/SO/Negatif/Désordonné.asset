@@ -13,22 +13,35 @@ MonoBehaviour:
   m_Name: "D\xE9sordonn\xE9"
   m_EditorClassIdentifier: 
   _name: "D\xE9sordonn\xE9"
-  _conflictTrait:
-  - {fileID: 11400000, guid: 3bb80547d470e6d4a9be179aa09b0a52, type: 2}
-  _prefixSentence:
-  - "Je suis consid\xE9r\xE9 comme \xE9tant "
-  - 'Je suis '
-  - 'Je suis plutot '
-  - "J'ai l'habitude d'\xEAtre "
-  _complementaryPrefixSentece:
-  - ' et aussi '
-  - ' de plus '
-  _contradictionPrefixSentece:
-  - ' Cependant'
-  - " Malgr\xE9s toutes mes qualit\xE9es"
-  - ' Malheuresement'
-  _suffixSentence:
-  - Mon bureau est toujours en pagaille.
-  - Je trouve difficile de maintenir l'ordre.
-  - Je me perds souvent dans mes propres affaires.
+  _conflictTrait: []
+  _sentenceParams:
+  - Sentence: "Mon bureau \xE9tait toujours en d\xE9sordre, couvert de papiers et
+      de livres"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Mes cheveux \xE9bouriff\xE9s refl\xE8tent souvent mon \xE9tat d'esprit
+      d\xE9sordonn\xE9"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Peut-\xEAtre qu'un jour, je trouverai l'ordre dans mon chaos cr\xE9atif"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 1
