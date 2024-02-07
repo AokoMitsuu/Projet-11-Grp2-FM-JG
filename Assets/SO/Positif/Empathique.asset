@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
-  m_Name: Curieux
+  m_Name: Empathique
   m_EditorClassIdentifier: 
-  _name: Curieux
+  _name: Empathique
   _conflictTrait:
-  - {fileID: 11400000, guid: 96377ae787c4c9846af415379bd83805, type: 2}
+  - {fileID: 11400000, guid: 66c352d810f32084f9b2c8c4c9bfe92f, type: 2}
   _prefixSentence:
   - "Je suis consid\xE9r\xE9 comme \xE9tant "
   - 'Je suis '
@@ -29,7 +29,7 @@ MonoBehaviour:
   - ' Cependant'
   - " Malgr\xE9s toutes mes qualit\xE9es"
   _suffixSentence:
-  - J'ai toujours soif d'apprendre.
-  - "Je cherche constamment \xE0 d\xE9couvrir de nouvelles choses."
-  - Chaque jour est une occasion d'apprendre.
+  - "Je ressens profond\xE9ment les \xE9motions des autres."
+  - Je m'efforce de comprendre les sentiments d'autrui.
+  - "Je suis naturellement \xE0 l'\xE9coute."
   _tag: 0

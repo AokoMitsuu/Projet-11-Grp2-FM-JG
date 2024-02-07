@@ -10,26 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
-  m_Name: Curieux
+  m_Name: Inquiet
   m_EditorClassIdentifier: 
-  _name: Curieux
+  _name: Inquiet
   _conflictTrait:
-  - {fileID: 11400000, guid: 96377ae787c4c9846af415379bd83805, type: 2}
+  - {fileID: 11400000, guid: f1cc1d15fdbedcf4a8232c87264af441, type: 2}
   _prefixSentence:
   - "Je suis consid\xE9r\xE9 comme \xE9tant "
   - 'Je suis '
   - 'Je suis plutot '
   - "J'ai l'habitude d'\xEAtre "
   _complementaryPrefixSentece:
-  - ' et aussi'
-  - ' de plus'
-  - ' de plus'
+  - ' et aussi '
+  - ' de plus '
   _contradictionPrefixSentece:
-  - ' Malheuresement'
   - ' Cependant'
   - " Malgr\xE9s toutes mes qualit\xE9es"
+  - ' Malheuresement'
   _suffixSentence:
-  - J'ai toujours soif d'apprendre.
-  - "Je cherche constamment \xE0 d\xE9couvrir de nouvelles choses."
-  - Chaque jour est une occasion d'apprendre.
-  _tag: 0
+  - Je me fais souvent du souci pour l'avenir.
+  - Il m'est difficile de rester serein.
+  - "Les \"et si\" occupent souvent mes pens\xE9es."
+  _tag: 1

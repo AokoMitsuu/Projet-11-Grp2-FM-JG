@@ -12,6 +12,9 @@ public class TraitSo : ScriptableObject
     public List<TraitSo> ConflictTrait => _conflictTrait;
     [SerializeField] private List<TraitSo> _conflictTrait;
 
+    public List<string> PrefixSentece => _prefixSentence;
+    [SerializeField] private List<string> _prefixSentence;
+
     public List<string> ComplementaryPrefixSentece => _complementaryPrefixSentece;
     [SerializeField] private List<string> _complementaryPrefixSentece;
 
@@ -29,7 +32,5 @@ public enum ETag
 {
     Positif,
     Negatif,
-    Other,
-    PassionPositif, 
-    PassionNegatif
+    Age
 }

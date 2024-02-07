@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
-  m_Name: Curieux
+  m_Name: Audacieux
   m_EditorClassIdentifier: 
-  _name: Curieux
+  _name: Audacieux
   _conflictTrait:
-  - {fileID: 11400000, guid: 96377ae787c4c9846af415379bd83805, type: 2}
+  - {fileID: 11400000, guid: 2c4966dd7bf43f344a061b844f7a5cc9, type: 2}
   _prefixSentence:
   - "Je suis consid\xE9r\xE9 comme \xE9tant "
-  - 'Je suis '
   - 'Je suis plutot '
+  - 'Je suis '
   - "J'ai l'habitude d'\xEAtre "
   _complementaryPrefixSentece:
   - ' et aussi'
@@ -29,7 +29,7 @@ MonoBehaviour:
   - ' Cependant'
   - " Malgr\xE9s toutes mes qualit\xE9es"
   _suffixSentence:
-  - J'ai toujours soif d'apprendre.
-  - "Je cherche constamment \xE0 d\xE9couvrir de nouvelles choses."
-  - Chaque jour est une occasion d'apprendre.
+  - "J'aime relever de nouveaux d\xE9fis."
+  - Je ne recule pas devant l'inconnu.
+  - L'aventure m'attire toujours.
   _tag: 0

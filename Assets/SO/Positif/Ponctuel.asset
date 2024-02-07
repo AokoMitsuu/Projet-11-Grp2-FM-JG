@@ -15,16 +15,21 @@ MonoBehaviour:
   _name: Ponctuel
   _conflictTrait:
   - {fileID: 11400000, guid: e7a0d62a854c60d4ba82b70239ecf0e1, type: 2}
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
   _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
+  - ' et aussi'
+  - ' de plus'
+  - ' de plus'
   _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
+  - ' Malheuresement'
+  - ' Cependant'
+  - " Malgr\xE9s toutes mes qualit\xE9es"
   _suffixSentence:
-  - "Je n'ai jamais \xE9t\xE9 en retard \xE0 un rendez-vous de ma vie"
-  - "La ponctualit\xE9 est une valeur que je continue \xE0 honorer scrupuleusement"
-  - "Je m'engage \xE0 maintenir cette ponctualit\xE9, symbole de respect pour les
-    autres et pour moi-m\xEAme"
+  - "J'arrive toujours \xE0 l'heure pour mes rendez-vous."
+  - "Pour moi, la ponctualit\xE9 est une marque de respect."
+  - "Je planifie mon temps pour \xE9viter tout retard."
   _tag: 0

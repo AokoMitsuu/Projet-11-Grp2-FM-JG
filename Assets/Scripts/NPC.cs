@@ -39,49 +39,46 @@ public class NPC
     {
         // Générer un résumé basé sur les traits
         _summary = $"Je suis {_name}.\n";
-        int index = 0;
 
-        List<TraitSo> traits = _traits.Where(trait => trait.Tag == ETag.Other || trait.Tag == ETag.Positif || trait.Tag == ETag.PassionPositif).ToList();
-        List<TraitSo> negativeTraits = _traits.Where(trait => trait.Tag == ETag.Negatif || trait.Tag == ETag.PassionNegatif).ToList();
 
-        _summary += CreateSubSummary(traits, ref index, false);
-        _summary += CreateSubSummary(negativeTraits, ref index, traits.Count > 0);
+        List<TraitSo> ageTraits = _traits.Where(trait => trait.Tag == ETag.Age).ToList();
+        List<TraitSo> Traits = _traits.Where(trait => trait.Tag == ETag.Positif).ToList();
+        List<TraitSo> negativeTraits = _traits.Where(trait => trait.Tag == ETag.Negatif).ToList();
 
-        OnTraitsChange?.Invoke();
-    }
-
-    private string CreateSubSummary(List<TraitSo> traits, ref int index, bool isContradiction)
-    {
-        var subSumary = "";
-        foreach (TraitSo trait in traits)
+        foreach (TraitSo trait in ageTraits)
         {
-            if (isContradiction && traits.First() == trait)
-            {
-                subSumary += trait.ContradictionPrefixSentece[Random.Range(0, trait.ContradictionPrefixSentece.Count)] + " ";
-            }
-            else if (traits.First() != trait)
-            {
-                subSumary += trait.ComplementaryPrefixSentece[Random.Range(0, trait.ComplementaryPrefixSentece.Count)].ToLower();
-            }
-
-            if(index == 0)
-                subSumary += trait.SufixSentece[index];
-            else
-                subSumary += trait.SufixSentece[index].ToLower();
-
-            if (traits.Last() == trait)
-            {
-                subSumary += ". ";
-            }
-            else
-            {
-                subSumary += " ";
-            }
-
-            index++;
+            _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
         }
 
-        return subSumary;
+        foreach (TraitSo trait in Traits)
+        {
+            if(Traits.First() != trait)
+            {
+                _summary = _summary.Substring(0, _summary.Length - 1);
+                _summary += trait.ComplementaryPrefixSentece[Random.Range(0, trait.ComplementaryPrefixSentece.Count - 1)].ToLower() + " ";
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)].ToLower() + " ";
+            }
+            else
+            {
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+            }
+        }
+
+        foreach (TraitSo trait in negativeTraits)
+        {
+            if (negativeTraits.First() != trait)
+            {
+                _summary = _summary.Substring(0, _summary.Length - 1);
+                _summary += trait.ContradictionPrefixSentece[Random.Range(0, trait.ContradictionPrefixSentece.Count - 1)].ToLower() + " ";
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)].ToLower() + " ";
+            }
+            else
+            {
+                _summary += trait.SufixSentece[Random.Range(0, trait.SufixSentece.Count - 1)];
+            }
+        }
+
+        OnTraitsChange?.Invoke();
     }
 
     private void RemoveConflicts(List<TraitSo> conflictTraits)

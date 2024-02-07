@@ -15,15 +15,21 @@ MonoBehaviour:
   _name: Dynamique
   _conflictTrait:
   - {fileID: 11400000, guid: 204d9239f119ba04ba498673f1b37864, type: 2}
+  _prefixSentence:
+  - "Je suis consid\xE9r\xE9 comme \xE9tant "
+  - 'Je suis '
+  - 'Je suis plutot '
+  - "J'ai l'habitude d'\xEAtre "
   _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
+  - ' et aussi'
+  - ' de plus'
+  - ' de plus'
   _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
+  - ' Malheuresement'
+  - ' Cependant'
+  - " Malgr\xE9s toutes mes qualit\xE9es"
   _suffixSentence:
-  - "J'\xE9tais toujours le premier \xE0 me lancer dans de nouvelles aventures"
-  - "Ma vie est un tourbillon d'activit\xE9s et de projets passionnants"
-  - "Je vais continuer \xE0 embrasser chaque jour avec \xE9nergie et enthousiasme"
+  - "Je d\xE9borde d'\xE9nergie et d'enthousiasme."
+  - Je suis toujours en mouvement.
+  - Je ne tiens pas en place.
   _tag: 0
