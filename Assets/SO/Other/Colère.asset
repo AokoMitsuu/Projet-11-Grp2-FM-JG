@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
-  m_Name: "L\xE9thargique"
+  m_Name: "Col\xE8re"
   m_EditorClassIdentifier: 
-  _name: "L\xE9thargique"
+  _name: "Col\xE8re"
   _conflictTrait:
-  - {fileID: 11400000, guid: 9022a6555ff6717419e11f02e0646bec, type: 2}
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: e0195548120c81a4c960dae559a595b5, type: 2}
   _complementaryPrefixSentece:
   - 'et aussi '
   - 'de plus '
@@ -23,8 +24,8 @@ MonoBehaviour:
   - "Malgr\xE9s toutes mes qualit\xE9es"
   - Malheuresement
   _suffixSentence:
-  - "Il y a des jours o\xF9 il m'\xE9tait difficile de sortir du lit"
-  - Parfois, je me sens engourdi, luttant pour trouver la motivation
-  - "J'esp\xE8re trouver des moyens de vaincre cette l\xE9thargie et de retrouver
-    ma vigueur"
-  _tag: 1
+  - "Hier, j'ai perdu patience face \xE0 l'injustice"
+  - "En ce moment, je bouillonne int\xE9rieurement contre les in\xE9galit\xE9s"
+  - "Je vais probablement devoir apprendre \xE0 canaliser ma col\xE8re face aux d\xE9fis
+    \xE0 venir"
+  _tag: 2
