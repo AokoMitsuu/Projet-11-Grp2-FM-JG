@@ -3226,39 +3226,30 @@ MonoBehaviour:
   _profileContainer: {fileID: 545996232}
   _profilePrefab: {fileID: 539979884583630865, guid: 950f41c533ee0c1468463d4be420182d, type: 3}
   _possibleTraits:
-  - {fileID: 11400000, guid: d8c2ec77c1771c34da6a21d95f78aca9, type: 2}
-  - {fileID: 11400000, guid: f2b32248f31f4d24fb20afecf6d8f0c1, type: 2}
-  - {fileID: 11400000, guid: 44b2fb239fadc2b47a5b155d21b769dc, type: 2}
-  - {fileID: 11400000, guid: f1cc1d15fdbedcf4a8232c87264af441, type: 2}
-  - {fileID: 11400000, guid: 57c2a597cfb4baf4db2c13b1d5039116, type: 2}
-  - {fileID: 11400000, guid: d72bf0f371d8edf4d847c70880da922b, type: 2}
-  - {fileID: 11400000, guid: 6d103bf0d469f3d4dbb7a2005d0d5671, type: 2}
-  - {fileID: 11400000, guid: f6ab96deabbd2f848b8efa5f9d2c9f45, type: 2}
-  - {fileID: 11400000, guid: a8720092a1960b54aa613faefc50488b, type: 2}
-  - {fileID: 11400000, guid: b2263d18fc1e4784aa7a2bcd90f6a41b, type: 2}
-  - {fileID: 11400000, guid: 9022a6555ff6717419e11f02e0646bec, type: 2}
   - {fileID: 11400000, guid: 0d28c550e0bd73d40b4bbff5b6a13bda, type: 2}
-  - {fileID: 11400000, guid: 99722b483bea08d4a9c91054834fb1b4, type: 2}
-  - {fileID: 11400000, guid: 6d058a44cc4b8c6459a894df6c785b2b, type: 2}
-  - {fileID: 11400000, guid: 96377ae787c4c9846af415379bd83805, type: 2}
-  - {fileID: 11400000, guid: 3f726b5051eacfb42830a0afd6f1c7d1, type: 2}
-  - {fileID: 11400000, guid: ba13f243850b52840bbfdfa5d2627437, type: 2}
-  - {fileID: 11400000, guid: 36d4bc20e14385b4e835014c18400486, type: 2}
-  - {fileID: 11400000, guid: 66c352d810f32084f9b2c8c4c9bfe92f, type: 2}
-  - {fileID: 11400000, guid: 60402c46598bd044080d78560657626f, type: 2}
+  - {fileID: 11400000, guid: 9c6b28dda7a6c0642937c3fa03b296a5, type: 2}
+  - {fileID: 11400000, guid: e6ca93b138899cb4084b185e796d2ecb, type: 2}
   - {fileID: 11400000, guid: 204d9239f119ba04ba498673f1b37864, type: 2}
-  - {fileID: 11400000, guid: 937164c804ff9714ca414fc91dc7e71a, type: 2}
-  - {fileID: 11400000, guid: 3bb80547d470e6d4a9be179aa09b0a52, type: 2}
-  - {fileID: 11400000, guid: b4938ceab5be5384c9325728c043438c, type: 2}
-  - {fileID: 11400000, guid: ec1a4b4766e6dcd428a5458792b4f6db, type: 2}
-  - {fileID: 11400000, guid: 0c98392250acf0142a39f3e63a6adcbc, type: 2}
-  - {fileID: 11400000, guid: 2c4966dd7bf43f344a061b844f7a5cc9, type: 2}
-  - {fileID: 11400000, guid: 8e982acc05bf2054bb80594b3af8ff44, type: 2}
-  - {fileID: 11400000, guid: 8b60788ffdd506d4fa58bfbee676fc76, type: 2}
+  - {fileID: 11400000, guid: 0300026034903ed42b6299025a7caad8, type: 2}
+  - {fileID: 11400000, guid: b3200e43439a6cc44b39384dcdfc5b88, type: 2}
   - {fileID: 11400000, guid: e7a0d62a854c60d4ba82b70239ecf0e1, type: 2}
-  - {fileID: 11400000, guid: 582da936876c73b478302496fb8d312c, type: 2}
-  - {fileID: 11400000, guid: e6d5cc524f922af47bc53c89179fc239, type: 2}
-  - {fileID: 11400000, guid: 48eda0d57dea62c4aa46a466e8f86735, type: 2}
+  - {fileID: 11400000, guid: 585ea534e57f8c44ea096abf3add2bf4, type: 2}
+  - {fileID: 11400000, guid: bec19626fbf30fa4a98fc662e36701aa, type: 2}
+  - {fileID: 11400000, guid: 6fbef96dc8bad03429c0212bc157798a, type: 2}
+  - {fileID: 11400000, guid: 0c73ffaa7ef3ed84b9005c7ec6c3065d, type: 2}
+  - {fileID: 11400000, guid: e0195548120c81a4c960dae559a595b5, type: 2}
+  - {fileID: 11400000, guid: 7dd1ee8e41732c54289970bae3c868d1, type: 2}
+  - {fileID: 11400000, guid: edbc61e31772d0149ac5cea375aa5266, type: 2}
+  - {fileID: 11400000, guid: 3cc84e25b2528f84fb293634e21f0b82, type: 2}
+  - {fileID: 11400000, guid: 5fa17cf0759a2dc41ade4aa11389c500, type: 2}
+  - {fileID: 11400000, guid: 2b1354ffef87d0c4395f54ddf13cc03f, type: 2}
+  - {fileID: 11400000, guid: 2f0985bc20a74c8458006992e4f95f76, type: 2}
+  - {fileID: 11400000, guid: f9070ca6cfb4b144db9b346528b9fe62, type: 2}
+  - {fileID: 11400000, guid: f6ab96deabbd2f848b8efa5f9d2c9f45, type: 2}
+  - {fileID: 11400000, guid: 9022a6555ff6717419e11f02e0646bec, type: 2}
+  - {fileID: 11400000, guid: ec1a4b4766e6dcd428a5458792b4f6db, type: 2}
+  - {fileID: 11400000, guid: 52e2bd47709ae7440a9d3c6fe2eb6608, type: 2}
+  - {fileID: 11400000, guid: 395833ee19ae99142a774ad65876e0d8, type: 2}
   _traitContainer: {fileID: 2103502712}
   _traitPrefab: {fileID: 4976610554917155687, guid: 59efbd2778f5b134db5fc760b70e2d90, type: 3}
   _basePortraits:
