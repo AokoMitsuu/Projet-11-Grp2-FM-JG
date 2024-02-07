@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
-  m_Name: "L\xE9thargique"
+  m_Name: "Litt\xE9raire"
   m_EditorClassIdentifier: 
-  _name: "L\xE9thargique"
+  _name: "Litt\xE9raire"
   _conflictTrait:
-  - {fileID: 11400000, guid: 9022a6555ff6717419e11f02e0646bec, type: 2}
+  - {fileID: 11400000, guid: 7dd1ee8e41732c54289970bae3c868d1, type: 2}
   _complementaryPrefixSentece:
   - 'et aussi '
   - 'de plus '
@@ -23,8 +23,10 @@ MonoBehaviour:
   - "Malgr\xE9s toutes mes qualit\xE9es"
   - Malheuresement
   _suffixSentence:
-  - "Il y a des jours o\xF9 il m'\xE9tait difficile de sortir du lit"
-  - Parfois, je me sens engourdi, luttant pour trouver la motivation
-  - "J'esp\xE8re trouver des moyens de vaincre cette l\xE9thargie et de retrouver
-    ma vigueur"
-  _tag: 1
+  - "Les histoires me captivaient d\xE9j\xE0 quand je n'\xE9tais qu'un enfant, chaque
+    livre ouvert \xE9tant une porte vers un autre univers"
+  - "Je trouve refuge dans les pages des livres, me perdant dans les r\xE9cits d'aventures,
+    de myst\xE8re et de romance"
+  - "Je m'engage \xE0 poursuivre ma qu\xEAte de connaissances et d'\xE9vasion \xE0
+    travers la litt\xE9rature"
+  _tag: 3

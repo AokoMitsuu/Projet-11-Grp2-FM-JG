@@ -15,20 +15,15 @@ MonoBehaviour:
   _name: Tardif
   _conflictTrait:
   - {fileID: 11400000, guid: ec1a4b4766e6dcd428a5458792b4f6db, type: 2}
-  _prefixSentence:
-  - "Je suis consid\xE9r\xE9 comme \xE9tant "
-  - 'Je suis '
-  - 'Je suis plutot '
-  - "J'ai l'habitude d'\xEAtre "
   _complementaryPrefixSentece:
-  - ' et aussi '
-  - ' de plus '
+  - 'et aussi '
+  - 'de plus '
   _contradictionPrefixSentece:
-  - ' Cependant'
-  - " Malgr\xE9s toutes mes qualit\xE9es"
-  - ' Malheuresement'
+  - Cependant
+  - "Malgr\xE9s toutes mes qualit\xE9es"
+  - Malheuresement
   _suffixSentence:
-  - "J'ai tendance \xE0 sous-estimer le temps n\xE9cessaire."
-  - "Malgr\xE9 mes efforts, j'arrive souvent en retard."
-  - Le temps semble toujours filer entre mes doigts.
+  - Mes amis savaient qu'ils devaient toujours m'attendre
+  - Je lutte encore avec la notion de temps, souvent en retard
+  - "Je vais essayer d'am\xE9liorer ma gestion du temps pour ne plus \xEAtre en retard"
   _tag: 1
