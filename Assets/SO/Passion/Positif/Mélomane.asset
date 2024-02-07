@@ -15,18 +15,36 @@ MonoBehaviour:
   _name: "M\xE9lomane"
   _conflictTrait:
   - {fileID: 11400000, guid: edbc61e31772d0149ac5cea375aa5266, type: 2}
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - "Depuis mon plus jeune \xE2ge, les m\xE9lodies m'ont transport\xE9, chaque note
-    de musique \xE9veillant une \xE9motion profonde en moi"
-  - "Je vis au rythme des harmonies, chaque jour \xE9tant une opportunit\xE9 de d\xE9couvrir
-    de nouveaux sons et de revisiter des classiques"
-  - "Mon amour pour la musique ne cessera de cro\xEEtre, m'emmenant dans des voyages
-    sonores inexplor\xE9s et enrichissant mon \xE2me de rythmes sans fin"
+  _sentenceParams:
+  - Sentence: "Depuis mon plus jeune \xE2ge, les m\xE9lodies m'ont transport\xE9,
+      chaque note de musique \xE9veillant une \xE9motion profonde en moi"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Je vis au rythme des harmonies, chaque jour \xE9tant une opportunit\xE9
+      de d\xE9couvrir de nouveaux sons et de revisiter des classiques"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Mon amour pour la musique ne cessera de cro\xEEtre, m'emmenant dans
+      des voyages sonores inexplor\xE9s et enrichissant mon \xE2me de rythmes sans
+      fin"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 3

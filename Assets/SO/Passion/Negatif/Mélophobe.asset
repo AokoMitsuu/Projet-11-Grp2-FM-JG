@@ -14,18 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: "M\xE9lophobe"
   _conflictTrait: []
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - "Petite, le son des instruments me semblait dissonant, chaque concert me laissant
-    plus irrit\xE9 que d\xE9tendu"
-  - "Je tends \xE0 \xE9viter les environnements musicaux bruyants, pr\xE9f\xE9rant
-    le calme et la tranquillit\xE9 \xE0 la m\xE9lodie"
-  - "Je vais peut-\xEAtre essayer d'ouvrir mon esprit \xE0 diff\xE9rents genres musicaux,
-    dans l'espoir de surmonter ma r\xE9ticence envers la musique"
+  _sentenceParams:
+  - Sentence: "Petite, le son des instruments me semblait dissonant, chaque concert
+      me laissant plus irrit\xE9 que d\xE9tendu"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Je tends \xE0 \xE9viter les environnements musicaux bruyants, pr\xE9f\xE9rant
+      le calme et la tranquillit\xE9 \xE0 la m\xE9lodie"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Je vais peut-\xEAtre essayer d'ouvrir mon esprit \xE0 diff\xE9rents
+      genres musicaux, dans l'espoir de surmonter ma r\xE9ticence envers la musique"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 4

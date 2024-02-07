@@ -15,18 +15,35 @@ MonoBehaviour:
   _name: "Illettr\xE9"
   _conflictTrait:
   - {fileID: 11400000, guid: 2b1354ffef87d0c4395f54ddf13cc03f, type: 2}
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - "Lire m'a toujours sembl\xE9 fastidieux, les livres \xE0 l'\xE9cole ne captivant
-    jamais vraiment mon attention"
-  - "Je pr\xE9f\xE8re les m\xE9dias visuels et interactifs aux pages imprim\xE9es,
-    trouvant peu de plaisir dans la lecture traditionnelle"
-  - "Bien que r\xE9ticent, je suis ouvert \xE0 l'id\xE9e que certains livres pourraient,
-    un jour, \xE9veiller mon int\xE9r\xEAt et enrichir ma perspective"
+  _sentenceParams:
+  - Sentence: "Lire m'a toujours sembl\xE9 fastidieux, les livres \xE0 l'\xE9cole
+      ne captivant jamais vraiment mon attention"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Je pr\xE9f\xE8re les m\xE9dias visuels et interactifs aux pages imprim\xE9es,
+      trouvant peu de plaisir dans la lecture traditionnelle"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Bien que r\xE9ticent, je suis ouvert \xE0 l'id\xE9e que certains livres
+      pourraient, un jour, \xE9veiller mon int\xE9r\xEAt et enrichir ma perspective"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 4

@@ -15,16 +15,49 @@ MonoBehaviour:
   _name: Propre
   _conflictTrait:
   - {fileID: 11400000, guid: b3200e43439a6cc44b39384dcdfc5b88, type: 2}
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - "Ma grand-m\xE8re m'a appris \xE0 tenir ma chambre impeccable"
-  - "Je prends soin de ma personne, cherchant \xE0 briller de propret\xE9"
-  - "Je continuerai \xE0 valoriser l'ordre et la propret\xE9 dans tous les aspects
-    de ma vie"
+  _sentenceParams:
+  - Sentence: "$V1 m'a appris \xE0 tenir $V2 impeccable"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables:
+    - Variables:
+      - "Ma m\xE8re"
+      - "Mon p\xE8re"
+      - "Ma grand-m\xE8re"
+      - "Mon grand-p\xE8re"
+    - Variables:
+      - ma cuisine
+      - ma chambre
+      - mon garage
+  - Sentence: "Je prends soin de ma personne, cherchant \xE0 $V1 propret\xE9"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables:
+    - Variables:
+      - briller de
+      - rayonner de
+      - incarner la
+  - Sentence: "Je continuerai \xE0 $V1 l'ordre et la propret\xE9 dans tous les aspects
+      de ma vie"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables:
+    - Variables:
+      - valoriser
+      - "pr\xE9vil\xE9gier"
   _tag: 0

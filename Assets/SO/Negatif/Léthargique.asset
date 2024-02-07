@@ -15,16 +15,33 @@ MonoBehaviour:
   _name: "L\xE9thargique"
   _conflictTrait:
   - {fileID: 11400000, guid: 9022a6555ff6717419e11f02e0646bec, type: 2}
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - "Il y a des jours o\xF9 il m'\xE9tait difficile de sortir du lit"
-  - Parfois, je me sens engourdi, luttant pour trouver la motivation
-  - "J'esp\xE8re trouver des moyens de vaincre cette l\xE9thargie et de retrouver
-    ma vigueur"
+  _sentenceParams:
+  - Sentence: "Il y a des jours o\xF9 il m'\xE9tait difficile de sortir du lit"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: Parfois, je me sens engourdi, luttant pour trouver la motivation
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "J'esp\xE8re trouver des moyens de vaincre cette l\xE9thargie et de
+      retrouver ma vigueur"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 1

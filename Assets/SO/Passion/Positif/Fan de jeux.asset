@@ -14,18 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Fan de jeux
   _conflictTrait: []
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - "Quand j'\xE9tais enfant, j'ai pass\xE9 des heures \xE0 ma\xEEtriser chaque jeu
-    vid\xE9o qui me tombait sous la main"
-  - "Aujourd'hui, je trouve du r\xE9confort et de l'excitation \xE0 explorer de nouveaux
-    mondes virtuels, ma manette de jeu en main"
-  - "Je continuerai \xE0 suivre l'\xE9volution des jeux vid\xE9o, toujours \xE0 la
-    recherche de la prochaine aventure qui captivera mon esprit"
+  _sentenceParams:
+  - Sentence: "Quand j'\xE9tais enfant, j'ai pass\xE9 des heures \xE0 ma\xEEtriser
+      chaque jeu vid\xE9o qui me tombait sous la main"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Aujourd'hui, je trouve du r\xE9confort et de l'excitation \xE0 explorer
+      de nouveaux mondes virtuels, ma manette de jeu en main"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Je continuerai \xE0 suivre l'\xE9volution des jeux vid\xE9o, toujours
+      \xE0 la recherche de la prochaine aventure qui captivera mon esprit"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 3

@@ -15,16 +15,34 @@ MonoBehaviour:
   _name: Sale
   _conflictTrait:
   - {fileID: 11400000, guid: 52e2bd47709ae7440a9d3c6fe2eb6608, type: 2}
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - "Apr\xE8s une journ\xE9e de camping, j'\xE9tais couvert de boue et attirais les
-    mouches"
-  - "Parfois, je laisse tra\xEEner mes affaires, cr\xE9ant un d\xE9sordre peu engageant"
-  - Je vais faire un effort pour maintenir mon espace de vie plus propre
+  _sentenceParams:
+  - Sentence: "Apr\xE8s une journ\xE9e de camping, j'\xE9tais couvert de boue et
+      attirais les mouches"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Parfois, je laisse tra\xEEner mes affaires, cr\xE9ant un d\xE9sordre
+      peu engageant"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: Je vais faire un effort pour maintenir mon espace de vie plus propre
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 1

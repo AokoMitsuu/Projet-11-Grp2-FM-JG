@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -55,19 +56,27 @@ public class NPC
         var subSumary = "";
         foreach (TraitSo trait in traits)
         {
+            SentenceParams sentenceParams = trait.SentenceParams[index];
+
+            if (!sentenceParams.Sentence.Contains("$Contradiction"))
+                subSumary += "$Contradiction";
+
+            if (!sentenceParams.Sentence.Contains("$Complementary"))
+                subSumary += "$Complementary";
+
+            if (index == 0)
+                subSumary += sentenceParams.Sentence;
+            else
+                subSumary += sentenceParams.Sentence.ToLower();
+
             if (isContradiction && traits.First() == trait)
             {
-                subSumary += trait.ContradictionPrefixSentece[Random.Range(0, trait.ContradictionPrefixSentece.Count)] + " ";
+                subSumary = subSumary.Replace("$Contradiction", sentenceParams.ContradictionPrefixSentence[Random.Range(0, sentenceParams.ContradictionPrefixSentence.Count)] + " ");
             }
             else if (traits.First() != trait)
             {
-                subSumary += trait.ComplementaryPrefixSentece[Random.Range(0, trait.ComplementaryPrefixSentece.Count)].ToLower();
+                subSumary = subSumary.Replace("$Complementary", sentenceParams.ComplementaryPrefixSentence[Random.Range(0, sentenceParams.ComplementaryPrefixSentence.Count)].ToLower() + " ");
             }
-
-            if(index == 0)
-                subSumary += trait.SufixSentece[index];
-            else
-                subSumary += trait.SufixSentece[index].ToLower();
 
             if (traits.Last() == trait)
             {
@@ -78,10 +87,37 @@ public class NPC
                 subSumary += " ";
             }
 
+            subSumary = ReplaceVariables(subSumary, sentenceParams.SentenceVariables);
+            subSumary = subSumary.Replace("$Contradiction", "");
+            subSumary = subSumary.Replace("$Complementary", "");
             index++;
         }
 
         return subSumary;
+    }
+
+    private static string ReplaceVariables(string input, List<SentenceVariables> variable)
+    {
+        string pattern = @"\$(V\d+)";
+
+        string result = Regex.Replace(input, pattern, match =>
+        {
+            string indexStr = match.Value.Substring(2);
+            int index;
+            if (int.TryParse(indexStr, out index) && index > 0 && index <= variable.Count)
+            {
+                var test1 = variable[index - 1];
+                var test2 = test1.Variables;
+                var test3 = test2[Random.Range(0, test2.Count)];
+                return variable[index - 1].Variables[Random.Range(0, variable[index - 1].Variables.Count)];
+            }
+            else
+            {
+                return match.Value;
+            }
+        });
+
+        return result;
     }
 
     private void RemoveConflicts(List<TraitSo> conflictTraits)

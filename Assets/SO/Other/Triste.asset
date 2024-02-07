@@ -16,15 +16,33 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: bec19626fbf30fa4a98fc662e36701aa, type: 2}
   - {fileID: 11400000, guid: 6fbef96dc8bad03429c0212bc157798a, type: 2}
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - "Hier, j'ai \xE9clat\xE9 de rire en repensant \xE0 une vieille blague"
-  - "Aujourd'hui, je me sens l\xE9ger et plein de gratitude pour les petites choses"
-  - Demain, je vais partager un moment de joie avec mes amis
+  _sentenceParams:
+  - Sentence: "Hier, j'ai \xE9clat\xE9 de rire en repensant \xE0 une vieille blague"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Aujourd'hui, je me sens l\xE9ger et plein de gratitude pour les petites
+      choses"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: Demain, je vais partager un moment de joie avec mes amis
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 2

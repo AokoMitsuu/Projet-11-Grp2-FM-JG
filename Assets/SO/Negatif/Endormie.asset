@@ -14,15 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Endormie
   _conflictTrait: []
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - "Je pouvais m'endormir n'importe o\xF9, \xE9puis\xE9 par mes aventures"
-  - "Le soir, je m'endors d\xE8s que ma t\xEAte touche l'oreiller"
-  - "Je r\xEAve d'une nuit compl\xE8te de sommeil r\xE9parateur"
+  _sentenceParams:
+  - Sentence: "Je pouvais m'endormir n'importe o\xF9, \xE9puis\xE9 par mes aventures"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Le soir, je m'endors d\xE8s que ma t\xEAte touche l'oreiller"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Je r\xEAve d'une nuit compl\xE8te de sommeil r\xE9parateur"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 1

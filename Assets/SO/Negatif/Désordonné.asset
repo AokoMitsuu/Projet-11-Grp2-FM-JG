@@ -14,15 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: "D\xE9sordonn\xE9"
   _conflictTrait: []
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - "Mon bureau \xE9tait toujours en d\xE9sordre, couvert de papiers et de livres"
-  - "Mes cheveux \xE9bouriff\xE9s refl\xE8tent souvent mon \xE9tat d'esprit d\xE9sordonn\xE9"
-  - "Peut-\xEAtre qu'un jour, je trouverai l'ordre dans mon chaos cr\xE9atif"
+  _sentenceParams:
+  - Sentence: "Mon bureau \xE9tait toujours en d\xE9sordre, couvert de papiers et
+      de livres"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Mes cheveux \xE9bouriff\xE9s refl\xE8tent souvent mon \xE9tat d'esprit
+      d\xE9sordonn\xE9"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Peut-\xEAtre qu'un jour, je trouverai l'ordre dans mon chaos cr\xE9atif"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 1

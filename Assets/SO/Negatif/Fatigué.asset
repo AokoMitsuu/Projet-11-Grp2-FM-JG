@@ -14,15 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: "Fatigu\xE9"
   _conflictTrait: []
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - "Les nuits blanches \xE0 \xE9tudier m'ont laiss\xE9 des cernes marqu\xE9s"
-  - "Le rythme effr\xE9n\xE9 de la vie me rend souvent fatigu\xE9"
-  - "J'esp\xE8re trouver un \xE9quilibre qui me permettra de me reposer suffisamment"
+  _sentenceParams:
+  - Sentence: "Les nuits blanches \xE0 \xE9tudier m'ont laiss\xE9 des cernes marqu\xE9s"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Le rythme effr\xE9n\xE9 de la vie me rend souvent fatigu\xE9"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "J'esp\xE8re trouver un \xE9quilibre qui me permettra de me reposer
+      suffisamment"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 1

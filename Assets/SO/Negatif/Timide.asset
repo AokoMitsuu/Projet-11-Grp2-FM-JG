@@ -14,16 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: 
   _conflictTrait: []
-  _complementaryPrefixSentece:
-  - 'et aussi '
-  - 'de plus '
-  _contradictionPrefixSentece:
-  - Cependant
-  - "Malgr\xE9s toutes mes qualit\xE9es"
-  - Malheuresement
-  _suffixSentence:
-  - Autrefois, je rougissais et me cachais lorsqu'on me posait des questions
-  - "Je suis encore r\xE9serv\xE9 dans les grands groupes, pr\xE9f\xE9rant observer"
-  - "Peut-\xEAtre qu'avec le temps, je gagnerai en confiance pour m'exprimer plus
-    librement"
+  _sentenceParams:
+  - Sentence: Autrefois, je rougissais et me cachais lorsqu'on me posait des questions
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Je suis encore r\xE9serv\xE9 dans les grands groupes, pr\xE9f\xE9rant
+      observer"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
+  - Sentence: "Peut-\xEAtre qu'avec le temps, je gagnerai en confiance pour m'exprimer
+      plus librement"
+    ComplementaryPrefixSentence:
+    - 'et aussi '
+    - 'de plus '
+    ContradictionPrefixSentence:
+    - Cependant
+    - Malheuresement
+    - "Malgr\xE9s toutes mes qualit\xE9s"
+    SentenceVariables: []
   _tag: 1
