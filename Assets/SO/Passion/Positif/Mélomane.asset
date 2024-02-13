@@ -19,8 +19,8 @@ MonoBehaviour:
   - Sentence: "Depuis mon plus jeune \xE2ge, les m\xE9lodies m'ont transport\xE9,
       chaque note de musique \xE9veillant une \xE9motion profonde en moi"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -29,8 +29,8 @@ MonoBehaviour:
   - Sentence: "Je vis au rythme des harmonies, chaque jour \xE9tant une opportunit\xE9
       de d\xE9couvrir de nouveaux sons et de revisiter des classiques"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -40,8 +40,8 @@ MonoBehaviour:
       des voyages sonores inexplor\xE9s et enrichissant mon \xE2me de rythmes sans
       fin"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

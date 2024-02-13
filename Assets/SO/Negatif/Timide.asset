@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Timide
   m_EditorClassIdentifier: 
-  _name: 
+  _name: Timide
   _conflictTrait: []
   _sentenceParams:
   - Sentence: Autrefois, je rougissais et me cachais lorsqu'on me posait des questions
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -27,8 +27,8 @@ MonoBehaviour:
   - Sentence: "Je suis encore r\xE9serv\xE9 dans les grands groupes, pr\xE9f\xE9rant
       observer"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -37,8 +37,8 @@ MonoBehaviour:
   - Sentence: "Peut-\xEAtre qu'avec le temps, je gagnerai en confiance pour m'exprimer
       plus librement"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

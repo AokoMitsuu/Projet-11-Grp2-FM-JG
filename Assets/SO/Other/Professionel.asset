@@ -18,8 +18,8 @@ MonoBehaviour:
   - Sentence: "Pour mon premier entretien d'embauche, j'avais nou\xE9 ma cravate
       avec soin"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -27,8 +27,8 @@ MonoBehaviour:
     SentenceVariables: []
   - Sentence: "Chaque matin, je choisis une cravate qui refl\xE8te mon professionnalisme"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -36,8 +36,8 @@ MonoBehaviour:
     SentenceVariables: []
   - Sentence: "Je continuerai \xE0 porter une cravate pour tous mes rendez-vous importants"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

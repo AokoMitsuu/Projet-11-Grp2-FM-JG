@@ -17,32 +17,40 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 52e2bd47709ae7440a9d3c6fe2eb6608, type: 2}
   _sentenceParams:
   - Sentence: "Apr\xE8s une journ\xE9e de camping, j'\xE9tais couvert de boue et
-      attirais les mouches"
+      attirais les $v1"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Parfois, je laisse tra\xEEner mes affaires, cr\xE9ant un d\xE9sordre
-      peu engageant"
+    SentenceVariables:
+    - Variables:
+      - mouches
+      - insects
+  - Sentence: "Parfois, je laisse tra\xEEner mes affaires, cr\xE9ant un $v1 peu engageant"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: Je vais faire un effort pour maintenir mon espace de vie plus propre
+    SentenceVariables:
+    - Variables:
+      - "d\xE9sordre"
+      - bordel
+  - Sentence: Je vais $v1 pour maintenir mon espace de vie plus propre
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - faire un effort
+      - tout donner
   _tag: 1

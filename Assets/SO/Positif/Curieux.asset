@@ -17,8 +17,8 @@ MonoBehaviour:
   _sentenceParams:
   - Sentence: Enfant, je posais des questions sur tout et n'importe quoi
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -27,8 +27,8 @@ MonoBehaviour:
   - Sentence: "Ma curiosit\xE9 me pousse \xE0 explorer de nouveaux sujets chaque
       jour"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -36,8 +36,8 @@ MonoBehaviour:
     SentenceVariables: []
   - Sentence: "Je continuerai \xE0 chercher des r\xE9ponses aux myst\xE8res de l'univers"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

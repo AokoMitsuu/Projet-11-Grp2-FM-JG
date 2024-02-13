@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: "Col\xE8re"
   _conflictTrait:
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 6fbef96dc8bad03429c0212bc157798a, type: 2}
   - {fileID: 11400000, guid: e0195548120c81a4c960dae559a595b5, type: 2}
   _sentenceParams:
   - Sentence: "Hier, j'ai perdu patience face \xE0 l'injustice"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -28,8 +28,8 @@ MonoBehaviour:
     SentenceVariables: []
   - Sentence: "En ce moment, je bouillonne int\xE9rieurement contre les in\xE9galit\xE9s"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -38,8 +38,8 @@ MonoBehaviour:
   - Sentence: "Je vais probablement devoir apprendre \xE0 canaliser ma col\xE8re
       face aux d\xE9fis \xE0 venir"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

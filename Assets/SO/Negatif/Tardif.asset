@@ -18,8 +18,8 @@ MonoBehaviour:
   _sentenceParams:
   - Sentence: Mes amis savaient qu'ils devaient toujours m'attendre
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -27,8 +27,8 @@ MonoBehaviour:
     SentenceVariables: []
   - Sentence: Je lutte encore avec la notion de temps, souvent en retard
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -37,8 +37,8 @@ MonoBehaviour:
   - Sentence: "Je vais essayer d'am\xE9liorer ma gestion du temps pour ne plus \xEAtre
       en retard"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

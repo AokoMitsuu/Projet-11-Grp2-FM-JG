@@ -18,8 +18,8 @@ MonoBehaviour:
   _sentenceParams:
   - Sentence: "J'\xE9tais toujours le premier \xE0 me lancer dans de nouvelles aventures"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -27,8 +27,8 @@ MonoBehaviour:
     SentenceVariables: []
   - Sentence: "Ma vie est un tourbillon d'activit\xE9s et de projets passionnants"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -36,8 +36,8 @@ MonoBehaviour:
     SentenceVariables: []
   - Sentence: "Je vais continuer \xE0 embrasser chaque jour avec \xE9nergie et enthousiasme"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

@@ -16,32 +16,40 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 395833ee19ae99142a774ad65876e0d8, type: 2}
   _sentenceParams:
-  - Sentence: "Il fut un temps o\xF9 je comptais chaque euro pour finir le mois"
+  - Sentence: "Il fut un temps o\xF9 je comptais chaque $v1 pour finir le mois"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Bien que mes moyens soient limit\xE9s, je trouve de la joie dans la
-      simplicit\xE9"
+    SentenceVariables:
+    - Variables:
+      - euro
+      - centime
+  - Sentence: "Bien que mes moyens soient limit\xE9s, je trouve $v1 dans la simplicit\xE9"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Je travaille dur dans l'espoir d'am\xE9liorer ma situation financi\xE8re"
+    SentenceVariables:
+    - Variables:
+      - de la joie
+      - du bonheur
+  - Sentence: "Je travaille $v1 dans l'espoir d'am\xE9liorer ma situation financi\xE8re"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - dur
+      - d'arrache-pied
   _tag: 1
