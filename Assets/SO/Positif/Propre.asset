@@ -17,13 +17,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b3200e43439a6cc44b39384dcdfc5b88, type: 2}
   _sentenceParams:
   - Sentence: "$v1 m'a appris \xE0 tenir $v2 impeccable"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables:
     - Variables:
       - "Ma m\xE8re"
@@ -34,32 +29,44 @@ MonoBehaviour:
       - ma cuisine
       - ma chambre
       - mon garage
-  - Sentence: "Je prends soin de ma personne, cherchant \xE0 $v1 propret\xE9"
+  - Sentence: "$cont1 $comp2 Je $comp1 prends soin de $v2, cherchant \xE0 $v1 propret\xE9"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - maintenant
+      - aujourd'hui
+    - Sentences:
+      - ', maintenant'
+      - ', aujourd''hui'
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - cependant maintenant
     SentenceVariables:
     - Variables:
       - briller de
       - rayonner de
       - incarner la
-  - Sentence: "Je continuerai \xE0 $v1 l'ordre et la propret\xE9 dans tous les aspects
-      de ma vie"
+    - Variables:
+      - ma personne
+      - "moi m\xEAme"
+      - incarner la
+  - Sentence: "Je continuerai $cont1 $comp1 \xE0 $v1 $v2 dans $v3 aspects de ma vie"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - "\xE9galement"
+      - aussi
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - cependant
     SentenceVariables:
     - Variables:
       - valoriser
       - "pr\xE9vil\xE9gier"
+    - Variables:
+      - "l'ordre et la propret\xE9"
+      - "la propret\xE9 et l'ordre"
+    - Variables:
+      - tous les
+      - chaque
   _tag: 0
   _portraitSprites:
   - {fileID: 11400000, guid: 94baa6a4d56b197419a3dca16e172105, type: 2}
