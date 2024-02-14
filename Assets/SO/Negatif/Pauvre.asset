@@ -45,3 +45,5 @@ MonoBehaviour:
     - "Malgr\xE9s toutes mes qualit\xE9s"
     SentenceVariables: []
   _tag: 1
+  _portraitSprites:
+  - {fileID: 11400000, guid: 24939ff46feb0fe47807ae1d1903f832, type: 2}

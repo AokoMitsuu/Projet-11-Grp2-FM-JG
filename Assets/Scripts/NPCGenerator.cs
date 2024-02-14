@@ -19,7 +19,7 @@ public class NPCGenerator : MonoBehaviour
     [SerializeField] private GameObject _traitPrefab;
 
     [Space(10), Header("PORTRAIT")]
-    [SerializeField] private List<AnimatedSpriteSO> _basePortraits;
+    [SerializeField] private List<PortraitSpriteSO> _basePortraits;
 
 
     public int CurrentSeed => _seed;
@@ -53,14 +53,14 @@ public class NPCGenerator : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        List<AnimatedSpriteSO> portraits = new(_basePortraits);
+        List<PortraitSpriteSO> portraits = new(_basePortraits);
 
         for (int i = 0; i < _npcs.Length; i++)
         {
             string name = $"NPC {i + 1}";
             List<TraitSo> traits = GetRandomTraits();
 
-            AnimatedSpriteSO sprite = portraits[Random.Range(0, portraits.Count)];
+            PortraitSpriteSO sprite = portraits[Random.Range(0, portraits.Count)];
             portraits.Remove(sprite);
 
             NPC npc = new NPC(name, traits, sprite);

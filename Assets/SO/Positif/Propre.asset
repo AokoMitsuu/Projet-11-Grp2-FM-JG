@@ -61,3 +61,5 @@ MonoBehaviour:
       - valoriser
       - "pr\xE9vil\xE9gier"
   _tag: 0
+  _portraitSprites:
+  - {fileID: 11400000, guid: 94baa6a4d56b197419a3dca16e172105, type: 2}

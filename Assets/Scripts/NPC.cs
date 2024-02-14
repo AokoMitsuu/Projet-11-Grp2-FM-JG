@@ -21,10 +21,10 @@ public class NPC
     public string Summary => _summary;
     [SerializeField] private string _summary;
 
-    public AnimatedSpriteSO BaseSprite => _basePortrait;
-    private AnimatedSpriteSO _basePortrait;
+    public PortraitSpriteSO BaseSprite => _basePortrait;
+    private PortraitSpriteSO _basePortrait;
     
-    public NPC(string name, List<TraitSo> traits, AnimatedSpriteSO basePortrait)
+    public NPC(string name, List<TraitSo> traits, PortraitSpriteSO basePortrait)
     {
         _name = name;
         _traits = traits;

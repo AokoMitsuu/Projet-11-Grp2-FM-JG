@@ -18,6 +18,9 @@ public class TraitSo : ScriptableObject
 
     public ETag Tag => _tag;
     [SerializeField] private ETag _tag;
+
+    public List<PortraitSpriteSO> PortraitSprites => _portraitSprites;
+    [SerializeField] private List<PortraitSpriteSO> _portraitSprites;
 }
 
 public enum ETag

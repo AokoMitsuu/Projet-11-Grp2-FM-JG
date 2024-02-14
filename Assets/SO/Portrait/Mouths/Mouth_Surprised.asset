@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36662dab818c0324e998a1fcdaae9c3f, type: 3}
-  m_Name: Base1
+  m_Name: Mouth_Surprised
   m_EditorClassIdentifier: 
   _sprites:
-  - {fileID: 312954730, guid: 562ecc6ec9ec4e34d83cb298b14eae97, type: 3}
-  - {fileID: 1765269608, guid: 562ecc6ec9ec4e34d83cb298b14eae97, type: 3}
-  - {fileID: 1495968066, guid: 562ecc6ec9ec4e34d83cb298b14eae97, type: 3}
+  - {fileID: 5767058898976193538, guid: 1cd33bfa635caee4e9db98bba4479f0b, type: 3}
+  - {fileID: -8763030265974830142, guid: 1cd33bfa635caee4e9db98bba4479f0b, type: 3}
+  - {fileID: -6906864824058854572, guid: 1cd33bfa635caee4e9db98bba4479f0b, type: 3}
+  _type: 3

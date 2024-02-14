@@ -7,7 +7,7 @@ using UnityEngine;
 public class ProfileController : MonoBehaviour
 {
     [SerializeField] private GameObject _traitsContainer;
-    [SerializeField] private GameObject _portraitContainer;
+    [SerializeField] private Portrait _portrait;
     [SerializeField] private TMP_Text _sumaryText;
     [SerializeField] private TMP_Text _traitCountText;
 
@@ -53,12 +53,16 @@ public class ProfileController : MonoBehaviour
 
     private void UpdatePortrait()
     {
-        foreach (Transform child in _portraitContainer.transform)
-        {
-            Destroy(child.gameObject);
-        }
+        _portrait.Clear();
 
-        GameObject portraitBase = Instantiate(_portraitBasePrefab, _portraitContainer.transform);
-        portraitBase.GetComponent<SpriteAnimator>().SetSprite(Npc.BaseSprite);
+        _portrait.AddPortraitSprite(Npc.BaseSprite);
+
+        foreach (var trait in _npc.Traits)
+        {
+            foreach (var sprite in trait.PortraitSprites)
+            {
+                _portrait.AddPortraitSprite(sprite);
+            }
+        }
     }
 }

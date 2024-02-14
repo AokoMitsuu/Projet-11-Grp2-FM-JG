@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36662dab818c0324e998a1fcdaae9c3f, type: 3}
-  m_Name: Base3
+  m_Name: Spe_Dirty
   m_EditorClassIdentifier: 
   _sprites:
-  - {fileID: -1648871593, guid: 562ecc6ec9ec4e34d83cb298b14eae97, type: 3}
-  - {fileID: -1024678258, guid: 562ecc6ec9ec4e34d83cb298b14eae97, type: 3}
-  - {fileID: -1510124346, guid: 562ecc6ec9ec4e34d83cb298b14eae97, type: 3}
+  - {fileID: -763290527869387495, guid: 89b6ae3dcaf8a9e46a0f7f812593aa21, type: 3}
+  - {fileID: 8729867678470270973, guid: 89b6ae3dcaf8a9e46a0f7f812593aa21, type: 3}
+  - {fileID: 8578378933416359004, guid: 89b6ae3dcaf8a9e46a0f7f812593aa21, type: 3}
+  _type: 4
