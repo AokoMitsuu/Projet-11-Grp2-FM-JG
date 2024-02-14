@@ -16,7 +16,20 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 0300026034903ed42b6299025a7caad8, type: 2}
   _sentenceParams:
-  - Sentence: "Il fut un temps o\xF9 je comptais chaque euro pour finir le mois."
+  - Sentence: "J'ai travaill\xE9 dur $3 b\xE2tir ma $1, \xE9pargnant chaque $2."
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
+    SentenceVariables:
+    - Variables:
+      - fortune
+      - richesse
+    - Variables:
+      - euro
+      - cendime
+    - Variables:
+      - afin de
+      - pour
+  - Sentence: Je profite de $2, sans oublier $1.
     ComplementaryPrefixSentence:
     - et aussi
     - de plus
@@ -24,9 +37,14 @@ MonoBehaviour:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Bien que mes moyens soient limit\xE9s, je trouve de la joie dans la
-      simplicit\xE9."
+    SentenceVariables:
+    - Variables:
+      - "d'o\xF9 je viens"
+      - mes origines
+    - Variables:
+      - ma fortune
+      - ma richesse
+  - Sentence: J'investirai $1, $4 $3 $2.
     ComplementaryPrefixSentence:
     - et aussi
     - de plus
@@ -34,16 +52,22 @@ MonoBehaviour:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Je travaille dur dans l'espoir d'am\xE9liorer ma situation financi\xE8re"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - judicieusement
+      - avec sagesse
+    - Variables:
+      - ma richesse
+      - mon patrimoine
+      - ma fortune
+    - Variables:
+      - encore
+      - davantage
+      - encore plus
+    - Variables:
+      - "esp\xE9rant accro\xEEtre"
+      - dans l'espoir d'augmenter
+      - "esp\xE9rant augmenter"
   _tag: 0
   _portraitSprites:
   - {fileID: 11400000, guid: 281e8bf022f1ddf4ab342c6b8175bb04, type: 2}
