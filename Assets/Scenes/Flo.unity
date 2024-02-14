@@ -3227,6 +3227,7 @@ MonoBehaviour:
   _profilePrefab: {fileID: 539979884583630865, guid: 950f41c533ee0c1468463d4be420182d, type: 3}
   _possibleTraits:
   - {fileID: 11400000, guid: 0d28c550e0bd73d40b4bbff5b6a13bda, type: 2}
+  - {fileID: 11400000, guid: 395833ee19ae99142a774ad65876e0d8, type: 2}
   - {fileID: 11400000, guid: 9c6b28dda7a6c0642937c3fa03b296a5, type: 2}
   - {fileID: 11400000, guid: e6ca93b138899cb4084b185e796d2ecb, type: 2}
   - {fileID: 11400000, guid: 204d9239f119ba04ba498673f1b37864, type: 2}
@@ -3249,7 +3250,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9022a6555ff6717419e11f02e0646bec, type: 2}
   - {fileID: 11400000, guid: ec1a4b4766e6dcd428a5458792b4f6db, type: 2}
   - {fileID: 11400000, guid: 52e2bd47709ae7440a9d3c6fe2eb6608, type: 2}
-  - {fileID: 11400000, guid: 395833ee19ae99142a774ad65876e0d8, type: 2}
   _traitContainer: {fileID: 2103502712}
   _traitPrefab: {fileID: 4976610554917155687, guid: 59efbd2778f5b134db5fc760b70e2d90, type: 3}
   _basePortraits:

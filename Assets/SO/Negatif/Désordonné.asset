@@ -15,46 +15,57 @@ MonoBehaviour:
   _name: "D\xE9sordonn\xE9"
   _conflictTrait: []
   _sentenceParams:
-  - Sentence: "Mon bureau \xE9tait toujours en d\xE9sordre, couvert de $v1 et de
-      $v2"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+  - Sentence: "Mon $v2 \xE9tait toujours en d\xE9sordre, couvert de $v1"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables:
     - Variables:
       - papiers
       - babioles
-    - Variables:
       - livres
       - bouquins
-  - Sentence: "Mes cheveux $v1 refl\xE8tent souvent mon \xE9tat d'esprit d\xE9sordonn\xE9"
+    - Variables:
+      - bureau
+      - espace de travail
+  - Sentence: "$comp Mes cheveux en $v1 refl\xE8tent souvent mon \xE9tat d'esprit
+      $v2"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - Maintenant
+      - A present
+      - Aujourd'hui
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - test 3
+    - Sentences:
+      - test 3
     SentenceVariables:
     - Variables:
       - "\xE9bouriff\xE9s"
       - "p\xE9tard"
-  - Sentence: "Peut-\xEAtre qu'un jour, je trouverai l'ordre dans $v1"
+      - bataille
+    - Variables:
+      - "d\xE9sordonn\xE9"
+      - chaotique
+      - "embrouill\xE9"
+  - Sentence: "Peut-\xEAtre $comp1 qu'un jour, je trouverai $v2 dans $v1"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - test 1
+    - Sentences:
+      - test 2
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - test 1
+    - Sentences:
+      - test 2
     SentenceVariables:
     - Variables:
       - "mon chaos cr\xE9atif"
       - fort interieur
+    - Variables:
+      - l'ordre
+      - l'harmonie
   _tag: 1
   _portraitSprites:
   - {fileID: 11400000, guid: fcc8aa217bde9e04bab423c0a464d138, type: 2}

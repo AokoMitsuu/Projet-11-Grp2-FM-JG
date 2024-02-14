@@ -17,37 +17,40 @@ MonoBehaviour:
   _sentenceParams:
   - Sentence: "Je pouvais m'endormir n'importe o\xF9, \xE9puis\xE9 par mes $v1"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - aventures
       - parents
       - "coll\xE8gues"
-  - Sentence: "Le soir, je m'endors d\xE8s $v1"
+  - Sentence: "$v2 , je m'endors d\xE8s $v1"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - "que ma t\xEAte touche l'oreiller"
       - "que je suis rentr\xE9"
+    - Variables:
+      - Le soir
+      - "\xC0 peine rentr\xE9 le soir"
   - Sentence: Je $v1 d'une nuit $V2 de sommeil $v3
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - "r\xEAve"

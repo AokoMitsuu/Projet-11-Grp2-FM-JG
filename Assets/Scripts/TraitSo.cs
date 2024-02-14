@@ -21,6 +21,77 @@ public class TraitSo : ScriptableObject
 
     public List<PortraitSpriteSO> PortraitSprites => _portraitSprites;
     [SerializeField] private List<PortraitSpriteSO> _portraitSprites;
+
+    public override string ToString()
+    {
+        string summary = string.Empty;
+
+        summary += $"Nom : {_name}\n";
+
+        if(_conflictTrait.Count > 0)
+        {
+            summary += $"Conflict : \n";
+
+            foreach (var trait in _conflictTrait)
+            {
+                summary += $" - {trait.Name}\n";
+            }
+        }
+
+        summary += $"Phrases : ";
+
+        foreach (var sentence in _sentenceParams)
+        {
+            summary += $"\n\n   {sentence.Sentence}\n";
+
+            if(sentence.ComplementaryPrefixSentence.Count > 0)
+            {
+                summary += $"\n       Connecteur logique positif : \n";
+
+                for (int i = 0; i < sentence.ComplementaryPrefixSentence.Count; i++)
+                {
+                    summary += $"        - {i + 1}\n";
+
+                    foreach (var complementary in sentence.ComplementaryPrefixSentence[i].Sentences)
+                    {
+                        summary += $"           - {complementary}\n";
+                    }
+                }
+            }
+
+            if (sentence.ContradictionPrefixSentence.Count > 0)
+            {
+                summary += $"\n       Connecteur logique negatif : \n";
+
+                for (int i = 0; i < sentence.ContradictionPrefixSentence.Count; i++)
+                {
+                    summary += $"        - {i + 1}\n";
+
+                    foreach (var contradiction in sentence.ContradictionPrefixSentence[i].Sentences)
+                    {
+                        summary += $"           - {contradiction}\n";
+                    }
+                }
+            }
+
+            if (sentence.SentenceVariables.Count > 0)
+            {
+                summary += $"\n       Variable : \n";
+
+                for (int i = 0; i < sentence.SentenceVariables.Count; i++)
+                {
+                    summary += $"        - {i + 1}\n";
+
+                    foreach (var variable in sentence.SentenceVariables[i].Variables)
+                    {
+                        summary += $"           - {variable}\n";
+                    }
+                }
+            }
+        }
+
+        return summary;
+    }
 }
 
 public enum ETag

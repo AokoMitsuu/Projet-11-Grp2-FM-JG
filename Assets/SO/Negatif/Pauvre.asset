@@ -16,42 +16,66 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 395833ee19ae99142a774ad65876e0d8, type: 2}
   _sentenceParams:
-  - Sentence: "Il fut un temps o\xF9 je comptais chaque $v1 pour finir le mois"
+  - Sentence: "$v2 o\xF9 je comptais chaque $v1 pour finir le mois"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - euro
       - centime
-  - Sentence: "Bien que mes moyens soient limit\xE9s, je trouve $v1 dans la simplicit\xE9"
+      - billet
+    - Variables:
+      - Il fut un temps
+      - "Il y eut une \xE9poque"
+      - "Il a exist\xE9 un moment"
+      - J'ai connu des jours
+      - "Il fut une p\xE9riode"
+  - Sentence: "Bien que mes moyens soient $v2, je trouve $v1 dans la simplicit\xE9"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - de la joie
       - du bonheur
-  - Sentence: "Je travaille $v1 dans l'espoir d'am\xE9liorer ma situation financi\xE8re"
+    - Variables:
+      - "limit\xE9s"
+      - modestes
+      - "r\xE9duits"
+  - Sentence: "Je $v2 $v1 $v5 $v4 ma $v3 financi\xE8re"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - dur
       - d'arrache-pied
+    - Variables:
+      - travaille
+      - m'investis
+    - Variables:
+      - situation
+      - condition
+    - Variables:
+      - "d'am\xE9liorer"
+      - "d'avoir une am\xE9lioration dans"
+    - Variables:
+      - "esp\xE9rant"
+      - "dans l'\xE9spoir"
+      - aspirant
   _tag: 1
   _portraitSprites:
   - {fileID: 11400000, guid: 24939ff46feb0fe47807ae1d1903f832, type: 2}

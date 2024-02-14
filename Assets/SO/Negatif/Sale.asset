@@ -16,43 +16,64 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 52e2bd47709ae7440a9d3c6fe2eb6608, type: 2}
   _sentenceParams:
-  - Sentence: "Apr\xE8s une journ\xE9e de camping, j'\xE9tais couvert de boue et
-      attirais les $v1"
+  - Sentence: $v2 de camping, $v3 couvert de boue et attirais les $v1
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - mouches
       - insects
-  - Sentence: "Parfois, je laisse tra\xEEner mes affaires, cr\xE9ant un $v1 peu engageant"
+    - Variables:
+      - "Suite \xE0 une journ\xE9e pass\xE9e"
+      - "Apr\xE8s une journ\xE9e"
+    - Variables:
+      - "j'\xE9tais"
+      - je me retrouvais
+  - Sentence: "$v2, je laisse tra\xEEner mes affaires, cr\xE9ant un $v1 $v3"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - "d\xE9sordre"
       - bordel
-  - Sentence: Je vais $v1 pour maintenir mon espace de vie plus propre
+    - Variables:
+      - De temps en temps
+      - Parfois
+    - Variables:
+      - peu engageant
+      - "d\xE9sagr\xE9able"
+      - "d\xE9sagr\xE9able"
+      - "peu s\xE9duisant"
+  - Sentence: $v2 $v1 pour maintenir mon espace $v3
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - faire un effort
       - tout donner
+      - consacrer du temps
+    - Variables:
+      - Je vais
+      - Je m'engage
+      - Je m'efforcerai de
+    - Variables:
+      - de vie plus propre
+      - Je m'engage
   _tag: 1
   _portraitSprites:
   - {fileID: 11400000, guid: c53ebbc16ea3f694bbb6c73ae78544bb, type: 2}
