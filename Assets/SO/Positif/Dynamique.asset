@@ -16,32 +16,30 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 204d9239f119ba04ba498673f1b37864, type: 2}
   _sentenceParams:
-  - Sentence: "J'\xE9tais toujours le premier \xE0 me lancer dans de nouvelles aventures"
+  - Sentence: "J'ai toujours \xE9t\xE9 tr\xE8s dynamique et $v1"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
+    SentenceVariables:
+    - Variables:
+      - "plein de vitalit\xE9"
+      - "d'une vitalit\xE9 \xE0 toute \xE9preuve"
+    - Variables:
+      - "tr\xE8s dynamique"
+      - "marqu\xE9 par un dynamisme"
+  - Sentence: "Ma vie est $comp1 un tourbillon d'activit\xE9s et de projets passionnants"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Ma vie est un tourbillon d'activit\xE9s et de projets passionnants"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - maintenant
+    ContradictionPrefixSentence: []
     SentenceVariables: []
   - Sentence: "Je vais continuer \xE0 embrasser chaque jour avec \xE9nergie et enthousiasme"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables: []
   _tag: 0
   _portraitSprites: []

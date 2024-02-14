@@ -16,32 +16,50 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: e7a0d62a854c60d4ba82b70239ecf0e1, type: 2}
   _sentenceParams:
-  - Sentence: "Je n'ai jamais \xE9t\xE9 en retard \xE0 un rendez-vous de ma vie"
+  - Sentence: $v1 $v2 un rendez-vous$v3
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
+    SentenceVariables:
+    - Variables:
+      - Je n'ai jamais
+      - Jamais je n'ai
+    - Variables:
+      - "\xE9t\xE9 en retard \xE0 "
+      - "manqu\xE9"
+    - Variables:
+      - ' de ma vie'
+      - ', sans exception'
+  - Sentence: "La ponctualit\xE9 est une $v1 que je $v2 scrupuleusement"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
+    SentenceVariables:
+    - Variables:
+      - valeur
+      - vertu
+    - Variables:
+      - "continue \xE0 honorer"
+      - m'efforce de respecter
+    - Variables:
+      - scrupuleusement
+      - "de mani\xE8re in\xE9branlable"
+      - "de fa\xE7on scrupuleuse"
+  - Sentence: $cont1 $comp1 Je $v1 $v2
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - de plus
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "La ponctualit\xE9 est une valeur que je continue \xE0 honorer scrupuleusement"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Je m'engage \xE0 maintenir cette ponctualit\xE9, symbole de respect
-      pour les autres et pour moi-m\xEAme"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
+    - Sentences:
+      - mais
+    SentenceVariables:
+    - Variables:
+      - maintiendrai
+      - "pr\xE9serverai"
+      - "continuerai \xE0 respecter"
+      - "perp\xE9tuerai"
+    - Variables:
+      - "ma tradition de ponctualit\xE9"
+      - "ma pratique de la ponctualit\xE9"
+      - "ma coutume d'\xEAtre ponctuel"
   _tag: 0
+  _portraitSprites:
+  - {fileID: 11400000, guid: 1b228185197cc5b4a94a17a0f8905632, type: 2}

@@ -16,7 +16,7 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 0300026034903ed42b6299025a7caad8, type: 2}
   _sentenceParams:
-  - Sentence: "J'ai travaill\xE9 dur $v3 b\xE2tir ma $v1, \xE9pargnant chaque $v2."
+  - Sentence: "J'ai travaill\xE9 dur $v3 b\xE2tir ma $v1, \xE9pargnant chaque $v2"
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
     SentenceVariables:
@@ -29,7 +29,7 @@ MonoBehaviour:
     - Variables:
       - afin de
       - pour
-  - Sentence: $cont1 $comp2 Je profite $comp1 de $v2, sans oublier $v1.
+  - Sentence: $cont1 $comp2 Je profite $comp1 de $v2, sans oublier $v1
     ComplementaryPrefixSentence:
     - Sentences:
       - aujourd'hui
@@ -46,7 +46,7 @@ MonoBehaviour:
     - Variables:
       - ma fortune
       - ma richesse
-  - Sentence: $cont1 J'investirai $comp1 $v1, $v4 $v3 $v2.
+  - Sentence: $cont1 J'investirai $comp1 $v1, $v4 $v3 $v2
     ComplementaryPrefixSentence:
     - Sentences:
       - "\xE9galement"
