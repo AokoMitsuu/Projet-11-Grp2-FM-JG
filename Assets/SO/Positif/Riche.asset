@@ -16,7 +16,7 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 0300026034903ed42b6299025a7caad8, type: 2}
   _sentenceParams:
-  - Sentence: "J'ai travaill\xE9 dur $3 b\xE2tir ma $1, \xE9pargnant chaque $2."
+  - Sentence: "J'ai travaill\xE9 dur $v3 b\xE2tir ma $v1, \xE9pargnant chaque $v2."
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
     SentenceVariables:
@@ -25,18 +25,20 @@ MonoBehaviour:
       - richesse
     - Variables:
       - euro
-      - cendime
+      - centime
     - Variables:
       - afin de
       - pour
-  - Sentence: Je profite de $2, sans oublier $1.
+  - Sentence: $cont1 $comp2 Je profite $comp1 de $v2, sans oublier $v1.
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - aujourd'hui
+      - maintenant
+    - Sentences:
+      - ','
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - cependant
     SentenceVariables:
     - Variables:
       - "d'o\xF9 je viens"
@@ -44,14 +46,14 @@ MonoBehaviour:
     - Variables:
       - ma fortune
       - ma richesse
-  - Sentence: J'investirai $1, $4 $3 $2.
+  - Sentence: $cont1 J'investirai $comp1 $v1, $v4 $v3 $v2.
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - "\xE9galement"
+      - aussi
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - cependant
     SentenceVariables:
     - Variables:
       - judicieusement
