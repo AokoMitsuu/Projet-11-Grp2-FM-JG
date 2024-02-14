@@ -19,8 +19,8 @@ MonoBehaviour:
   - Sentence: "Les histoires me captivaient d\xE9j\xE0 quand je n'\xE9tais qu'un
       enfant, chaque livre ouvert \xE9tant une porte vers un autre univers"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -29,8 +29,8 @@ MonoBehaviour:
   - Sentence: "Je trouve refuge dans les pages des livres, me perdant dans les r\xE9cits
       d'aventures, de myst\xE8re et de romance"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -39,8 +39,8 @@ MonoBehaviour:
   - Sentence: "Je m'engage \xE0 poursuivre ma qu\xEAte de connaissances et d'\xE9vasion
       \xE0 travers la litt\xE9rature"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

@@ -17,8 +17,8 @@ MonoBehaviour:
   _sentenceParams:
   - Sentence: "Autrefois, je s\xE9duisais l'auditoire avec mes discours enflamm\xE9s"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -26,8 +26,8 @@ MonoBehaviour:
     SentenceVariables: []
   - Sentence: "Je prends la parole avec aisance lors des r\xE9unions"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -36,8 +36,8 @@ MonoBehaviour:
   - Sentence: "Je perfectionnerai mon \xE9loquence pour devenir un orateur encore
       plus convaincant"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

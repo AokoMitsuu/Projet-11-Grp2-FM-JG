@@ -15,34 +15,50 @@ MonoBehaviour:
   _name: Endormie
   _conflictTrait: []
   _sentenceParams:
-  - Sentence: "Je pouvais m'endormir n'importe o\xF9, \xE9puis\xE9 par mes aventures"
+  - Sentence: "Je pouvais m'endormir n'importe o\xF9, \xE9puis\xE9 par mes $v1"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Le soir, je m'endors d\xE8s que ma t\xEAte touche l'oreiller"
+    SentenceVariables:
+    - Variables:
+      - aventures
+      - parents
+      - "coll\xE8gues"
+  - Sentence: "Le soir, je m'endors d\xE8s $v1"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Je r\xEAve d'une nuit compl\xE8te de sommeil r\xE9parateur"
+    SentenceVariables:
+    - Variables:
+      - "que ma t\xEAte touche l'oreiller"
+      - "que je suis rentr\xE9"
+  - Sentence: Je $v1 d'une nuit $V2 de sommeil $v3
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  _tag: 1
+    SentenceVariables:
+    - Variables:
+      - "r\xEAve"
+      - souhaite
+    - Variables:
+      - "compl\xE8te"
+      - "enti\xE8re"
+    - Variables:
+      - "r\xE9parateur"
+      - profond
+  _tag: 2
   _portraitSprites:
-  - {fileID: 11400000, guid: 82d53f04578e22248b5deb9925d4bc0b, type: 2}
-  - {fileID: 11400000, guid: 0c5a1e725728b55468770add34cdd670, type: 2}
+- {fileID: 11400000, guid: 82d53f04578e22248b5deb9925d4bc0b, type: 2}
+- {fileID: 11400000, guid: 0c5a1e725728b55468770add34cdd670, type: 2}

@@ -18,8 +18,8 @@ MonoBehaviour:
   - Sentence: "Enfant, je trouvais de la joie \xE0 cr\xE9er, que ce soit en dessinant
       sur les murs ou en construisant des ch\xE2teaux de sable"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -29,8 +29,8 @@ MonoBehaviour:
       moyens d'expression, trouvant satisfaction dans la cr\xE9ation de quelque chose
       d'unique"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -39,8 +39,8 @@ MonoBehaviour:
   - Sentence: "Je vais continuer \xE0 nourrir ma cr\xE9ativit\xE9, explorant de nouvelles
       avenues pour exprimer mes id\xE9es et partager ma vision du monde"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

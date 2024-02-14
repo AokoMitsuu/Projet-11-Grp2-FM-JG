@@ -58,12 +58,13 @@ public class NPC
 
     private void GenerateSummary()
     {
-        // G�n�rer un r�sum� bas� sur les traits
         _summary = $"Je suis {_name}.\n";
         int index = 0;
 
         List<TraitSo> traits = _traits.Where(trait => trait.Tag == ETag.Other || trait.Tag == ETag.Positif || trait.Tag == ETag.PassionPositif).ToList();
+        traits.Shuffle();
         List<TraitSo> negativeTraits = _traits.Where(trait => trait.Tag == ETag.Negatif || trait.Tag == ETag.PassionNegatif).ToList();
+        negativeTraits.Shuffle();
 
         _summary += CreateSubSummary(traits, ref index, false);
         _summary += CreateSubSummary(negativeTraits, ref index, traits.Count > 0);
@@ -116,7 +117,7 @@ public class NPC
 
     private static string ReplaceVariables(string input, List<SentenceVariables> variable)
     {
-        string pattern = @"\$(V\d+)";
+        string pattern = @"\$(v\d+)";
 
         string result = Regex.Replace(input, pattern, match =>
         {

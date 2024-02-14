@@ -18,8 +18,8 @@ MonoBehaviour:
   _sentenceParams:
   - Sentence: "Je n'ai jamais \xE9t\xE9 en retard \xE0 un rendez-vous de ma vie"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -27,8 +27,8 @@ MonoBehaviour:
     SentenceVariables: []
   - Sentence: "La ponctualit\xE9 est une valeur que je continue \xE0 honorer scrupuleusement"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -37,8 +37,8 @@ MonoBehaviour:
   - Sentence: "Je m'engage \xE0 maintenir cette ponctualit\xE9, symbole de respect
       pour les autres et pour moi-m\xEAme"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

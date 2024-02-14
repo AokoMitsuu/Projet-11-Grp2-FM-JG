@@ -15,35 +15,46 @@ MonoBehaviour:
   _name: "D\xE9sordonn\xE9"
   _conflictTrait: []
   _sentenceParams:
-  - Sentence: "Mon bureau \xE9tait toujours en d\xE9sordre, couvert de papiers et
-      de livres"
+  - Sentence: "Mon bureau \xE9tait toujours en d\xE9sordre, couvert de $v1 et de
+      $v2"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Mes cheveux \xE9bouriff\xE9s refl\xE8tent souvent mon \xE9tat d'esprit
-      d\xE9sordonn\xE9"
+    SentenceVariables:
+    - Variables:
+      - papiers
+      - babioles
+    - Variables:
+      - livres
+      - bouquins
+  - Sentence: "Mes cheveux $v1 refl\xE8tent souvent mon \xE9tat d'esprit d\xE9sordonn\xE9"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Peut-\xEAtre qu'un jour, je trouverai l'ordre dans mon chaos cr\xE9atif"
+    SentenceVariables:
+    - Variables:
+      - "\xE9bouriff\xE9s"
+      - "p\xE9tard"
+  - Sentence: "Peut-\xEAtre qu'un jour, je trouverai l'ordre dans $v1"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
     - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - "mon chaos cr\xE9atif"
+      - fort interieur
   _tag: 1
   _portraitSprites:
   - {fileID: 11400000, guid: fcc8aa217bde9e04bab423c0a464d138, type: 2}

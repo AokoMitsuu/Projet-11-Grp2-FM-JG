@@ -16,10 +16,10 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: b3200e43439a6cc44b39384dcdfc5b88, type: 2}
   _sentenceParams:
-  - Sentence: "$V1 m'a appris \xE0 tenir $V2 impeccable"
+  - Sentence: "$V1 m'a appris \xE0 tenir $v2 impeccable"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -34,10 +34,10 @@ MonoBehaviour:
       - ma cuisine
       - ma chambre
       - mon garage
-  - Sentence: "Je prends soin de ma personne, cherchant \xE0 $V1 propret\xE9"
+  - Sentence: "Je prends soin de ma personne, cherchant \xE0 $v1 propret\xE9"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -47,11 +47,11 @@ MonoBehaviour:
       - briller de
       - rayonner de
       - incarner la
-  - Sentence: "Je continuerai \xE0 $V1 l'ordre et la propret\xE9 dans tous les aspects
+  - Sentence: "Je continuerai \xE0 $v1 l'ordre et la propret\xE9 dans tous les aspects
       de ma vie"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

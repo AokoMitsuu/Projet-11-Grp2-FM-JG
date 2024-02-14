@@ -18,8 +18,8 @@ MonoBehaviour:
   - Sentence: "Petite, le son des instruments me semblait dissonant, chaque concert
       me laissant plus irrit\xE9 que d\xE9tendu"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -28,8 +28,8 @@ MonoBehaviour:
   - Sentence: "Je tends \xE0 \xE9viter les environnements musicaux bruyants, pr\xE9f\xE9rant
       le calme et la tranquillit\xE9 \xE0 la m\xE9lodie"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -38,8 +38,8 @@ MonoBehaviour:
   - Sentence: "Je vais peut-\xEAtre essayer d'ouvrir mon esprit \xE0 diff\xE9rents
       genres musicaux, dans l'espoir de surmonter ma r\xE9ticence envers la musique"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

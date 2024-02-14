@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab53cf64fcf4f2645802fc5d6bd755f5, type: 3}
   m_Name: Heureux
   m_EditorClassIdentifier: 
-  _name: 
+  _name: Heureux
   _conflictTrait:
   - {fileID: 11400000, guid: bec19626fbf30fa4a98fc662e36701aa, type: 2}
   - {fileID: 11400000, guid: e0195548120c81a4c960dae559a595b5, type: 2}
   _sentenceParams:
   - Sentence: "Hier, j'ai \xE9clat\xE9 de rire en repensant \xE0 une vieille blague"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -29,8 +29,8 @@ MonoBehaviour:
   - Sentence: "Aujourd'hui, je me sens l\xE9ger et plein de gratitude pour les petites
       choses"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -38,8 +38,8 @@ MonoBehaviour:
     SentenceVariables: []
   - Sentence: Demain, je vais partager un moment de joie avec mes amis
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement

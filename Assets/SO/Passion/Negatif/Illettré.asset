@@ -19,8 +19,8 @@ MonoBehaviour:
   - Sentence: "Lire m'a toujours sembl\xE9 fastidieux, les livres \xE0 l'\xE9cole
       ne captivant jamais vraiment mon attention"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -29,8 +29,8 @@ MonoBehaviour:
   - Sentence: "Je pr\xE9f\xE8re les m\xE9dias visuels et interactifs aux pages imprim\xE9es,
       trouvant peu de plaisir dans la lecture traditionnelle"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
@@ -39,8 +39,8 @@ MonoBehaviour:
   - Sentence: "Bien que r\xE9ticent, je suis ouvert \xE0 l'id\xE9e que certains livres
       pourraient, un jour, \xE9veiller mon int\xE9r\xEAt et enrichir ma perspective"
     ComplementaryPrefixSentence:
-    - 'et aussi '
-    - 'de plus '
+    - et aussi
+    - de plus
     ContradictionPrefixSentence:
     - Cependant
     - Malheuresement
