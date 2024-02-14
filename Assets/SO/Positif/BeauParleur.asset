@@ -17,31 +17,33 @@ MonoBehaviour:
   _sentenceParams:
   - Sentence: "Autrefois, je s\xE9duisais l'auditoire avec mes discours enflamm\xE9s"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables: []
-  - Sentence: "Je prends la parole avec aisance lors des r\xE9unions"
+  - Sentence: "$comp2 Je prends $comp1 la parole avec aisance lors des r\xE9unions"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - aussi
+    - Sentences:
+      - de plus
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables: []
   - Sentence: "Je perfectionnerai mon \xE9loquence pour devenir un orateur encore
       plus convaincant"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables: []
   _tag: 0
   _portraitSprites:

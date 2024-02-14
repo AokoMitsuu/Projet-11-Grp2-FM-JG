@@ -9,6 +9,8 @@ using Random = UnityEngine.Random;
 public class NPC
 {
     public const int MAX_TRAITS_COUNT = 3;
+    public const string COMP = "$comp";
+    public const string CONT = "$cont";
 
     public Action OnTraitsChange;
 
@@ -77,11 +79,11 @@ public class NPC
         {
             SentenceParams sentenceParams = trait.SentenceParams[index];
 
-            if (!sentenceParams.Sentence.Contains("$Contradiction"))
-                subSumary += "$Contradiction";
+            if (!sentenceParams.Sentence.Contains(CONT))
+                subSumary += CONT + "1 ";
 
-            if (!sentenceParams.Sentence.Contains("$Complementary"))
-                subSumary += "$Complementary";
+            if (!sentenceParams.Sentence.Contains(COMP))
+                subSumary += COMP + "1 ";
 
             if (index == 0)
                 subSumary += sentenceParams.Sentence;
@@ -90,11 +92,11 @@ public class NPC
 
             if (isContradiction && traits.First() == trait)
             {
-                subSumary = subSumary.Replace("$Contradiction", sentenceParams.ContradictionPrefixSentence[Random.Range(0, sentenceParams.ContradictionPrefixSentence.Count)] + " ");
+                subSumary = ReplaceCont(subSumary, sentenceParams.ContradictionPrefixSentence);
             }
             else if (traits.First() != trait)
             {
-                subSumary = subSumary.Replace("$Complementary", sentenceParams.ComplementaryPrefixSentence[Random.Range(0, sentenceParams.ComplementaryPrefixSentence.Count)].ToLower() + " ");
+                subSumary = ReplaceComp(subSumary, sentenceParams.ComplementaryPrefixSentence);
             }
 
             if (traits.Last() == trait)
@@ -107,8 +109,13 @@ public class NPC
             }
 
             subSumary = ReplaceVariables(subSumary, sentenceParams.SentenceVariables);
-            subSumary = subSumary.Replace("$Contradiction", "");
-            subSumary = subSumary.Replace("$Complementary", "");
+
+            for (int i = 0; i < 10; i++)
+            {
+                subSumary = subSumary.Replace(CONT + i + " ", "");
+                subSumary = subSumary.Replace(COMP + i + " ", "");
+            }
+
             index++;
         }
 
@@ -137,6 +144,72 @@ public class NPC
         });
 
         return result;
+    }
+
+    private static string ReplaceCont(string input, List<Sentence> sentences)
+    {
+        string pattern = @"\$(cont\d+)\s?";
+        var matches = Regex.Matches(input, pattern).Cast<Match>().ToList();
+
+        // Sélection aléatoire d'un seul $comp pour le remplacer
+        if (matches.Count > 0)
+        {
+            var selectedMatch = matches[Random.Range(0, matches.Count)];
+
+            input = Regex.Replace(input, Regex.Escape(selectedMatch.Value), match =>
+            {
+                // Ajustement pour extraire correctement le numéro après "comp"
+                string indexStr = match.Value.Substring(5).Trim(); // Supprime "comp" et espace potentiel
+                int index;
+                if (int.TryParse(indexStr, out index) && index > 0 && index <= sentences.Count && sentences.Count > 0 && sentences[index - 1].Sentences.Count > 0)
+                {
+                    var selectedSentence = sentences[index - 1].Sentences[Random.Range(0, sentences[index - 1].Sentences.Count)];
+                    return selectedSentence + (match.Value.EndsWith(" ") ? " " : ""); // Ajoute un espace si l'original en avait un
+                }
+                else
+                {
+                    return match.Value.Trim();
+                }
+            }, RegexOptions.None);
+
+            // Suppression des autres $comp, y compris l'espace potentiel après
+            input = Regex.Replace(input, pattern, "");
+        }
+
+        return input;
+    }
+
+    private static string ReplaceComp(string input, List<Sentence> sentences)
+    {
+        string pattern = @"\$(comp\d+)\s?";
+        var matches = Regex.Matches(input, pattern).Cast<Match>().ToList();
+
+        // Sélection aléatoire d'un seul $comp pour le remplacer
+        if (matches.Count > 0)
+        {
+            var selectedMatch = matches[Random.Range(0, matches.Count)];
+
+            input = Regex.Replace(input, Regex.Escape(selectedMatch.Value), match =>
+            {
+                // Ajustement pour extraire correctement le numéro après "comp"
+                string indexStr = match.Value.Substring(5).Trim(); // Supprime "comp" et espace potentiel
+                int index;
+                if (int.TryParse(indexStr, out index) && index > 0 && index <= sentences.Count && sentences.Count > 0 && sentences[index - 1].Sentences.Count > 0)
+                {
+                    var selectedSentence = sentences[index - 1].Sentences[Random.Range(0, sentences[index - 1].Sentences.Count)];
+                    return selectedSentence + (match.Value.EndsWith(" ") ? " " : ""); // Ajoute un espace si l'original en avait un
+                }
+                else
+                {
+                    return match.Value.Trim();
+                }
+            }, RegexOptions.None);
+
+            // Suppression des autres $comp, y compris l'espace potentiel après
+            input = Regex.Replace(input, pattern, "");
+        }
+
+        return input;
     }
 
     private void RemoveConflicts(List<TraitSo> conflictTraits)

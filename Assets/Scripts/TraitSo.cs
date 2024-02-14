@@ -36,8 +36,8 @@ public enum ETag
 public class SentenceParams
 {
     public string Sentence;
-    public List<string> ComplementaryPrefixSentence;
-    public List<string> ContradictionPrefixSentence;
+    public List<Sentence> ComplementaryPrefixSentence;
+    public List<Sentence> ContradictionPrefixSentence;
     public List<SentenceVariables> SentenceVariables;
 }
 
@@ -45,4 +45,10 @@ public class SentenceParams
 public class SentenceVariables
 {
     public List<string> Variables;
+}
+
+[Serializable]
+public class Sentence
+{
+    public List<string> Sentences;
 }
