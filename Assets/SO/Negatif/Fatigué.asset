@@ -17,24 +17,24 @@ MonoBehaviour:
   _sentenceParams:
   - Sentence: "Les nuits blanches $v1 m'ont laiss\xE9 des cernes marqu\xE9s"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - "\xE0 \xE9tudier"
       - "\xE0 jouer"
   - Sentence: Le rythme $v1 de la vie me rend souvent $v2
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - soutenu
@@ -42,18 +42,21 @@ MonoBehaviour:
     - Variables:
       - "fatigu\xE9"
       - "fatigu\xE9"
-  - Sentence: "J'esp\xE8re $v1 un \xE9quilibre qui me permettra de me reposer suffisamment"
+  - Sentence: "$v2 $v1 un \xE9quilibre qui me permettra de me reposer suffisamment"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - trouver
       - "d\xE9couvrir"
+    - Variables:
+      - "J'esp\xE8re"
+      - Mon objectif est
   _tag: 1
   _portraitSprites:
   - {fileID: 11400000, guid: 2d10fa9498e5a154cab01d6b0e3e1e02, type: 2}

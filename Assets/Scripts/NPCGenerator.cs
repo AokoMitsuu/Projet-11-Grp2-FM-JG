@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class NPCGenerator : MonoBehaviour
@@ -35,6 +36,14 @@ public class NPCGenerator : MonoBehaviour
     {
         GenerateTrait();
         GenerateNPCs();
+        //Debug.Log(GenerateTraitSummury());
+        Debug.Log(_possibleTraits[0]);
+        //string sum = "";
+        //foreach(var t in _possibleTraits)
+        //{
+        //    sum += $" - {t.Name}\n";
+        //}
+        //Debug.Log(sum);
     }
 
     public void Regenerate(int seed)
@@ -101,5 +110,17 @@ public class NPCGenerator : MonoBehaviour
         }
 
         return selectedTraits;
+    }
+
+    private string GenerateTraitSummury()
+    {
+        string summary = "";
+
+        foreach(var trait in _possibleTraits)
+        {
+            summary += trait.ToString();
+        }
+
+        return summary;
     }
 }

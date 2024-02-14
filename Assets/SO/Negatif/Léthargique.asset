@@ -16,14 +16,14 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 9022a6555ff6717419e11f02e0646bec, type: 2}
   _sentenceParams:
-  - Sentence: "Il y a des $v1 o\xF9 il m'\xE9tait difficile de "
+  - Sentence: "Il y a des $v1 o\xF9 il m'\xE9tait difficile de $v2"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - jours
@@ -31,29 +31,44 @@ MonoBehaviour:
     - Variables:
       - sortir du lit
       - me lever
-  - Sentence: Parfois, je me sens engourdi, luttant pour trouver $v1
+  - Sentence: Parfois, je me sens $v2, luttant pour trouver $v1
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - la motivation
       - "l'\xE9nergie"
-  - Sentence: "J'esp\xE8re trouver des moyens de vaincre cette l\xE9thargie et de
-      retrouver $v1"
+    - Variables:
+      - engourdi
+      - lourd
+      - "anesth\xE9si\xE9"
+      - "fig\xE9"
+      - comme retenu
+      - "comme paralys\xE9"
+  - Sentence: "$v2 trouver des moyens de vaincre cette l\xE9thargie et de retrouver
+      $v1"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables:
     - Variables:
       - ma vigueur
       - "mon \xE9nergie"
+    - Variables:
+      - "J'esp\xE8re"
+      - "J'aspire \xE0"
+      - "Je suis en qu\xEAte "
+      - Je m'efforce de
+      - "Je d\xE9sire"
+      - "Je vise \xE0"
   _tag: 1
+  _portraitSprites: []

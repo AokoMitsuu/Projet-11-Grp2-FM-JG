@@ -16,32 +16,40 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: ec1a4b4766e6dcd428a5458792b4f6db, type: 2}
   _sentenceParams:
-  - Sentence: Mes amis savaient qu'ils devaient toujours m'attendre
+  - Sentence: $v1 savaient qu'ils devaient toujours m'attendre
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: Je lutte encore avec la notion de temps, souvent en retard
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
+    SentenceVariables:
+    - Variables:
+      - Mes amis
+      - Ma famille
+      - Mes proches
+  - Sentence: Je $v1 encore avec la notion de temps, souvent en retard
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
+    SentenceVariables:
+    - Variables:
+      - lutte
+      - me bats
   - Sentence: "Je vais essayer d'am\xE9liorer ma gestion du temps pour ne plus \xEAtre
       en retard"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables: []
   _tag: 1
+  _portraitSprites: []
