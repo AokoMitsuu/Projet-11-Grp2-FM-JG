@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: "M\xE9lophobe"
   m_EditorClassIdentifier: 
   _name: "M\xE9lophobe"
-  _conflictTrait: []
+  _conflictTrait:
+  - {fileID: 11400000, guid: 2f0985bc20a74c8458006992e4f95f76, type: 2}
   _sentenceParams:
   - Sentence: "Petite, le son des instruments me semblait dissonant, chaque concert
       me laissant plus irrit\xE9 que d\xE9tendu"
