@@ -16,7 +16,7 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: b3200e43439a6cc44b39384dcdfc5b88, type: 2}
   _sentenceParams:
-  - Sentence: "$V1 m'a appris \xE0 tenir $v2 impeccable"
+  - Sentence: "$v1 m'a appris \xE0 tenir $v2 impeccable"
     ComplementaryPrefixSentence:
     - et aussi
     - de plus
