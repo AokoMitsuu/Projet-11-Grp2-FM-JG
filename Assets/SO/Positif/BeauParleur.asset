@@ -24,7 +24,7 @@ MonoBehaviour:
     - Sentences: []
     - Sentences: []
     SentenceVariables: []
-  - Sentence: "$comp2 Je prends $comp1 la parole avec aisance lors des r\xE9unions"
+  - Sentence: "$comp2 Je prends $comp1 la parole $v1 lors des r\xE9unions"
     ComplementaryPrefixSentence:
     - Sentences:
       - aussi
@@ -34,17 +34,28 @@ MonoBehaviour:
     - Sentences: []
     - Sentences: []
     - Sentences: []
-    SentenceVariables: []
-  - Sentence: "Je perfectionnerai mon \xE9loquence pour devenir un orateur encore
-      plus convaincant"
+    SentenceVariables:
+    - Variables:
+      - avec aisance
+      - avec plaisir
+  - Sentence: "$cont1 $comp1 Je perfectionnerai mon \xE9loquence pour devenir un
+      orateur encore plus $v1"
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - et
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
-    SentenceVariables: []
+    - Sentences:
+      - mais
+    SentenceVariables:
+    - Variables:
+      - convaincant
+      - persuasif
+      - influent
+      - efficace
+    - Variables:
+      - "mon \xE9loquence"
+      - "mon habilet\xE9 \xE0 parler"
+      - "mes comp\xE9tences en \xE9loquence"
   _tag: 0
   _portraitSprites:
   - {fileID: 11400000, guid: 1f43ead043ea6b14aab728e7d92ef08f, type: 2}

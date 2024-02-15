@@ -29,7 +29,7 @@ MonoBehaviour:
       - ma cuisine
       - ma chambre
       - mon garage
-  - Sentence: "$cont1 $comp2 Je $comp1 prends soin de $v2, cherchant \xE0 $v1 propret\xE9"
+  - Sentence: "$cont1 $comp2 Je prends $comp1 soin de $v2, cherchant \xE0 $v1 propret\xE9"
     ComplementaryPrefixSentence:
     - Sentences:
       - maintenant

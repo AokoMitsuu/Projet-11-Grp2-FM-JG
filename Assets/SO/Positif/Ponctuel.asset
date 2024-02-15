@@ -29,9 +29,13 @@ MonoBehaviour:
     - Variables:
       - ' de ma vie'
       - ', sans exception'
-  - Sentence: "La ponctualit\xE9 est une $v1 que je $v2 scrupuleusement"
-    ComplementaryPrefixSentence: []
-    ContradictionPrefixSentence: []
+  - Sentence: "$comp1 $cont1 La ponctualit\xE9 est une $v1 que je $v2 scrupuleusement"
+    ComplementaryPrefixSentence:
+    - Sentences:
+      - de plus
+    ContradictionPrefixSentence:
+    - Sentences:
+      - mais
     SentenceVariables:
     - Variables:
       - valeur

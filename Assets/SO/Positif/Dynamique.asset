@@ -16,7 +16,7 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 204d9239f119ba04ba498673f1b37864, type: 2}
   _sentenceParams:
-  - Sentence: "J'ai toujours \xE9t\xE9 tr\xE8s dynamique et $v1"
+  - Sentence: "J'ai toujours \xE9t\xE9 $v2 et $v1"
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
     SentenceVariables:
@@ -25,21 +25,40 @@ MonoBehaviour:
       - "d'une vitalit\xE9 \xE0 toute \xE9preuve"
     - Variables:
       - "tr\xE8s dynamique"
-      - "marqu\xE9 par un dynamisme"
-  - Sentence: "Ma vie est $comp1 un tourbillon d'activit\xE9s et de projets passionnants"
+      - "d\xE9bordant d'\xE9nergie"
+  - Sentence: $v1 est $comp1 $v2 et de projets passionnants
     ComplementaryPrefixSentence:
     - Sentences:
       - maintenant
+      - aujourd'hui
     ContradictionPrefixSentence: []
-    SentenceVariables: []
-  - Sentence: "Je vais continuer \xE0 embrasser chaque jour avec \xE9nergie et enthousiasme"
+    SentenceVariables:
+    - Variables:
+      - Ma vie
+      - Mon quotidien
+    - Variables:
+      - "un tourbillon d'activit\xE9s"
+      - "une cascade d'activit\xE9s"
+      - "une effervescence d'activit\xE9s"
+    - Variables:
+      - "un tourbillon d'activit\xE9s"
+      - "une cascade d'activit\xE9s"
+      - "une effervescence d'activit\xE9s"
+  - Sentence: "$cont1 $comp1 Je vais continuer \xE0 $v2 chaque jour avec $v1"
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - et
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
-    SentenceVariables: []
+    - Sentences:
+      - cependant
+      - mais
+    SentenceVariables:
+    - Variables:
+      - "\xE9nergie et enthousiasme"
+      - "vivacit\xE9 et passion"
+    - Variables:
+      - embrasser
+      - accueillir
+      - attaquer
   _tag: 0
   _portraitSprites: []

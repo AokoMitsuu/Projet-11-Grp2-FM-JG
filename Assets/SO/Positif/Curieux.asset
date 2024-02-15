@@ -15,34 +15,50 @@ MonoBehaviour:
   _name: Curieux
   _conflictTrait: []
   _sentenceParams:
-  - Sentence: Enfant, je posais des questions sur tout et n'importe quoi
+  - Sentence: $v1
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
+    SentenceVariables:
+    - Variables:
+      - "J'ai toujours aim\xE9 poser des questions sur tout et n'importe quoi"
+      - "Interroger sur tout et rien a toujours \xE9t\xE9 une de mes inclinations"
+      - "Poser des questions sur tout et n'importe quoi a toujours \xE9t\xE9 ma marque
+        de fabrique"
+      - "Interroger sur tout et sur rien a toujours \xE9t\xE9 une habitude chez moi"
+      - "Questionner sur tout et n'importe quoi a toujours \xE9t\xE9 une caract\xE9ristique
+        de ma personnalit\xE9"
+  - Sentence: "$cont1 $comp1 Ma curiosit\xE9 me pousse \xE0 explorer de $v1 $v2"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - maintenant
+      - dorenavant
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Ma curiosit\xE9 me pousse \xE0 explorer de nouveaux sujets chaque
-      jour"
+    - Sentences:
+      - mais
+    SentenceVariables:
+    - Variables:
+      - nouveaux sujets
+      - nouveaux domaines
+      - nouveaux terrains
+    - Variables:
+      - chaque jour
+      - quotidiennement
+  - Sentence: "$comp1 $cont1 $v1 \xE0 chercher $comp2 des r\xE9ponses \xE0 tout ce
+      qui m'entoure"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - et
+    - Sentences:
+      - "\xE9galement"
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Je continuerai \xE0 chercher des r\xE9ponses aux myst\xE8res de l'univers"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
+    - Sentences:
+      - cependant
+      - mais
+    SentenceVariables:
+    - Variables:
+      - Je continuerai
+      - Je maintiendrai mon effort
+      - Je continuerai inlassablement
   _tag: 0
   _portraitSprites:
   - {fileID: 11400000, guid: 33c58400231527545b973d0e5012153e, type: 2}
