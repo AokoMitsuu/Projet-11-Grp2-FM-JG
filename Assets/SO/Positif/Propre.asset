@@ -29,14 +29,14 @@ MonoBehaviour:
       - ma cuisine
       - ma chambre
       - mon garage
-  - Sentence: "$cont1 $comp2 Je prends $comp1 soin de $v2, cherchant \xE0 $v1 propret\xE9"
+  - Sentence: "$cont1 $comp1 Je prends $comp2 soin de $v2, cherchant \xE0 $v1 propret\xE9"
     ComplementaryPrefixSentence:
+    - Sentences:
+      - maintenant,
+      - aujourd'hui,
     - Sentences:
       - maintenant
       - aujourd'hui
-    - Sentences:
-      - ', maintenant'
-      - ', aujourd''hui'
     ContradictionPrefixSentence:
     - Sentences:
       - cependant maintenant

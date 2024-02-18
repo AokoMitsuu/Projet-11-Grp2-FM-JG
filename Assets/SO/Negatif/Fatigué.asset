@@ -25,7 +25,7 @@ MonoBehaviour:
     - Variables:
       - blanches
       - "\xE0 ne pas dormir"
-  - Sentence: $comp1 $cont1 Le rythme $v1 de la vie me rend souvent $v2
+  - Sentence: $comp1 $cont1 $v3 $v1 de la vie me rend souvent $v2
     ComplementaryPrefixSentence:
     - Sentences:
       - maintenant,
@@ -39,7 +39,13 @@ MonoBehaviour:
       - "effr\xE9n\xE9"
     - Variables:
       - "fatigu\xE9"
-      - "fatigu\xE9"
+      - "\xE9puis\xE9"
+    - Variables:
+      - "la fr\xE9n\xE9sie quotidienne"
+      - le rythme
+      - la course incessante
+      - la cadence rapide
+      - "le rythme effr\xE9n\xE9"
   - Sentence: "$comp1 $cont1 $v2 $v1 un \xE9quilibre qui me permettra de me reposer
       suffisamment"
     ComplementaryPrefixSentence:

@@ -16,12 +16,24 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: edbc61e31772d0149ac5cea375aa5266, type: 2}
   _sentenceParams:
-  - Sentence: "Depuis mon plus jeune \xE2ge, les m\xE9lodies m'ont transport\xE9"
+  - Sentence: "Depuis $v2, les m\xE9lodies m'ont $v1"
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
-    SentenceVariables: []
-  - Sentence: "$comp1 $cont1 Je vis au rythme des harmonies, chaque jour \xE9tant
-      une opportunit\xE9 de d\xE9couvrir de nouveaux sons"
+    SentenceVariables:
+    - Variables:
+      - "emport\xE9"
+      - "captiv\xE9"
+      - "charm\xE9"
+      - "fascin\xE9"
+      - "enchant\xE9"
+      - "touch\xE9"
+    - Variables:
+      - que je suis tout petit
+      - "mon plus jeune \xE2ge"
+      - mon enfance
+      - que je suis tout jeune
+  - Sentence: "$comp1 $cont1 Je vis au rythme des $v1, chaque jour \xE9tant une $v3
+      de d\xE9couvrir $v2"
     ComplementaryPrefixSentence:
     - Sentences:
       - aujourd'hui
@@ -29,15 +41,46 @@ MonoBehaviour:
     ContradictionPrefixSentence:
     - Sentences:
       - mais aujourd'hui
-    SentenceVariables: []
-  - Sentence: "$comp1 $cont1 Mon amour pour la musique ne cessera de cro\xEEtre"
+    SentenceVariables:
+    - Variables:
+      - harmonies
+      - "m\xE9lodies"
+    - Variables:
+      - de nouveaux sons
+      - de nouvelles expressions musicales
+      - de nouveaux accords
+      - "de nouvelles m\xE9lodies"
+      - de nouveaux arrangements musicaux
+      - de nouvelles composition
+      - de nouvelles musiques
+    - Variables:
+      - "opportunit\xE9"
+      - occasion
+      - "possibilit\xE9"
+  - Sentence: $comp1 $cont1 $v1 $v2 la musique ne cessera $v3
     ComplementaryPrefixSentence:
     - Sentences:
       - et
     ContradictionPrefixSentence:
     - Sentences:
       - mais
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - mon affection
+      - mon attachement
+      - mon amour
+      - mon engouement
+      - mon admiration
+    - Variables:
+      - pour
+      - "\xE0"
+    - Variables:
+      - s'intensifier
+      - "cro\xEEtre"
+      - se renforcer
+      - de s'approfondir
+      - "de s'\xE9panouir"
+      - "se d\xE9velopper davantage"
   _tag: 3
   _portraitSprites:
   - {fileID: 11400000, guid: 7297ec1c1b94bda4e8338b895864008c, type: 2}

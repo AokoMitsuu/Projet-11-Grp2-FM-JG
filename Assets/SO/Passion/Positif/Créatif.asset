@@ -26,8 +26,7 @@ MonoBehaviour:
       - de la joie
       - du plaisir
       - de l'amusement
-  - Sentence: "$cont1 $comp1 je canalise $comp2 ma cr\xE9ativit\xE9 \xE0 travers
-      $v1 $v2"
+  - Sentence: "$cont1 $comp1 je canalise $comp2 $v3 \xE0 travers $v1 $v2"
     ComplementaryPrefixSentence:
     - Sentences:
       - 'actuellement, '
@@ -47,7 +46,10 @@ MonoBehaviour:
     - Variables:
       - moyens d'expression
       - domaines
-  - Sentence: "$cont1 $comp2 Je vais $comp1 continuer \xE0 nourrir ma cr\xE9ativit\xE9"
+    - Variables:
+      - "ma cr\xE9ativit\xE9"
+      - "mon esprit cr\xE9atif"
+  - Sentence: "$cont1 $comp2 Je vais $comp1 continuer \xE0 $v1 $v2"
     ComplementaryPrefixSentence:
     - Sentences:
       - "\xE9galement"
@@ -56,7 +58,16 @@ MonoBehaviour:
     ContradictionPrefixSentence:
     - Sentences:
       - mais
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - nourrir
+      - cultiver
+      - alimenter
+    - Variables:
+      - "ma cr\xE9ativit\xE9"
+      - "ma source de cr\xE9ativit\xE9"
+      - "mon potentiel cr\xE9atif"
+      - "ma flamme cr\xE9ative"
   _tag: 3
   _portraitSprites:
   - {fileID: 11400000, guid: d5d946955e5a7c94caa03d4550bc1f6d, type: 2}

@@ -27,8 +27,8 @@ MonoBehaviour:
     - Variables:
       - bureau
       - espace de travail
-  - Sentence: "$comp1 $cont1 Mes cheveux en $v1 refl\xE8tent souvent mon \xE9tat
-      d'esprit $v2"
+  - Sentence: "$comp1 $cont1 Mes cheveux $v1 refl\xE8tent souvent mon \xE9tat d'esprit
+      $v2"
     ComplementaryPrefixSentence:
     - Sentences:
       - maintenant,
@@ -40,8 +40,8 @@ MonoBehaviour:
     SentenceVariables:
     - Variables:
       - "\xE9bouriff\xE9s"
-      - "p\xE9tard"
-      - bataille
+      - "en p\xE9tard"
+      - en bataille
     - Variables:
       - "d\xE9sordonn\xE9"
       - chaotique

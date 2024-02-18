@@ -16,12 +16,26 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 7dd1ee8e41732c54289970bae3c868d1, type: 2}
   _sentenceParams:
-  - Sentence: "Les histoires me captivaient d\xE9j\xE0 quand je n'\xE9tais qu'un
-      enfant"
+  - Sentence: "$v1 $v2 d\xE9j\xE0 $v3 $v4"
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
-    SentenceVariables: []
-  - Sentence: $cont1 Je trouve $comp1 refuge dans $v1 pages des livres
+    SentenceVariables:
+    - Variables:
+      - Les histoires
+      - "Les r\xE9cis"
+      - Les comtes
+    - Variables:
+      - me captivaient
+      - m'enchantaient
+      - m'attiraient
+    - Variables:
+      - lorsque
+      - quand
+    - Variables:
+      - "j'\xE9tais jeune"
+      - "j'\xE9tais enfant"
+      - "je n'\xE9tais qu'un enfant"
+  - Sentence: $cont1 Je trouve $comp1 $v2 dans $v1 pages $v3
     ComplementaryPrefixSentence:
     - Sentences:
       - maintenant
@@ -32,8 +46,14 @@ MonoBehaviour:
     - Variables:
       - les
       - chaque
-  - Sentence: "$cont1 Je m'engage $comp1 \xE0 poursuivre ma qu\xEAte d'\xE9vasion
-      \xE0 travers la litt\xE9rature"
+    - Variables:
+      - refuge
+      - abris
+      - asile
+    - Variables:
+      - des livres
+      - des romans
+  - Sentence: "$cont1 Je m'engage $comp1 \xE0 $v1 $v3 d'\xE9vasion \xE0 travers $v2"
     ComplementaryPrefixSentence:
     - Sentences:
       - "\xE9galement"
@@ -41,7 +61,18 @@ MonoBehaviour:
     ContradictionPrefixSentence:
     - Sentences:
       - mais
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - poursuivre
+      - continuer
+    - Variables:
+      - "la litt\xE9rature"
+      - les livres
+      - "les oeuvres litt\xE9raires"
+      - la lecture
+    - Variables:
+      - "ma qu\xEAte"
+      - ma recherche
   _tag: 3
   _portraitSprites:
   - {fileID: 11400000, guid: 0a7fa6ff7457b1544b2d7d10f02c1d5f, type: 2}

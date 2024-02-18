@@ -15,10 +15,24 @@ MonoBehaviour:
   _name: Fan de jeux
   _conflictTrait: []
   _sentenceParams:
-  - Sentence: "Quand j'\xE9tais enfant, j'ai pass\xE9 des heures sur des jeux vid\xE9os"
+  - Sentence: "$v1, j'ai $v2 $v3 sur des jeux vid\xE9os"
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - "Quand j'\xE9tais enfant"
+      - "Quand j'\xE9tais jeune"
+      - Jeune
+      - Enfant
+    - Variables:
+      - "pass\xE9"
+      - "consacr\xE9"
+      - investi
+    - Variables:
+      - des heures
+      - une grande partie de mon temps
+      - de nombreuses heures
+      - "un temps consid\xE9rable"
   - Sentence: "$comp1 $cont1 je trouve $comp2 du r\xE9confort et de l'excitation
       \xE0 $v2 de nouveaux $v1 virtuels"
     ComplementaryPrefixSentence:
@@ -37,8 +51,8 @@ MonoBehaviour:
     - Variables:
       - "d\xE9couvrir"
       - explorer
-  - Sentence: "$cont1 Je continuerai $comp1 \xE0 suivre l'\xE9volution des jeux vid\xE9o,
-      toujours \xE0 la recherche de la prochaine aventure"
+  - Sentence: "$cont1 Je continuerai $comp1 \xE0 $v1 l'\xE9volution des jeux vid\xE9o,
+      toujours $v2 de $v3"
     ComplementaryPrefixSentence:
     - Sentences:
       - "\xE9galement"
@@ -46,7 +60,20 @@ MonoBehaviour:
     ContradictionPrefixSentence:
     - Sentences:
       - mais
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - suivre
+      - "m'interesser \xE0"
+    - Variables:
+      - "\xE0 la recherche"
+      - "en qu\xEAte"
+    - Variables:
+      - la prochaine aventure
+      - nouvelles aventures
+      - "la prochaine exp\xE9rience captivante"
+      - "la prochaine aventure \xE0 exp\xE9rimenter"
+      - "la prochaine exp\xE9rience palpitante"
+      - la prochaine grande aventure
   _tag: 3
   _portraitSprites:
   - {fileID: 11400000, guid: e8c0331ab6f00b94ea87c18224e3ba8a, type: 2}
