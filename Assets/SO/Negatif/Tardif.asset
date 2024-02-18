@@ -24,8 +24,8 @@ MonoBehaviour:
       - Mes amis
       - Ma famille
       - Mes proches
-  - Sentence: $comp1 $cont1 Je $v1 encore avec la notion de temps, car je suis souvent
-      en retard
+  - Sentence: $comp1 $cont1 Je $v1 avec la notion de temps, car je suis souvent en
+      retard
     ComplementaryPrefixSentence:
     - Sentences:
       - aujourd'hui,
