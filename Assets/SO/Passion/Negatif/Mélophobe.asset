@@ -16,28 +16,60 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 2f0985bc20a74c8458006992e4f95f76, type: 2}
   _sentenceParams:
-  - Sentence: "Petit, le son des instruments me semblait dissonant, chaque concert
-      me laissant plus irrit\xE9 que d\xE9tendu"
+  - Sentence: "$v1, le son des instruments me $v2 $v3, chaque concert me laissant
+      plus $v4 que d\xE9tendu"
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
-    SentenceVariables: []
-  - Sentence: "$comp1 $cont1 Je tends \xE0 \xE9viter les environnements musicaux
-      bruyants, pr\xE9f\xE9rant le calme \xE0 la m\xE9lodie"
+    SentenceVariables:
+    - Variables:
+      - Petit
+      - Jeune
+      - Enfant
+    - Variables:
+      - semblait
+      - paraissait
+    - Variables:
+      - discordants
+      - dissonant
+    - Variables:
+      - "contrari\xE9"
+      - "agac\xE9"
+      - "irrit\xE9"
+  - Sentence: "$comp1 $cont1 $v1 \xE0 $v2 les environnements musicaux bruyants, pr\xE9f\xE9rant
+      $v3"
     ComplementaryPrefixSentence:
     - Sentences:
       - maintenant
     ContradictionPrefixSentence:
     - Sentences:
       - mais maintenant
-    SentenceVariables: []
-  - Sentence: "$comp1 $cont1 Je ne serais jamais interess\xE9 par la musique"
+    SentenceVariables:
+    - Variables:
+      - je tends
+      - j'ai tendance
+    - Variables:
+      - "\xE9viter"
+      - esquiver
+    - Variables:
+      - "le calme \xE0 la m\xE9lodie"
+      - "le silence \xE0 la symphonie"
+      - "la tranquillit\xE9 \xE0 la cacophonie"
+      - "le calme \xE0 la sonorit\xE9"
+      - "la paix au tumulte m\xE9lodique"
+  - Sentence: $comp1 $cont1 $v1
     ComplementaryPrefixSentence:
     - Sentences:
       - et
     ContradictionPrefixSentence:
     - Sentences:
       - mais
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - "la musique ne m'int\xE9ressera jamais"
+      - "je ne trouverai jamais d'int\xE9r\xEAt pour la musique"
+      - "la musique ne suscitera jamais mon int\xE9r\xEAt"
+      - "je ne d\xE9velopperai jamais d'int\xE9r\xEAt pour la musique"
+      - la musique ne me passionnera jamais
   _tag: 4
   _portraitSprites:
   - {fileID: 11400000, guid: 93c00b5f3a282e547ab50bd6d3420da3, type: 2}
