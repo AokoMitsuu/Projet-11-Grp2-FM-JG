@@ -17,33 +17,30 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bec19626fbf30fa4a98fc662e36701aa, type: 2}
   - {fileID: 11400000, guid: 6fbef96dc8bad03429c0212bc157798a, type: 2}
   _sentenceParams:
-  - Sentence: "Hier, j'ai \xE9clat\xE9 de rire en repensant \xE0 une vieille blague"
+  - Sentence: "Des p\xE9riodes de tristesse ont marqu\xE9 mon pass\xE9"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    ContradictionPrefixSentence: []
     SentenceVariables: []
-  - Sentence: "Aujourd'hui, je me sens l\xE9ger et plein de gratitude pour les petites
-      choses"
+  - Sentence: "$comp1 $cont1 La tristesse domine mes \xE9motions"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - 'maintenant, '
+      - 'aujourd''hui, '
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - 'mais maintenant, '
     SentenceVariables: []
-  - Sentence: Demain, je vais partager un moment de joie avec mes amis
+  - Sentence: "$cont1 J'esp\xE8re $comp1 voir dans le futur des moments de joie contrairement
+      \xE0 maintenant"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - aussi
+      - "\xE9galement"
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais
     SentenceVariables: []
   _tag: 2
   _portraitSprites:

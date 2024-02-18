@@ -17,29 +17,26 @@ MonoBehaviour:
   _sentenceParams:
   - Sentence: "Pour mon premier entretien d'embauche, j'avais nou\xE9 ma cravate
       avec soin"
-    ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables: []
-  - Sentence: "$comp1 Chaque matin, je choisis une cravate qui refl\xE8te mon professionnalisme"
+  - Sentence: "$comp1 $cont1 Chaque matin, je choisis une cravate qui refl\xE8te
+      mon professionnalisme"
     ComplementaryPrefixSentence:
     - Sentences:
-      - 'Maintenant '
+      - maintenant,
     ContradictionPrefixSentence:
-    - Sentences: []
+    - Sentences:
+      - mais maintenant,
     SentenceVariables: []
-  - Sentence: "Je continuerai \xE0 porter une cravate pour tous mes rendez-vous importants"
+  - Sentence: "$cont1 $comp1 Je continuerai \xE0 porter une cravate pour tous mes
+      rendez-vous importants"
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - et
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - mais
     SentenceVariables: []
   _tag: 2
   _portraitSprites:

@@ -28,14 +28,14 @@ MonoBehaviour:
       - aventures
       - parents
       - "coll\xE8gues"
-  - Sentence: "$v2 , je m'endors d\xE8s $v1"
+  - Sentence: "$cont1 $comp1 $v2, je m'endors d\xE8s $v1"
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - aujourd'hui,
+      - maintenant,
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - mais maintenant,
     SentenceVariables:
     - Variables:
       - "que ma t\xEAte touche l'oreiller"
@@ -43,14 +43,14 @@ MonoBehaviour:
     - Variables:
       - Le soir
       - "\xC0 peine rentr\xE9 le soir"
-  - Sentence: Je $v1 d'une nuit $V2 de sommeil $v3
+  - Sentence: $cont1 Je $v1 $comp1 d'une nuit $V2 de sommeil $v3
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - aussi
+      - "\xE9galement"
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - mais
     SentenceVariables:
     - Variables:
       - "r\xEAve"

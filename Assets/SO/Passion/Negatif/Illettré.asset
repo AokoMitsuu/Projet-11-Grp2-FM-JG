@@ -18,33 +18,26 @@ MonoBehaviour:
   _sentenceParams:
   - Sentence: "Lire m'a toujours sembl\xE9 fastidieux, les livres \xE0 l'\xE9cole
       ne captivant jamais vraiment mon attention"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables: []
-  - Sentence: "Je pr\xE9f\xE8re les m\xE9dias visuels et interactifs aux pages imprim\xE9es,
-      trouvant peu de plaisir dans la lecture traditionnelle"
+  - Sentence: "$comp1 $cont1 Je pr\xE9f\xE8re les m\xE9dias visuels et interactifs
+      aux pages imprim\xE9es"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - maintenant,
+      - aujourd'hui,
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais maintenant,
     SentenceVariables: []
-  - Sentence: "Bien que r\xE9ticent, je suis ouvert \xE0 l'id\xE9e que certains livres
-      pourraient, un jour, \xE9veiller mon int\xE9r\xEAt et enrichir ma perspective"
+  - Sentence: "$cont1 $comp1 Je ne surement serais jamais interess\xE9 par la lecture"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - et
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais
     SentenceVariables: []
   _tag: 4
   _portraitSprites:

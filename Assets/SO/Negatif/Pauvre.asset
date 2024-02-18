@@ -36,13 +36,8 @@ MonoBehaviour:
       - J'ai connu des jours
       - "Il fut une p\xE9riode"
   - Sentence: "Bien que mes moyens soient $v2, je trouve $v1 dans la simplicit\xE9"
-    ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables:
     - Variables:
       - de la joie
@@ -51,14 +46,9 @@ MonoBehaviour:
       - "limit\xE9s"
       - modestes
       - "r\xE9duits"
-  - Sentence: "Je $v2 $v1 $v5 $v4 ma $v3 financi\xE8re"
-    ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+  - Sentence: "Je $v2 $v1 $v5$v4 ma $v3 financi\xE8re"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables:
     - Variables:
       - dur
@@ -70,12 +60,12 @@ MonoBehaviour:
       - situation
       - condition
     - Variables:
-      - "d'am\xE9liorer"
-      - "d'avoir une am\xE9lioration dans"
+      - "am\xE9liorer"
+      - "avoir une am\xE9lioration dans"
     - Variables:
-      - "esp\xE9rant"
-      - "dans l'\xE9spoir"
-      - aspirant
+      - "esp\xE9rant "
+      - "dans l'\xE9spoir d'"
+      - "aspirant \xE0 "
   _tag: 1
   _portraitSprites:
   - {fileID: 11400000, guid: 24939ff46feb0fe47807ae1d1903f832, type: 2}

@@ -69,11 +69,10 @@ MonoBehaviour:
       - consacrer du temps
     - Variables:
       - Je vais
-      - Je m'engage
+      - "Je m'engage \xE0"
       - Je m'efforcerai de
     - Variables:
       - de vie plus propre
-      - Je m'engage
   _tag: 1
   _portraitSprites:
   - {fileID: 11400000, guid: c53ebbc16ea3f694bbb6c73ae78544bb, type: 2}

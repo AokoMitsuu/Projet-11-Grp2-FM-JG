@@ -27,18 +27,16 @@ MonoBehaviour:
     - Variables:
       - bureau
       - espace de travail
-  - Sentence: "$comp Mes cheveux en $v1 refl\xE8tent souvent mon \xE9tat d'esprit
-      $v2"
+  - Sentence: "$comp1 $cont1 Mes cheveux en $v1 refl\xE8tent souvent mon \xE9tat
+      d'esprit $v2"
     ComplementaryPrefixSentence:
     - Sentences:
-      - Maintenant
-      - A present
-      - Aujourd'hui
+      - maintenant,
+      - a present,
+      - aujourd'hui,
     ContradictionPrefixSentence:
     - Sentences:
-      - test 3
-    - Sentences:
-      - test 3
+      - mais maintenant,
     SentenceVariables:
     - Variables:
       - "\xE9bouriff\xE9s"
@@ -48,24 +46,21 @@ MonoBehaviour:
       - "d\xE9sordonn\xE9"
       - chaotique
       - "embrouill\xE9"
-  - Sentence: "Peut-\xEAtre $comp1 qu'un jour, je trouverai $v2 dans $v1"
+  - Sentence: "$comp1 $cont1 Peut-\xEAtre $comp1 qu'un jour, je trouverai $v2 dans
+      $v1"
     ComplementaryPrefixSentence:
     - Sentences:
-      - test 1
-    - Sentences:
-      - test 2
+      - et
     ContradictionPrefixSentence:
     - Sentences:
-      - test 1
-    - Sentences:
-      - test 2
+      - mais
     SentenceVariables:
     - Variables:
       - "mon chaos cr\xE9atif"
-      - fort interieur
+      - mon fort interieur
     - Variables:
-      - l'ordre
-      - l'harmonie
+      - de l'ordre
+      - de l'harmonie
   _tag: 1
   _portraitSprites:
   - {fileID: 11400000, guid: fcc8aa217bde9e04bab423c0a464d138, type: 2}

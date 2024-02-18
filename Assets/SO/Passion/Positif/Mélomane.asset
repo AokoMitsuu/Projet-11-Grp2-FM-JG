@@ -16,36 +16,27 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: edbc61e31772d0149ac5cea375aa5266, type: 2}
   _sentenceParams:
-  - Sentence: "Depuis mon plus jeune \xE2ge, les m\xE9lodies m'ont transport\xE9,
-      chaque note de musique \xE9veillant une \xE9motion profonde en moi"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+  - Sentence: "Depuis mon plus jeune \xE2ge, les m\xE9lodies m'ont transport\xE9"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables: []
-  - Sentence: "Je vis au rythme des harmonies, chaque jour \xE9tant une opportunit\xE9
-      de d\xE9couvrir de nouveaux sons et de revisiter des classiques"
+  - Sentence: "$comp1 $cont1 Je vis au rythme des harmonies, chaque jour \xE9tant
+      une opportunit\xE9 de d\xE9couvrir de nouveaux sons"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - aujourd'hui
+      - maintenant
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais aujourd'hui
     SentenceVariables: []
-  - Sentence: "Mon amour pour la musique ne cessera de cro\xEEtre, m'emmenant dans
-      des voyages sonores inexplor\xE9s et enrichissant mon \xE2me de rythmes sans
-      fin"
+  - Sentence: "$comp1 $cont1 Mon amour pour la musique ne cessera de cro\xEEtre"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - et
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais
     SentenceVariables: []
   _tag: 3
   _portraitSprites:

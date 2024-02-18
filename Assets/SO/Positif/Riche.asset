@@ -35,7 +35,8 @@ MonoBehaviour:
       - aujourd'hui
       - maintenant
     - Sentences:
-      - ','
+      - aujourd'hui,
+      - maintenant,
     ContradictionPrefixSentence:
     - Sentences:
       - cependant

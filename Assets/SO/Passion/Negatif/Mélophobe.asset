@@ -16,35 +16,27 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 2f0985bc20a74c8458006992e4f95f76, type: 2}
   _sentenceParams:
-  - Sentence: "Petite, le son des instruments me semblait dissonant, chaque concert
+  - Sentence: "Petit, le son des instruments me semblait dissonant, chaque concert
       me laissant plus irrit\xE9 que d\xE9tendu"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables: []
-  - Sentence: "Je tends \xE0 \xE9viter les environnements musicaux bruyants, pr\xE9f\xE9rant
-      le calme et la tranquillit\xE9 \xE0 la m\xE9lodie"
+  - Sentence: "$comp1 $cont1 Je tends \xE0 \xE9viter les environnements musicaux
+      bruyants, pr\xE9f\xE9rant le calme \xE0 la m\xE9lodie"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - maintenant
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais maintenant
     SentenceVariables: []
-  - Sentence: "Je vais peut-\xEAtre essayer d'ouvrir mon esprit \xE0 diff\xE9rents
-      genres musicaux, dans l'espoir de surmonter ma r\xE9ticence envers la musique"
+  - Sentence: "$comp1 $cont1 Je ne serais jamais interess\xE9 par la musique"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - et
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais
     SentenceVariables: []
   _tag: 4
   _portraitSprites:

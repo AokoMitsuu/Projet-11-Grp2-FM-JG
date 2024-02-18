@@ -16,25 +16,20 @@ MonoBehaviour:
   _conflictTrait: []
   _sentenceParams:
   - Sentence: "Les nuits blanches $v1 m'ont laiss\xE9 des cernes marqu\xE9s"
-    ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables:
     - Variables:
       - "\xE0 \xE9tudier"
       - "\xE0 jouer"
-  - Sentence: Le rythme $v1 de la vie me rend souvent $v2
+  - Sentence: $comp1 $cont1 Le rythme $v1 de la vie me rend souvent $v2
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - maintenant,
+      - aujourd'hui,
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - mais aujourd'hui
     SentenceVariables:
     - Variables:
       - soutenu
@@ -42,14 +37,15 @@ MonoBehaviour:
     - Variables:
       - "fatigu\xE9"
       - "fatigu\xE9"
-  - Sentence: "$v2 $v1 un \xE9quilibre qui me permettra de me reposer suffisamment"
+  - Sentence: "$comp1 $cont1 $v2 $v1 un \xE9quilibre qui me permettra de me reposer
+      suffisamment"
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - et
+      - de plus,
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - mais
     SentenceVariables:
     - Variables:
       - trouver

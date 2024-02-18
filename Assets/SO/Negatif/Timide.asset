@@ -17,32 +17,32 @@ MonoBehaviour:
   _sentenceParams:
   - Sentence: Autrefois, je rougissais et me cachais lorsqu'on me posait des questions
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables: []
   - Sentence: "Je suis encore r\xE9serv\xE9 dans les grands groupes, pr\xE9f\xE9rant
       observer"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences: []
+    - Sentences: []
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences: []
+    - Sentences: []
+    - Sentences: []
     SentenceVariables: []
-  - Sentence: "Peut-\xEAtre qu'avec le temps, je gagnerai en confiance pour m'exprimer
-      plus librement"
+  - Sentence: "$cont1 $comp1 Peut-\xEAtre qu'avec le temps, je gagnerai en confiance
+      pour m'exprimer plus librement"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - et
+      - 
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais
     SentenceVariables: []
   _tag: 1
   _portraitSprites:

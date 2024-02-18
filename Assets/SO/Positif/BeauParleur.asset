@@ -16,13 +16,8 @@ MonoBehaviour:
   _conflictTrait: []
   _sentenceParams:
   - Sentence: "Autrefois, je s\xE9duisais l'auditoire avec mes discours enflamm\xE9s"
-    ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables: []
   - Sentence: "$comp2 Je prends $comp1 la parole $v1 lors des r\xE9unions"
     ComplementaryPrefixSentence:

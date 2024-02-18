@@ -17,34 +17,30 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7dd1ee8e41732c54289970bae3c868d1, type: 2}
   _sentenceParams:
   - Sentence: "Les histoires me captivaient d\xE9j\xE0 quand je n'\xE9tais qu'un
-      enfant, chaque livre ouvert \xE9tant une porte vers un autre univers"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+      enfant"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables: []
-  - Sentence: "Je trouve refuge dans les pages des livres, me perdant dans les r\xE9cits
-      d'aventures, de myst\xE8re et de romance"
+  - Sentence: $cont1 Je trouve $comp1 refuge dans $v1 pages des livres
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - maintenant
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Je m'engage \xE0 poursuivre ma qu\xEAte de connaissances et d'\xE9vasion
+    - Sentences:
+      - mais aujourd'hui,
+    SentenceVariables:
+    - Variables:
+      - les
+      - chaque
+  - Sentence: "$cont1 Je m'engage $comp1 \xE0 poursuivre ma qu\xEAte d'\xE9vasion
       \xE0 travers la litt\xE9rature"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - "\xE9galement"
+      - aussi
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais
     SentenceVariables: []
   _tag: 3
   _portraitSprites:

@@ -60,7 +60,7 @@ public class NPC
 
     private void GenerateSummary()
     {
-        _summary = $"Je suis {_name}.\n";
+        //_summary = $"Je suis {_name}.\n";
         int index = 0;
 
         List<TraitSo> traits = _traits.Where(trait => trait.Tag == ETag.Other || trait.Tag == ETag.Positif || trait.Tag == ETag.PassionPositif).ToList();
@@ -68,7 +68,7 @@ public class NPC
         List<TraitSo> negativeTraits = _traits.Where(trait => trait.Tag == ETag.Negatif || trait.Tag == ETag.PassionNegatif).ToList();
         negativeTraits.Shuffle();
 
-        _summary += CreateSubSummary(traits, ref index, false);
+        _summary = CreateSubSummary(traits, ref index, false);
         _summary += CreateSubSummary(negativeTraits, ref index, traits.Count > 0);
     }
 
@@ -105,7 +105,7 @@ public class NPC
             }
             else
             {
-                subSumary += " ";
+                subSumary += ", ";
             }
 
             subSumary = ReplaceVariables(subSumary, sentenceParams.SentenceVariables);

@@ -15,36 +15,47 @@ MonoBehaviour:
   _name: "Cr\xE9atif"
   _conflictTrait: []
   _sentenceParams:
-  - Sentence: "Enfant, je trouvais de la joie \xE0 cr\xE9er, que ce soit en dessinant
-      sur les murs ou en construisant des ch\xE2teaux de sable"
+  - Sentence: "Enfant, je trouvais $v2 \xE0 cr\xE9er en dessinant $v1"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
+    SentenceVariables:
+    - Variables:
+      - sur les murs
+      - dans mon cahier
+    - Variables:
+      - de la joie
+      - du plaisir
+      - de l'amusement
+  - Sentence: "$cont1 $comp1 je canalise $comp2 ma cr\xE9ativit\xE9 \xE0 travers
+      $v1 $v2"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - 'actuellement, '
+      - 'maintenant, '
+      - aujourd'hui,
+      - "dor\xE9navant,"
+    - Sentences:
+      - maintenant
+      - aujourd'hui
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Actuellement, je canalise ma cr\xE9ativit\xE9 \xE0 travers divers
-      moyens d'expression, trouvant satisfaction dans la cr\xE9ation de quelque chose
-      d'unique"
+    - Sentences:
+      - mais maintenant
+    SentenceVariables:
+    - Variables:
+      - multiple
+      - divers
+    - Variables:
+      - moyens d'expression
+      - domaines
+  - Sentence: "$cont1 $comp2 Je vais $comp1 continuer \xE0 nourrir ma cr\xE9ativit\xE9"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - "\xE9galement"
+    - Sentences:
+      - et
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Je vais continuer \xE0 nourrir ma cr\xE9ativit\xE9, explorant de nouvelles
-      avenues pour exprimer mes id\xE9es et partager ma vision du monde"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais
     SentenceVariables: []
   _tag: 3
   _portraitSprites:

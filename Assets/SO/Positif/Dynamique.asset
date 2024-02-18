@@ -26,16 +26,18 @@ MonoBehaviour:
     - Variables:
       - "tr\xE8s dynamique"
       - "d\xE9bordant d'\xE9nergie"
-  - Sentence: $v1 est $comp1 $v2 et de projets passionnants
+  - Sentence: $cont1 $v1 est $comp1 $v2 et de projets passionnants
     ComplementaryPrefixSentence:
     - Sentences:
       - maintenant
       - aujourd'hui
-    ContradictionPrefixSentence: []
+    ContradictionPrefixSentence:
+    - Sentences:
+      - mais maintenant,
     SentenceVariables:
     - Variables:
-      - Ma vie
-      - Mon quotidien
+      - ma vie
+      - mon quotidien
     - Variables:
       - "un tourbillon d'activit\xE9s"
       - "une cascade d'activit\xE9s"

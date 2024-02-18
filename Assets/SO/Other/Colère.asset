@@ -18,32 +18,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e0195548120c81a4c960dae559a595b5, type: 2}
   _sentenceParams:
   - Sentence: "Hier, j'ai perdu patience face \xE0 l'injustice"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables: []
-  - Sentence: "En ce moment, je bouillonne int\xE9rieurement contre les in\xE9galit\xE9s"
+  - Sentence: "$comp1 $cont1 je bouillonne int\xE9rieurement contre les in\xE9galit\xE9s"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - maintenant,
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais maintenant,
     SentenceVariables: []
-  - Sentence: "Je vais probablement devoir apprendre \xE0 canaliser ma col\xE8re
-      face aux d\xE9fis \xE0 venir"
+  - Sentence: "$comp1 $cont1 Je vais probablement devoir apprendre \xE0 canaliser
+      ma col\xE8re face aux d\xE9fis \xE0 venir"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - et
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais
     SentenceVariables: []
   _tag: 2
   _portraitSprites:

@@ -15,35 +15,37 @@ MonoBehaviour:
   _name: Fan de jeux
   _conflictTrait: []
   _sentenceParams:
-  - Sentence: "Quand j'\xE9tais enfant, j'ai pass\xE9 des heures \xE0 ma\xEEtriser
-      chaque jeu vid\xE9o qui me tombait sous la main"
-    ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
-    ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+  - Sentence: "Quand j'\xE9tais enfant, j'ai pass\xE9 des heures sur des jeux vid\xE9os"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables: []
-  - Sentence: "Aujourd'hui, je trouve du r\xE9confort et de l'excitation \xE0 explorer
-      de nouveaux mondes virtuels, ma manette de jeu en main"
+  - Sentence: "$comp1 $cont1 je trouve $comp2 du r\xE9confort et de l'excitation
+      \xE0 $v2 de nouveaux $v1 virtuels"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - aujourd'hui,
+    - Sentences:
+      - aujourd'hui
+      - maintenant
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
-    SentenceVariables: []
-  - Sentence: "Je continuerai \xE0 suivre l'\xE9volution des jeux vid\xE9o, toujours
-      \xE0 la recherche de la prochaine aventure qui captivera mon esprit"
+    - Sentences:
+      - mais maintenant,
+    SentenceVariables:
+    - Variables:
+      - mondes
+      - univers
+    - Variables:
+      - "d\xE9couvrir"
+      - explorer
+  - Sentence: "$cont1 Je continuerai $comp1 \xE0 suivre l'\xE9volution des jeux vid\xE9o,
+      toujours \xE0 la recherche de la prochaine aventure"
     ComplementaryPrefixSentence:
-    - et aussi
-    - de plus
+    - Sentences:
+      - "\xE9galement"
+      - aussi
     ContradictionPrefixSentence:
-    - Cependant
-    - Malheuresement
-    - "Malgr\xE9s toutes mes qualit\xE9s"
+    - Sentences:
+      - mais
     SentenceVariables: []
   _tag: 3
   _portraitSprites:
