@@ -15,7 +15,7 @@ MonoBehaviour:
   _name: Timide
   _conflictTrait: []
   _sentenceParams:
-  - Sentence: Autrefois, je rougissais et me cachais lorsqu'on me posait des questions
+  - Sentence: Autrefois, je rougissais et me cachais lorsqu'on $v1
     ComplementaryPrefixSentence:
     - Sentences: []
     - Sentences: []
@@ -23,19 +23,32 @@ MonoBehaviour:
     - Sentences: []
     - Sentences: []
     - Sentences: []
-    SentenceVariables: []
-  - Sentence: "Je suis encore r\xE9serv\xE9 dans les grands groupes, pr\xE9f\xE9rant
-      observer"
+    SentenceVariables:
+    - Variables:
+      - me posait des questions
+      - me demandait
+      - me parlait
+  - Sentence: $comp1 $cont1 Je suis $v1 $v2 dans les grands groupes, $v3 observer
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - aujourd'hui,
+      - maintenant,
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
-    SentenceVariables: []
-  - Sentence: "$cont1 $comp1 Peut-\xEAtre qu'avec le temps, je gagnerai en confiance
-      pour m'exprimer plus librement"
+    - Sentences:
+      - mais maintenant,
+    SentenceVariables:
+    - Variables:
+      - toujours
+      - encore
+    - Variables:
+      - "r\xE9serv\xE9"
+      - discret
+    - Variables:
+      - "pr\xE9f\xE9rant"
+      - "privil\xE9giant"
+      - favorisant
+  - Sentence: "$cont1 $comp1 Peut-\xEAtre qu'avec le temps, je gagnerai en $v1 pour
+      m'exprimer $v2"
     ComplementaryPrefixSentence:
     - Sentences:
       - et
@@ -43,7 +56,15 @@ MonoBehaviour:
     ContradictionPrefixSentence:
     - Sentences:
       - mais
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - confiance
+      - assurance
+    - Variables:
+      - plus librement
+      - "plus ais\xE9ment"
+      - "de mani\xE8re plus libre"
+      - plus ouvertement
   _tag: 1
   _portraitSprites:
   - {fileID: 11400000, guid: 4600390b3fc82924782f76329d519f05, type: 2}

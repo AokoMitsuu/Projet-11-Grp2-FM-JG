@@ -17,13 +17,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 52e2bd47709ae7440a9d3c6fe2eb6608, type: 2}
   _sentenceParams:
   - Sentence: $v2 de camping, $v3 couvert de boue et attirais les $v1
-    ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables:
     - Variables:
       - mouches
@@ -34,43 +29,41 @@ MonoBehaviour:
     - Variables:
       - "j'\xE9tais"
       - je me retrouvais
-  - Sentence: "$v2, je laisse tra\xEEner mes affaires, cr\xE9ant un $v1 $v3"
+  - Sentence: "$cont1 $comp1 je laisse tra\xEEner mes affaires, cr\xE9ant un $v1
+      $v2"
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - maintenant,
+      - aujourd'hui,
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - mais maintenant,
     SentenceVariables:
     - Variables:
       - "d\xE9sordre"
       - bordel
     - Variables:
-      - De temps en temps
-      - Parfois
-    - Variables:
       - peu engageant
       - "d\xE9sagr\xE9able"
       - "d\xE9sagr\xE9able"
       - "peu s\xE9duisant"
-  - Sentence: $v2 $v1 pour maintenir mon espace $v3
+  - Sentence: $comp1 $cont1 $v2 $v1 pour maintenir mon espace $v3
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - de plus
+      - et
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - mais
     SentenceVariables:
     - Variables:
       - faire un effort
       - tout donner
       - consacrer du temps
     - Variables:
-      - Je vais
-      - "Je m'engage \xE0"
-      - Je m'efforcerai de
+      - je vais
+      - "je m'engage \xE0"
+      - je m'efforcerai de
     - Variables:
       - de vie plus propre
   _tag: 1

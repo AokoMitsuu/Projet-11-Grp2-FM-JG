@@ -15,13 +15,16 @@ MonoBehaviour:
   _name: "Fatigu\xE9"
   _conflictTrait: []
   _sentenceParams:
-  - Sentence: "Les nuits blanches $v1 m'ont laiss\xE9 des cernes marqu\xE9s"
+  - Sentence: "Les nuits $v2 $v1 m'ont laiss\xE9 des cernes marqu\xE9s"
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
     SentenceVariables:
     - Variables:
       - "\xE0 \xE9tudier"
       - "\xE0 jouer"
+    - Variables:
+      - blanches
+      - "\xE0 ne pas dormir"
   - Sentence: $comp1 $cont1 Le rythme $v1 de la vie me rend souvent $v2
     ComplementaryPrefixSentence:
     - Sentences:
@@ -51,8 +54,8 @@ MonoBehaviour:
       - trouver
       - "d\xE9couvrir"
     - Variables:
-      - "J'esp\xE8re"
-      - Mon objectif est
+      - "j'esp\xE8re"
+      - mon objectif est
   _tag: 1
   _portraitSprites:
   - {fileID: 11400000, guid: 2d10fa9498e5a154cab01d6b0e3e1e02, type: 2}

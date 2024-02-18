@@ -16,7 +16,7 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 9022a6555ff6717419e11f02e0646bec, type: 2}
   _sentenceParams:
-  - Sentence: "Il y a des $v1 o\xF9 il m'\xE9tait difficile de $v2"
+  - Sentence: "Il y a des $v1 o\xF9 il m'\xE9tait $v3 de $v2"
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
     SentenceVariables:
@@ -26,6 +26,9 @@ MonoBehaviour:
     - Variables:
       - sortir du lit
       - me lever
+    - Variables:
+      - difficile
+      - impossible
   - Sentence: $comp1 $cont1  je me sens $v2, luttant pour trouver $v1
     ComplementaryPrefixSentence:
     - Sentences:
@@ -45,8 +48,8 @@ MonoBehaviour:
       - "fig\xE9"
       - comme retenu
       - "comme paralys\xE9"
-  - Sentence: "$comp1 $cont1 $v2 trouver des moyens de vaincre cette l\xE9thargie
-      et de retrouver $v1"
+  - Sentence: "$comp1 $cont1 $v2 trouver des moyens de vaincre ma l\xE9thargie et
+      de retrouver $v1"
     ComplementaryPrefixSentence:
     - Sentences:
       - de plus
@@ -58,6 +61,7 @@ MonoBehaviour:
     - Variables:
       - ma vigueur
       - "mon \xE9nergie"
+      - ma force
     - Variables:
       - "j'esp\xE8re"
       - "j'aspire \xE0"

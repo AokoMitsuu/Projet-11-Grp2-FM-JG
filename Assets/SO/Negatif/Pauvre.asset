@@ -17,13 +17,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 395833ee19ae99142a774ad65876e0d8, type: 2}
   _sentenceParams:
   - Sentence: "$v2 o\xF9 je comptais chaque $v1 pour finir le mois"
-    ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables:
     - Variables:
       - euro
@@ -35,9 +30,15 @@ MonoBehaviour:
       - "Il a exist\xE9 un moment"
       - J'ai connu des jours
       - "Il fut une p\xE9riode"
-  - Sentence: "Bien que mes moyens soient $v2, je trouve $v1 dans la simplicit\xE9"
-    ComplementaryPrefixSentence: []
-    ContradictionPrefixSentence: []
+  - Sentence: $comp1 $cont1 Bien que mes moyens soient $v2, je trouve $v1 dans $v3
+    ComplementaryPrefixSentence:
+    - Sentences:
+      - aujourd'hui,
+      - maintenant,
+    ContradictionPrefixSentence:
+    - Sentences:
+      - mais maintenant
+      - mais aujourd'hui
     SentenceVariables:
     - Variables:
       - de la joie
@@ -46,9 +47,17 @@ MonoBehaviour:
       - "limit\xE9s"
       - modestes
       - "r\xE9duits"
-  - Sentence: "Je $v2 $v1 $v5$v4 ma $v3 financi\xE8re"
-    ComplementaryPrefixSentence: []
-    ContradictionPrefixSentence: []
+    - Variables:
+      - "la simplicit\xE9"
+      - les choses simples
+  - Sentence: "$comp1 $cont1 Je $v2 $v1 $v5$v4 ma $v3 financi\xE8re"
+    ComplementaryPrefixSentence:
+    - Sentences:
+      - de plus
+      - et
+    ContradictionPrefixSentence:
+    - Sentences:
+      - mais
     SentenceVariables:
     - Variables:
       - dur

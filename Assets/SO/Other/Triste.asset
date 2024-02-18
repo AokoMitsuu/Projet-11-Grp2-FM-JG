@@ -17,13 +17,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bec19626fbf30fa4a98fc662e36701aa, type: 2}
   - {fileID: 11400000, guid: 6fbef96dc8bad03429c0212bc157798a, type: 2}
   _sentenceParams:
-  - Sentence: "Des p\xE9riodes de tristesse ont marqu\xE9 mon pass\xE9"
-    ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+  - Sentence: $v1 de tristesse $v2 $v3
+    ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
-    SentenceVariables: []
-  - Sentence: "$comp1 $cont1 La tristesse domine mes \xE9motions"
+    SentenceVariables:
+    - Variables:
+      - "Des p\xE9riodes"
+      - Des moments
+      - Des instants
+    - Variables:
+      - "ont laiss\xE9 leur empreinte sur"
+      - "ont marqu\xE9"
+      - "ont jalonn\xE9"
+    - Variables:
+      - "mon v\xE9cu"
+      - "mon pass\xE9"
+  - Sentence: "$comp1 $cont1 La tristesse $v1 mes \xE9motions"
     ComplementaryPrefixSentence:
     - Sentences:
       - 'maintenant, '
@@ -31,9 +40,13 @@ MonoBehaviour:
     ContradictionPrefixSentence:
     - Sentences:
       - 'mais maintenant, '
-    SentenceVariables: []
-  - Sentence: "$cont1 J'esp\xE8re $comp1 voir dans le futur des moments de joie contrairement
-      \xE0 maintenant"
+    SentenceVariables:
+    - Variables:
+      - "pr\xE9domine"
+      - occupe une place centrale dans
+      - domine
+  - Sentence: "$cont1 J'esp\xE8re $comp1 voir dans le futur des moments de $v1 $v2
+      $v3"
     ComplementaryPrefixSentence:
     - Sentences:
       - aussi
@@ -41,7 +54,16 @@ MonoBehaviour:
     ContradictionPrefixSentence:
     - Sentences:
       - mais
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - joie
+      - bonheur
+    - Variables:
+      - en contraste avec
+      - "contrairement \xE0"
+    - Variables:
+      - ma situation actuelle
+      - maintenant
   _tag: 2
   _portraitSprites:
   - {fileID: 11400000, guid: 64733b3182e5fcc42a54af2936242614, type: 2}

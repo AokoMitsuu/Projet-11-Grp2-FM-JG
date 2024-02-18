@@ -17,27 +17,56 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6fbef96dc8bad03429c0212bc157798a, type: 2}
   - {fileID: 11400000, guid: e0195548120c81a4c960dae559a595b5, type: 2}
   _sentenceParams:
-  - Sentence: "Hier, j'ai perdu patience face \xE0 l'injustice"
+  - Sentence: $v1
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
-    SentenceVariables: []
-  - Sentence: "$comp1 $cont1 je bouillonne int\xE9rieurement contre les in\xE9galit\xE9s"
+    SentenceVariables:
+    - Variables:
+      - "Hier, j'ai perdu patience face \xE0 l'injustice"
+      - "Hier, j'ai c\xE9d\xE9 \xE0 l'impatience devant l'injustice"
+      - "Hier, j'ai \xE9t\xE9 frustr\xE9 par l'injustice, perdant patience"
+      - "Hier, l'injustice a test\xE9 ma patience au point de la faire vaciller"
+      - "Face \xE0 l'injustice hier, j'ai laiss\xE9 transpara\xEEtre mon impatience"
+      - "Face \xE0 l'injustice hier, j'ai fini par perdre patience"
+  - Sentence: "$comp1 $cont1 $v1 int\xE9rieurement $v2 $v3"
     ComplementaryPrefixSentence:
     - Sentences:
       - maintenant,
     ContradictionPrefixSentence:
     - Sentences:
       - mais maintenant,
-    SentenceVariables: []
-  - Sentence: "$comp1 $cont1 Je vais probablement devoir apprendre \xE0 canaliser
-      ma col\xE8re face aux d\xE9fis \xE0 venir"
+    SentenceVariables:
+    - Variables:
+      - "ma col\xE8re gronde"
+      - je bouillonne
+      - "je suis en \xE9bullition"
+    - Variables:
+      - contre les
+      - face aux
+      - envers les
+    - Variables:
+      - "in\xE9galit\xE9s"
+      - injustices sociales
+      - "in\xE9galit\xE9s qui persistent"
+  - Sentence: "$comp1 $cont1 Je vais probablement devoir apprendre \xE0 $v3 ma col\xE8re
+      $v2 d\xE9fis $v1"
     ComplementaryPrefixSentence:
     - Sentences:
       - et
     ContradictionPrefixSentence:
     - Sentences:
       - mais
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - "\xE0 venir"
+      - qui se dressent devant moi
+    - Variables:
+      - devant les
+      - face aux
+    - Variables:
+      - apaiser
+      - canaliser
+      - "g\xE9rer"
   _tag: 2
   _portraitSprites:
   - {fileID: 11400000, guid: 7d8c42e71474d0e4cb8feb885dedcea1, type: 2}

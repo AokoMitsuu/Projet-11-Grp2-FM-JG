@@ -15,19 +15,20 @@ MonoBehaviour:
   _name: Endormie
   _conflictTrait: []
   _sentenceParams:
-  - Sentence: "Je pouvais m'endormir n'importe o\xF9, \xE9puis\xE9 par mes $v1"
-    ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+  - Sentence: "Je pouvais $v2 n'importe o\xF9, $v3 par mes $v1"
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables:
     - Variables:
       - aventures
       - parents
       - "coll\xE8gues"
+    - Variables:
+      - m'endormir
+      - me reposer
+    - Variables:
+      - "fatigu\xE9"
+      - "\xE9puis\xE9"
   - Sentence: "$cont1 $comp1 $v2, je m'endors d\xE8s $v1"
     ComplementaryPrefixSentence:
     - Sentences:
@@ -41,8 +42,8 @@ MonoBehaviour:
       - "que ma t\xEAte touche l'oreiller"
       - "que je suis rentr\xE9"
     - Variables:
-      - Le soir
-      - "\xC0 peine rentr\xE9 le soir"
+      - le soir
+      - "\xE0 peine rentr\xE9 le soir"
   - Sentence: $cont1 Je $v1 $comp1 d'une nuit $V2 de sommeil $v3
     ComplementaryPrefixSentence:
     - Sentences:

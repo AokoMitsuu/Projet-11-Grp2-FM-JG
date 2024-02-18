@@ -132,9 +132,6 @@ public class NPC
             int index;
             if (int.TryParse(indexStr, out index) && index > 0 && index <= variable.Count)
             {
-                var test1 = variable[index - 1];
-                var test2 = test1.Variables;
-                var test3 = test2[Random.Range(0, test2.Count)];
                 return variable[index - 1].Variables[Random.Range(0, variable[index - 1].Variables.Count)];
             }
             else

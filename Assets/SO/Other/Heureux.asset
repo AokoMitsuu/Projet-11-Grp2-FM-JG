@@ -17,12 +17,23 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bec19626fbf30fa4a98fc662e36701aa, type: 2}
   - {fileID: 11400000, guid: e0195548120c81a4c960dae559a595b5, type: 2}
   _sentenceParams:
-  - Sentence: "J'\xE9clate souvant de rire en repensant \xE0 des vieilles blagues"
+  - Sentence: $v1 de rire en $v3 $v2
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
-    SentenceVariables: []
-  - Sentence: "$comp1 $cont1 je me sens l\xE9ger et plein de gratitude pour les petites
-      choses"
+    SentenceVariables:
+    - Variables:
+      - "J'\xE9clate souvant"
+      - Il m'arrive souvent
+      - "Il m'arrive r\xE9guli\xE8rement d'\xE9clater"
+    - Variables:
+      - des vieilles blagues
+      - d'anciennes plaisanteries
+      - de vieilles blagues
+      - "des blagues du pass\xE9"
+    - Variables:
+      - "repensant \xE0"
+      - "me rem\xE9morant"
+  - Sentence: $comp1 $cont1 je $v1 et $v2 $v4 $v3
     ComplementaryPrefixSentence:
     - Sentences:
       - ajourd'hui
@@ -30,15 +41,36 @@ MonoBehaviour:
     ContradictionPrefixSentence:
     - Sentences:
       - mais maintenant
-    SentenceVariables: []
-  - Sentence: $comp1 $cont1 je partagerai des moments de joie avec mes amis
+    SentenceVariables:
+    - Variables:
+      - "me sens l\xE9ger"
+      - "ressens une l\xE9g\xE8ret\xE9"
+    - Variables:
+      - plein de gratitude
+      - une profonde gratitude
+      - une gratitude profonde
+    - Variables:
+      - les petites choses
+      - les petites joies du quotidien
+    - Variables:
+      - pour
+      - envers
+  - Sentence: $comp1 $cont1 je partagerai $v1 avec $v2
     ComplementaryPrefixSentence:
     - Sentences:
       - et
+      - de plus
     ContradictionPrefixSentence:
     - Sentences:
       - mais
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - des moments de joie
+      - des instants de pur bonheur
+      - "des moments de complicit\xE9"
+    - Variables:
+      - mes amis
+      - ma famille
   _tag: 2
   _portraitSprites:
   - {fileID: 11400000, guid: 425407fd5d46c244eb48773cd2232ddd, type: 2}

@@ -15,29 +15,58 @@ MonoBehaviour:
   _name: Professionnel
   _conflictTrait: []
   _sentenceParams:
-  - Sentence: "Pour mon premier entretien d'embauche, j'avais nou\xE9 ma cravate
-      avec soin"
+  - Sentence: "$v1 mon premier entretien $v3, j'avais nou\xE9 ma cravate $v2"
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
-    SentenceVariables: []
-  - Sentence: "$comp1 $cont1 Chaque matin, je choisis une cravate qui refl\xE8te
-      mon professionnalisme"
+    SentenceVariables:
+    - Variables:
+      - Pour
+      - Lors de
+      - Au moment de
+    - Variables:
+      - avec soin
+      - avec le plus grand soin
+    - Variables:
+      - d'embauche
+      - professionnel
+  - Sentence: $comp1 $cont1 $v1, je choisis une cravate $v3 $v2
     ComplementaryPrefixSentence:
     - Sentences:
       - maintenant,
     ContradictionPrefixSentence:
     - Sentences:
       - mais maintenant,
-    SentenceVariables: []
-  - Sentence: "$cont1 $comp1 Je continuerai \xE0 porter une cravate pour tous mes
-      rendez-vous importants"
+    SentenceVariables:
+    - Variables:
+      - chaque matin
+      - chaque jour
+    - Variables:
+      - mon professionnalisme
+      - "mon s\xE9rieux professionnel"
+      - ma stature professionnelle
+      - ma rigueur professionnelle
+      - mon allure professionnelle
+    - Variables:
+      - "qui refl\xE8te"
+      - en accord avec
+  - Sentence: $cont1 $comp1 Je continuerai $v1 cravate pour $v2 mes rendez-vous $v3
     ComplementaryPrefixSentence:
     - Sentences:
       - et
     ContradictionPrefixSentence:
     - Sentences:
       - mais
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - "\xE0 porter une"
+      - la port de la
+    - Variables:
+      - tous
+      - chaqu'un de
+    - Variables:
+      - importants
+      - significatifs
+      - essentiel
   _tag: 2
   _portraitSprites:
   - {fileID: 11400000, guid: d00af753c6e028f44bf99d8d3df0906a, type: 2}

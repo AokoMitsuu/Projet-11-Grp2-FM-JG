@@ -16,13 +16,26 @@ MonoBehaviour:
   _conflictTrait:
   - {fileID: 11400000, guid: 2b1354ffef87d0c4395f54ddf13cc03f, type: 2}
   _sentenceParams:
-  - Sentence: "Lire m'a toujours sembl\xE9 fastidieux, les livres \xE0 l'\xE9cole
-      ne captivant jamais vraiment mon attention"
+  - Sentence: $v1
     ComplementaryPrefixSentence: []
     ContradictionPrefixSentence: []
-    SentenceVariables: []
-  - Sentence: "$comp1 $cont1 Je pr\xE9f\xE8re les m\xE9dias visuels et interactifs
-      aux pages imprim\xE9es"
+    SentenceVariables:
+    - Variables:
+      - "Lire m'a toujours sembl\xE9 fastidieux, les livres \xE0 l'\xE9cole ne captivant
+        jamais vraiment mon attention"
+      - "Je n'ai jamais trouv\xE9 de plaisir \xE0 lire, les livres scolaires ne m'ont
+        jamais passionn\xE9"
+      - "La lecture m'a toujours paru ennuyeuse, les ouvrages scolaires ne r\xE9ussissant
+        jamais \xE0 m'attirer"
+      - "Pour moi, lire a toujours \xE9t\xE9 une corv\xE9e, les livres \xE0 l'\xE9cole
+        ne suscitant jamais mon int\xE9r\xEAt"
+      - "La lecture m'a toujours sembl\xE9 laborieuse, les livres \xE0 l'\xE9cole
+        ne parvenant jamais \xE0 m'engager pleinement"
+      - "Je n'ai jamais \xE9prouv\xE9 de plaisir \xE0 lire, les livres scolaires
+        ne captivant jamais mon int\xE9r\xEAt"
+      - "Pour moi, lire a toujours \xE9t\xE9 une t\xE2che ardue, les livres \xE0
+        l'\xE9cole ne r\xE9ussissant jamais \xE0 m'enthousiasmer"
+  - Sentence: "$comp1 $cont1 Je $v1 les m\xE9dias visuels et interactifs $v3 $v2"
     ComplementaryPrefixSentence:
     - Sentences:
       - maintenant,
@@ -30,15 +43,30 @@ MonoBehaviour:
     ContradictionPrefixSentence:
     - Sentences:
       - mais maintenant,
-    SentenceVariables: []
-  - Sentence: "$cont1 $comp1 Je ne surement serais jamais interess\xE9 par la lecture"
+    SentenceVariables:
+    - Variables:
+      - "pr\xE9f\xE8re"
+      - favorise
+      - "privil\xE9gie"
+    - Variables:
+      - supports traditionnels
+      - "pages imprim\xE9es"
+      - supports papier
+    - Variables:
+      - par rapport aux
+      - aux
+      - "plut\xF4t que les"
+  - Sentence: $cont1 $comp1 Je ne serai surement jamais $v1 par la lecture
     ComplementaryPrefixSentence:
     - Sentences:
       - et
     ContradictionPrefixSentence:
     - Sentences:
       - mais
-    SentenceVariables: []
+    SentenceVariables:
+    - Variables:
+      - "int\xE9ress\xE9"
+      - "attir\xE9"
   _tag: 4
   _portraitSprites:
   - {fileID: 11400000, guid: 7f279688da3f1554eac26d8371f9e7f4, type: 2}

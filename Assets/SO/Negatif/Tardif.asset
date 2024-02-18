@@ -17,39 +17,41 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ec1a4b4766e6dcd428a5458792b4f6db, type: 2}
   _sentenceParams:
   - Sentence: $v1 savaient qu'ils devaient toujours m'attendre
-    ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    ComplementaryPrefixSentence: []
+    ContradictionPrefixSentence: []
     SentenceVariables:
     - Variables:
       - Mes amis
       - Ma famille
       - Mes proches
-  - Sentence: Je $v1 encore avec la notion de temps, souvent en retard
+  - Sentence: $comp1 $cont1 Je $v1 encore avec la notion de temps, car je suis souvent
+      en retard
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - aujourd'hui,
+      - maintenant,
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - mais maintenant,
     SentenceVariables:
     - Variables:
       - lutte
       - me bats
-  - Sentence: "Je vais essayer d'am\xE9liorer ma gestion du temps pour ne plus \xEAtre
+  - Sentence: "$comp1 $cont1 Je vais $v1 ma gestion du temps $v2 ne plus \xEAtre
       en retard"
     ComplementaryPrefixSentence:
-    - Sentences: []
-    - Sentences: []
+    - Sentences:
+      - de plus
+      - et
     ContradictionPrefixSentence:
-    - Sentences: []
-    - Sentences: []
-    - Sentences: []
-    SentenceVariables: []
+    - Sentences:
+      - mais
+    SentenceVariables:
+    - Variables:
+      - "essayer d'am\xE9liorer"
+      - faire des efforts sur
+    - Variables:
+      - afin de
+      - pour
   _tag: 1
   _portraitSprites: []
