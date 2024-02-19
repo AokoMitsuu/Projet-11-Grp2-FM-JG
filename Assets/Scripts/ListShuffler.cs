@@ -6,15 +6,14 @@ public static class ListShuffler
     // Méthode d'extension pour mélanger une liste
     public static void Shuffle<T>(this IList<T> list)
     {
-        System.Random rng = new System.Random();
-        int n = list.Count;
-        while (n > 1)
+        for (int i = list.Count - 1; i > 0; i--)
         {
-            n--;
-            int k = rng.Next(n + 1);
-            T value = list[k];
-            list[k] = list[n];
-            list[n] = value;
+            int randomIndex = Random.Range(0, i + 1);
+
+            // Échange les éléments
+            T temp = list[i];
+            list[i] = list[randomIndex];
+            list[randomIndex] = temp;
         }
     }
 }
